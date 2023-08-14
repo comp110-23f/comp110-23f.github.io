@@ -20,6 +20,16 @@
     "2023-08-30": [],
     "2023-08-31": [
         {
+            "kind": "RD",
+            "n": 0,
+            "title": "Reading: The Ethical Algorithm Chapter on Gradescope (Due Wednesday 9/20)",
+            "date": "2023-08-31",
+            "deadline": "2023-09-20",
+            "links": {
+                "": "https://gradescope.com"
+            }
+        },
+        {
             "kind": "EX",
             "n": 1,
             "title": "Chardle - Input, Variables, and Conditionals (Due Wednesday 9/6)",
@@ -105,6 +115,16 @@
             "date": "2023-10-05",
             "deadline": "2023-10-11",
             "links": {}
+        },
+        {
+            "kind": "RD",
+            "n": 1,
+            "title": "Reading: Weapons of Math Destruction (Due Wednesday 10/25)",
+            "date": "2023-10-05",
+            "deadline": "2023-10-25",
+            "links": {
+                "": "https://gradescope.com"
+            }
         }
     ],
     "2023-10-06": [],
@@ -187,6 +207,16 @@
             "date": "2023-11-09",
             "deadline": "2023-11-15",
             "links": {}
+        },
+        {
+            "kind": "RD",
+            "n": 2,
+            "title": "Reading: TBD (Due Wednesday 11/29)",
+            "date": "2023-11-09",
+            "deadline": "2023-11-29",
+            "links": {
+                "": "https://gradescope.com"
+            }
         }
     ],
     "2023-11-10": [],
