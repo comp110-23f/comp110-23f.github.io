@@ -9,7 +9,9 @@
             "title": "Hello World (Due Friday 9/1)",
             "date": "2023-08-24",
             "deadline": "2023-09-01",
-            "links": {}
+            "links": {
+                "EX00 - Hello, World": "/exercises/ex00_hello_world.html"
+            }
         }
     ],
     "2023-08-25": [],
