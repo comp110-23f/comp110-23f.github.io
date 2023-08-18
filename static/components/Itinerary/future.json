@@ -1,6 +1,31 @@
 {
     "2023-08-21": [],
-    "2023-08-22": [],
+    "2023-08-22": [
+        {
+            "kind": "CL",
+            "n": 0,
+            "title": "Welcome to COMP110 - An Intro to the Class and Coding",
+            "date": "2023-08-22",
+            "deadline": "None",
+            "links": {
+                "Live Stream Link": "https://youtube.com/live/GVfPAJ_n8Pc?feature=share",
+                "Slides (Coming Soon)": ""
+            }
+        },
+        {
+            "kind": "LS",
+            "n": 0,
+            "title": "Syllabus and Support (Due Thursday 8/24)",
+            "date": "2023-08-22",
+            "deadline": "2023-08-24",
+            "links": {
+                "1. Read the Syllabus": "/resources/syllabus.html",
+                "2. Read Quiz Expectations": "/resources/quiz-expectations.html",
+                "3. Read Support Resources": "/support",
+                "4. Complete Lesson 00 Responses on Gradescope": "https://www.gradescope.com/"
+            }
+        }
+    ],
     "2023-08-23": [],
     "2023-08-24": [
         {
