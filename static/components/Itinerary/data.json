@@ -31,9 +31,9 @@
         {
             "kind": "EX",
             "n": 0,
-            "title": "Hello World (Due Friday 9/1)",
+            "title": "Hello World (Due Wednesday 8/30)",
             "date": "2023-08-24",
-            "deadline": "2023-09-01",
+            "deadline": "2023-08-30",
             "links": {
                 "EX00 - Hello, World": "/exercises/ex00_hello_world.html"
             }
@@ -189,7 +189,7 @@
         {
             "kind": "EX",
             "n": 6,
-            "title": "Dictionary Utilities (Due Wednesday 11/1)",
+            "title": "Turtle (Due Wednesday 11/1)",
             "date": "2023-10-26",
             "deadline": "2023-11-01",
             "links": {}
@@ -214,7 +214,7 @@
         {
             "kind": "EX",
             "n": 7,
-            "title": "Data Wrangling (Due Monday 11/13)",
+            "title": "Dictonary Utils (Due Monday 11/13)",
             "date": "2023-11-02",
             "deadline": "2023-11-13",
             "links": {}
@@ -230,7 +230,7 @@
         {
             "kind": "EX",
             "n": 8,
-            "title": "River Simulation Part 1 (Due Wednesday 11/15)",
+            "title": "Data Wrangling (Due Wednesday 11/15)",
             "date": "2023-11-09",
             "deadline": "2023-11-15",
             "links": {}
@@ -256,7 +256,7 @@
         {
             "kind": "EX",
             "n": 9,
-            "title": "River Simulation Part 2 (Due Monday 11/27)",
+            "title": "River Simulation (Due Monday 11/27)",
             "date": "2023-11-16",
             "deadline": "2023-11-27",
             "links": {}
