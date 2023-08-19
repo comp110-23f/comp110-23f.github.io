@@ -9,7 +9,8 @@
             "deadline": "None",
             "links": {
                 "Live Stream Link": "https://youtube.com/live/GVfPAJ_n8Pc?feature=share",
-                "Slides (Coming Soon)": ""
+                "Course Intro Slides (Coming Soon)": "",
+                "Intro to Coding Slides": "/static/slides/CL00.pdf"
             }
         },
         {
