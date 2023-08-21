@@ -38,6 +38,16 @@
             "links": {
                 "EX00 - Hello, World": "/exercises/ex00_hello_world.html"
             }
+        },
+        {
+            "kind": "VL",
+            "n": 0,
+            "title": "Virtual Lesson",
+            "date": "2023-08-24",
+            "deadline": "2023-08-24",
+            "links": {
+                "": "/virtual-classes/VL00.html"
+            }
         }
     ],
     "2023-08-25": [],
