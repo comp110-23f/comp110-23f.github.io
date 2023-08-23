@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1692747752.4183953">
+  <link rel="stylesheet" href="/static/styles.css?v=1692802104.2868245">
 </head>
 
 <body>
@@ -105,13 +105,13 @@
 <ul>
 <li>If, instead, you see “Download the latest version of Python” be sure your browser Window is maximized and refresh the web page.</li>
 </ul></li>
-<li>Press the <strong>Download Python 3.11.1</strong> button. The download should begin.
+<li>Press the <strong>Download Python 3.11.4</strong> button. The download should begin.
 <ul>
 <li>If you are taken to another page without a download beginning, scroll down to the <strong>Files</strong> heading and select the file named <code>Windows x86 executable installer</code>.**</li>
 </ul></li>
 <li>Open the download once it completes and <strong>carefully</strong> follow the instructions below, <em>especially the first one</em>:
 <ol start="0" type="1">
-<li><strong>IMPORTANT: Check the box on the first screen labelled “Add Python 3.11.1 to PATH”</strong>
+<li><strong>IMPORTANT: Check the box on the first screen labelled “Add Python 3.11.4 to PATH”</strong>
 <ul>
 <li>If you do not see this option, you likely have an older version of Python already installed. Go ahead and uninstall the old version and then retry installing the new version.</li>
 <li>Knowing exactly what this does is beyond your concern, but the gist is it makes it easier for other programs on your system to make use of Python.</li>
@@ -177,7 +177,7 @@
 <ul>
 <li>If you instead see, “Download the latest version of Python”, make sure your browser is full screen and refresh the page.</li>
 </ul></li>
-<li>Click the <strong>Download Python 3.11.1</strong> button. Your download should begin.
+<li>Click the <strong>Download Python 3.11.4</strong> button. Your download should begin.
 <ul>
 <li>If you are brought to another page, scroll down to the Files section and select the <code>macOS 64-bit universal2 installer</code>.</li>
 </ul></li>
@@ -195,7 +195,7 @@
 <ol start="0" type="1">
 <li>Open a new Terminal window. If you still have one open from section 0, close it out and start a new one, because changes made during the installation of Python will not take effect until a new shell session begins.</li>
 <li>Give the command <code>python3 --version</code>, notice the <code>3</code> after the word <code>python</code> and two dashes at the front of <code>--version</code>, and press enter. You should see <code>Python 3.11.1</code> (or greater) which indicates your install was successful. If not, try the steps above one more time and restart your computer before trying these. Otherwise, come work with us in office hours!</li>
-<li>Now try giving the command <code>python --version</code>, without the <code>3</code> from above. If you see <code>Python 2.X.YY</code>, where <code>X</code> and <code>YY</code> are irrelevant numbers, continue to the next step because Mac also includes a much older version of Python. This is confusing when you’re trying to learn modern Python! If you see <code>Python 3.X.YY</code>, but not <code>Python 3.11.1</code> this means you previously installed an older version of Python3, and you should also continue to step 3. If you see the result <code>Python 3.11.1</code> then you are all set and can continue to the next section on installing VSCode.</li>
+<li>Now try giving the command <code>python --version</code>, without the <code>3</code> from above. If you see <code>Python 2.X.YY</code>, where <code>X</code> and <code>YY</code> are irrelevant numbers, continue to the next step because Mac also includes a much older version of Python. This is confusing when you’re trying to learn modern Python! If you see <code>Python 3.X.YY</code>, but not <code>Python 3.11.1</code> or greater, this means you previously installed an older version of Python3, and you should also continue to step 3. If you see the result <code>Python 3.11.x</code> then you are all set and can continue to the next section on installing VSCode.</li>
 <li>Let’s simplify life by making <code>python</code> refer to the latest version you just installed, not the old one. What the following command is doing is making a link between the name <code>python</code> and the version you just installed. The command is more advanced than where we are at, so do not worry yourself on its details. You should copy and paste the following command into your Terminal, and press enter, because the punctuation symbols need to match precisely.</li>
 </ol>
 <p><code>sudo ln -s "$(which python3)" "$(dirname $(which python3))/python"</code></p>
