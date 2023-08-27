@@ -58,6 +58,14 @@
     "2023-08-30": [],
     "2023-08-31": [
         {
+            "kind": "VL",
+            "n": 1,
+            "title": "Virtual Lesson",
+            "date": "2023-08-31",
+            "deadline": "2023-08-31",
+            "links": {}
+        },
+        {
             "kind": "RD",
             "n": 0,
             "title": "Reading: The Ethical Algorithm Chapter on Gradescope (Due Wednesday 9/20)",
