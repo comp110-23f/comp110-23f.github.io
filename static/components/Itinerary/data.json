@@ -54,19 +54,7 @@
     "2023-08-26": [],
     "2023-08-27": [],
     "2023-08-28": [],
-    "2023-08-29": [
-        {
-            "kind": "CL",
-            "n": 1,
-            "title": "Conditionals and Evaluating Expressions",
-            "date": "2023-08-29",
-            "deadline": "None",
-            "links": {
-                "Lecture Video": "",
-                "Lecture Slides": "/static/slides/CL01-conditionals.pdf"
-            }
-        }
-    ],
+    "2023-08-29": [],
     "2023-08-30": [],
     "2023-08-31": [
         {
@@ -86,14 +74,6 @@
             "links": {
                 "": "https://gradescope.com"
             }
-        },
-        {
-            "kind": "EX",
-            "n": 1,
-            "title": "Chardle - Input, Variables, and Conditionals (Due Monday 9/11)",
-            "date": "2023-08-31",
-            "deadline": "2023-09-11",
-            "links": {}
         }
     ],
     "2023-09-01": [],
@@ -118,7 +98,7 @@
         },
         {
             "kind": "EX",
-            "n": 2,
+            "n": 1,
             "title": "One-shot Wordle (Due Wednesday 9/20)",
             "date": "2023-09-12",
             "deadline": "2023-09-20",
@@ -136,7 +116,7 @@
     "2023-09-21": [
         {
             "kind": "EX",
-            "n": 3,
+            "n": 2,
             "title": "Structured Wordle (Due Wednesday 9/27)",
             "date": "2023-09-21",
             "deadline": "2023-09-27",
@@ -168,7 +148,7 @@
     "2023-10-05": [
         {
             "kind": "EX",
-            "n": 4,
+            "n": 3,
             "title": "List Utils (Due Wednesday 10/11)",
             "date": "2023-10-05",
             "deadline": "2023-10-11",
@@ -199,7 +179,7 @@
     "2023-10-17": [
         {
             "kind": "EX",
-            "n": 5,
+            "n": 4,
             "title": "List Utils + Unit Tests (Due Monday 10/23)",
             "date": "2023-10-17",
             "deadline": "2023-10-23",
@@ -219,7 +199,7 @@
     "2023-10-26": [
         {
             "kind": "EX",
-            "n": 6,
+            "n": 5,
             "title": "Turtle (Due Wednesday 11/1)",
             "date": "2023-10-26",
             "deadline": "2023-11-01",
@@ -244,7 +224,7 @@
     "2023-11-02": [
         {
             "kind": "EX",
-            "n": 7,
+            "n": 6,
             "title": "Dictionary Utils (Due Wednesday 11/8)",
             "date": "2023-11-02",
             "deadline": "2023-11-08",
@@ -260,7 +240,7 @@
     "2023-11-09": [
         {
             "kind": "EX",
-            "n": 8,
+            "n": 7,
             "title": "Data Wrangling (Due Wednesday 11/15)",
             "date": "2023-11-09",
             "deadline": "2023-11-15",
@@ -286,7 +266,7 @@
     "2023-11-16": [
         {
             "kind": "EX",
-            "n": 9,
+            "n": 8,
             "title": "River Simulation (Due Monday 11/27)",
             "date": "2023-11-16",
             "deadline": "2023-11-27",
@@ -316,7 +296,7 @@
     "2023-11-28": [
         {
             "kind": "EX",
-            "n": 10,
+            "n": 9,
             "title": "Simpy (Due Wednesday 12/6)",
             "date": "2023-11-28",
             "deadline": "2023-12-06",
