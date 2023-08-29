@@ -36,14 +36,6 @@
     "2023-09-11": [],
     "2023-09-12": [
         {
-            "kind": "QZ",
-            "n": 0,
-            "title": "Quiz 0",
-            "date": "2023-09-12",
-            "deadline": "2023-09-12",
-            "links": {}
-        },
-        {
             "kind": "EX",
             "n": 1,
             "title": "One-shot Wordle (Due Wednesday 9/20)",
