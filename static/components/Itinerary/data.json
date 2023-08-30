@@ -63,7 +63,9 @@
             "title": "Virtual Lesson",
             "date": "2023-08-31",
             "deadline": "2023-08-31",
-            "links": {}
+            "links": {
+                "": "/virtual-classes/VL01.html"
+            }
         },
         {
             "kind": "RD",
