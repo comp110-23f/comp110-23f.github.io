@@ -86,6 +86,17 @@
     "2023-09-06": [],
     "2023-09-07": [
         {
+            "kind": "CL",
+            "n": 1,
+            "title": "Memory Diagrams",
+            "date": "2023-09-07",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
+            }
+        },
+        {
             "kind": "EX",
             "n": 1,
             "title": "Chardle - Input, Variables, and Conditionals (Due Wednesday 9/13)",
@@ -93,6 +104,26 @@
             "deadline": "2023-09-13",
             "links": {
                 "Exercise Instructions": "/exercises/ex01.html"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 0,
+            "title": "Environment Diagrams Practice",
+            "date": "2023-09-07",
+            "deadline": "2023-09-07",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 1,
+            "title": "Environment Diagrams Practice with Conditionals",
+            "date": "2023-09-07",
+            "deadline": "2023-09-07",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
             }
         }
     ],

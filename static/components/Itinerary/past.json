@@ -54,5 +54,31 @@
     "2023-08-26": [],
     "2023-08-27": [],
     "2023-08-28": [],
-    "2023-08-29": []
+    "2023-08-29": [],
+    "2023-08-30": [],
+    "2023-08-31": [
+        {
+            "kind": "VL",
+            "n": 1,
+            "title": "Virtual Lesson",
+            "date": "2023-08-31",
+            "deadline": "2023-08-31",
+            "links": {
+                "": "/virtual-classes/VL01.html"
+            }
+        },
+        {
+            "kind": "RD",
+            "n": 0,
+            "title": "Reading: The Ethical Algorithm Chapter on Gradescope (Due Wednesday 9/27)",
+            "date": "2023-08-31",
+            "deadline": "2023-09-27",
+            "links": {
+                "": "https://gradescope.com"
+            }
+        }
+    ],
+    "2023-09-01": [],
+    "2023-09-02": [],
+    "2023-09-03": []
 }

@@ -1,34 +1,19 @@
 {
-    "2023-08-30": [],
-    "2023-08-31": [
-        {
-            "kind": "VL",
-            "n": 1,
-            "title": "Virtual Lesson",
-            "date": "2023-08-31",
-            "deadline": "2023-08-31",
-            "links": {
-                "": "/virtual-classes/VL01.html"
-            }
-        },
-        {
-            "kind": "RD",
-            "n": 0,
-            "title": "Reading: The Ethical Algorithm Chapter on Gradescope (Due Wednesday 9/27)",
-            "date": "2023-08-31",
-            "deadline": "2023-09-27",
-            "links": {
-                "": "https://gradescope.com"
-            }
-        }
-    ],
-    "2023-09-01": [],
-    "2023-09-02": [],
-    "2023-09-03": [],
     "2023-09-04": [],
     "2023-09-05": [],
     "2023-09-06": [],
     "2023-09-07": [
+        {
+            "kind": "CL",
+            "n": 1,
+            "title": "Memory Diagrams",
+            "date": "2023-09-07",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
+            }
+        },
         {
             "kind": "EX",
             "n": 1,
@@ -37,6 +22,26 @@
             "deadline": "2023-09-13",
             "links": {
                 "Exercise Instructions": "/exercises/ex01.html"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 0,
+            "title": "Environment Diagrams Practice",
+            "date": "2023-09-07",
+            "deadline": "2023-09-07",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 1,
+            "title": "Environment Diagrams Practice with Conditionals",
+            "date": "2023-09-07",
+            "deadline": "2023-09-07",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
             }
         }
     ],
