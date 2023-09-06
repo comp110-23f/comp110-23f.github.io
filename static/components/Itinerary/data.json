@@ -92,7 +92,7 @@
             "date": "2023-09-07",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
+                "Lecture Video": "https://youtube.com/live/2y7xX5Ae2AY?feature=share",
                 "Lecture Slides": "/static/slides/MemDiagrams.pdf"
             }
         },
