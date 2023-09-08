@@ -16,7 +16,7 @@
         {
             "kind": "LS",
             "n": 0,
-            "title": "Syllabus and Support<s><i>(Due Thursday 8/24)</i></s> (Extended to Wednesday 9/6)",
+            "title": "Syllabus and Support (Due Thursday 8/24)",
             "date": "2023-08-22",
             "deadline": "2023-08-24",
             "links": {
@@ -42,7 +42,7 @@
         {
             "kind": "VL",
             "n": 0,
-            "title": "Virtual Lesson (Due Thursday 8/24)",
+            "title": "Virtual Lesson<s><i>(Due Thursday 8/24)</i></s> (Extended to Wednesday 9/6)",
             "date": "2023-08-24",
             "deadline": "2023-08-24",
             "links": {
@@ -68,11 +68,21 @@
             }
         },
         {
+            "kind": "CQ",
+            "n": 0,
+            "title": "Update Canvas Email<s><i>(Due Thursday 8/31)</i></s> (Extended to Thursday 9/7)",
+            "date": "2023-08-31",
+            "deadline": "2023-08-31",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
+        },
+        {
             "kind": "RD",
             "n": 0,
-            "title": "Reading: The Ethical Algorithm Chapter on Gradescope (Due Wednesday 9/27)",
+            "title": "Reading: The Ethical Algorithm Chapter on Gradescope<s><i>(Due Wednesday 9/20)</i></s> (Extended to Wednesday 9/27)",
             "date": "2023-08-31",
-            "deadline": "2023-09-27",
+            "deadline": "2023-09-20",
             "links": {
                 "": "https://gradescope.com"
             }
@@ -108,7 +118,7 @@
         },
         {
             "kind": "CQ",
-            "n": 0,
+            "n": 1,
             "title": "Memory Diagrams Practice (Due Friday 9/8)",
             "date": "2023-09-07",
             "deadline": "2023-09-08",
@@ -118,7 +128,7 @@
         },
         {
             "kind": "CQ",
-            "n": 1,
+            "n": 2,
             "title": "Memory Diagrams Practice with Conditionals (Due Friday 9/8)",
             "date": "2023-09-07",
             "deadline": "2023-09-08",
