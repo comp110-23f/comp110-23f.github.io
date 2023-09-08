@@ -47,7 +47,19 @@
     "2023-09-09": [],
     "2023-09-10": [],
     "2023-09-11": [],
-    "2023-09-12": [],
+    "2023-09-12": [
+        {
+            "kind": "CL",
+            "n": 2,
+            "title": "Conditionals + Memory Diagram Practice",
+            "date": "2023-09-12",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "/",
+                "Lecture Slides": "/"
+            }
+        }
+    ],
     "2023-09-13": [],
     "2023-09-14": [
         {
