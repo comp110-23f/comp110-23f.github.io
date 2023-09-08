@@ -42,7 +42,7 @@
         {
             "kind": "VL",
             "n": 0,
-            "title": "Virtual Lesson",
+            "title": "Virtual Lesson (Due Thursday 8/24)",
             "date": "2023-08-24",
             "deadline": "2023-08-24",
             "links": {
@@ -60,7 +60,7 @@
         {
             "kind": "VL",
             "n": 1,
-            "title": "Virtual Lesson",
+            "title": "Virtual Lesson (Due Thursday 8/31)",
             "date": "2023-08-31",
             "deadline": "2023-08-31",
             "links": {
@@ -174,7 +174,7 @@
         {
             "kind": "QZ",
             "n": 1,
-            "title": "Quiz 1",
+            "title": "Quiz 1 (Due Tuesday 10/3)",
             "date": "2023-10-03",
             "deadline": "2023-10-03",
             "links": {}
@@ -250,7 +250,7 @@
         {
             "kind": "QZ",
             "n": 2,
-            "title": "Quiz 2",
+            "title": "Quiz 2 (Due Tuesday 10/31)",
             "date": "2023-10-31",
             "deadline": "2023-10-31",
             "links": {}
@@ -317,7 +317,7 @@
         {
             "kind": "QZ",
             "n": 3,
-            "title": "Quiz 3",
+            "title": "Quiz 3 (Due Tuesday 11/21)",
             "date": "2023-11-21",
             "deadline": "2023-11-21",
             "links": {}
