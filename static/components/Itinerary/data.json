@@ -150,7 +150,7 @@
             "deadline": "None",
             "links": {
                 "Lecture Video": "https://youtube.com/live/uTLwi7_2cf8?feature=share",
-                "Lecture Slides": "/"
+                "Lecture Slides": "/static/slides/f23/CL02.pdf"
             }
         }
     ],
