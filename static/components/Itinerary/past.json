@@ -93,5 +93,49 @@
     "2023-09-03": [],
     "2023-09-04": [],
     "2023-09-05": [],
-    "2023-09-06": []
+    "2023-09-06": [],
+    "2023-09-07": [
+        {
+            "kind": "CL",
+            "n": 1,
+            "title": "Memory Diagrams",
+            "date": "2023-09-07",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/2y7xX5Ae2AY?feature=share",
+                "Lecture Slides": "/static/slides/MemDiagrams.pdf"
+            }
+        },
+        {
+            "kind": "EX",
+            "n": 1,
+            "title": "Chardle - Input, Variables, and Conditionals (Due Wednesday 9/13)",
+            "date": "2023-09-07",
+            "deadline": "2023-09-13",
+            "links": {
+                "Exercise Instructions": "/exercises/ex01.html"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 1,
+            "title": "Memory Diagrams Practice (Due Friday 9/8)",
+            "date": "2023-09-07",
+            "deadline": "2023-09-08",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 2,
+            "title": "Memory Diagrams Practice with Conditionals (Due Friday 9/8)",
+            "date": "2023-09-07",
+            "deadline": "2023-09-08",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
+        }
+    ],
+    "2023-09-08": []
 }
