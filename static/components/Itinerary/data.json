@@ -157,12 +157,24 @@
     "2023-09-13": [],
     "2023-09-14": [
         {
+            "kind": "VL",
+            "n": 2,
+            "title": "Virtual Lesson (Due Thursday 9/14)",
+            "date": "2023-09-14",
+            "deadline": "2023-09-14",
+            "links": {
+                "": "/virtual-classes/VL02.html"
+            }
+        },
+        {
             "kind": "EX",
             "n": 2,
             "title": "One-shot Wordle (Due Wednesday 9/20)",
             "date": "2023-09-14",
             "deadline": "2023-09-20",
-            "links": {}
+            "links": {
+                "": "/exercises/ex02.html"
+            }
         }
     ],
     "2023-09-15": [],
