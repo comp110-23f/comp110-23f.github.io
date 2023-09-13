@@ -67,7 +67,7 @@
         {
             "kind": "QZ",
             "n": 1,
-            "title": "Quiz 1 (Due Tuesday 10/3)",
+            "title": "Quiz 1",
             "date": "2023-10-03",
             "deadline": "2023-10-03",
             "links": {}
@@ -143,7 +143,7 @@
         {
             "kind": "QZ",
             "n": 2,
-            "title": "Quiz 2 (Due Tuesday 10/31)",
+            "title": "Quiz 2",
             "date": "2023-10-31",
             "deadline": "2023-10-31",
             "links": {}
@@ -210,7 +210,7 @@
         {
             "kind": "QZ",
             "n": 3,
-            "title": "Quiz 3 (Due Tuesday 11/21)",
+            "title": "Quiz 3",
             "date": "2023-11-21",
             "deadline": "2023-11-21",
             "links": {}
