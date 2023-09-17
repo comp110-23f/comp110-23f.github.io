@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1694631149.7744544">
+  <link rel="stylesheet" href="/static/styles.css?v=1694982672.1188173">
 </head>
 
 <body>
@@ -185,7 +185,7 @@ The 🤠 rides a 🐎!</code></pre>
 </tbody>
 </table>
 <p>Escape sequences in string literals begin with a backslash.</p>
-<p>How can you <em>use</em> a double quote character in a string surrounded in double quotes? With the first escape sequence above! For example, the string literal <code>"The computer said, \"Hello, world.\""</code> will evaluate to the characters <code>The computer said, "Hello, world."</code> The <code>\"</code> escape sequence, when evaluated, results in a single backslash character.</p>
+<p>How can you <em>use</em> a double quote character in a string surrounded in double quotes? With the first escape sequence above! For example, the string literal <code>"The computer said, \"Hello, world.\""</code> will evaluate to the characters <code>The computer said, "Hello, world."</code> The <code>\"</code> escape sequence, when evaluated, results in a quotation character.</p>
 <p>The last entry in the table is also interesting. If backslashes are how we begin writing an escape sequence in a string literal in Python… <em>how do we write a single backslash?</em> By writing two backslashes back-to-back, of course! The first backslash begins an escape sequence, the second backslash causes the sequence to evaluate to a single backslash.</p>
 <h2 id="f-strings-format-strings">f-Strings “Format” Strings</h2>
 <p>Zooming back out to thinking of strings at a high-level, by now you have used concatenation enough to recognize that concatenating strings can be a lot of work! Especially if you are concatenating non-string values in the middle of a larger string. Modern Python has a special string literal called a <em>format string</em> or <em>f-string</em> for short, that makes this much easier. Consider the following examples:</p>
