@@ -7,7 +7,7 @@
     <title> Special Teams - COMP110 - 22F</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/static/styles.css?v=1695086128.770137">
+    <link rel="stylesheet" href="/static/styles.css?v=1695087427.8848102">
 </head>
 
 <body id="body" class="absolute-page container">
@@ -61,8 +61,27 @@
             <h2 >Special Teams</h2>
             <hr class="title"/>
         </div>
-    <div class="container">
-                <div class="content"><h2 id="what-are-special-teams">What are special teams?</h2>
+    <script src="/static/scripts/toggle-handler.js"></script>
+    
+    <div class="row px-4">
+        <div id="box" class="toc col-xl-3 col-lg-3 order-1 order-lg-2" role="doc-toc">
+            <div id="menu-overview" class="link-page horizon-box">
+                <button id="overview-button" class="btn btn-ov" onclick="hideshow()">Overview  <img id="button-img" class="filter-icon" src="/static/components/Itinerary/arrow-up.svg" style="height:15px; padding-left: 4px;"></button>
+                <div id="overview-links">
+                    <div id="TOC" role="doc-toc">
+                        <ul class="overview-item"><ul>
+<li><a href="#what-are-special-teams">What are special teams?</a></li>
+<li><a href="#which-special-teams-currently-exist">Which special teams currently exist?</a></li>
+<li><a href="#who-are-special-teams-for-and-how-do-they-work">Who are special teams for and how do they work?</a></li>
+<li><a href="#why-do-only-10-hour-tas-participate-on-special-teams">Why do only 10 hour TAs participate on special teams?</a></li>
+<li><a href="#how-do-i-get-on-a-special-team">How do I get on a special team?</a></li>
+</ul>
+</</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h2 id="what-are-special-teams">What are special teams?</h2>
 <p>Special Teams are a more targeted way of improving COMP110, COMP 211 (and previously COMP 101) as courses and making sure the student and TA experience is as great as possible. Given the size of the classes served by the TA team and the number of students who take these classes at Carolina, considerable effort is needed to make sure everything from grading to outreach occurs in a timely and efficient manner.</p>
 <h2 id="which-special-teams-currently-exist">Which special teams currently exist?</h2>
 <p>For the Fall of 2020, the special teams are:</p>
@@ -85,7 +104,10 @@
 <h2 id="how-do-i-get-on-a-special-team">How do I get on a special team?</h2>
 <p>If you come up to 10 hours and express interest on special teams at the beginning of a semester, usually you’ll get onto one. Special note is that if you’re already on a team it’s unlikely you’ll get onto another one - for example, the grading team tried to pick people who weren’t already on a team. If you don’t get on a team, don’t be afraid to reach out to either the team lead or Kris for more info; it is not a comment on your abilities and likely just a result of lots of interest in the teams you specified.</p>
 </div>
-            </div>
+
+       
+
+    </div> 
     </div>
 
     </div>
@@ -120,15 +142,15 @@
 
     <!-- Load our React components. -->
 
-    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695086128.770137"></script>
-        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695086128.770137"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695086128.770137"></script>
+    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695087427.8848102"></script>
+        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695087427.8848102"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695087427.8848102"></script>
     <script src="/static/scripts/log-in-handler.js"></script>
 
     

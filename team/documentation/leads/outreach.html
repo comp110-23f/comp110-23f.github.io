@@ -7,7 +7,7 @@
     <title> Team Lead Guide to Outreach - COMP110 - 22F</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/static/styles.css?v=1695086132.301671">
+    <link rel="stylesheet" href="/static/styles.css?v=1695087431.560032">
 </head>
 
 <body id="body" class="absolute-page container">
@@ -61,8 +61,35 @@
             <h2 >Team Lead Guide to Outreach</h2>
             <hr class="title"/>
         </div>
-    <div class="container">
-                <div class="content"><h2 id="key-objectives">Key Objectives</h2>
+    <script src="/static/scripts/toggle-handler.js"></script>
+    
+    <div class="row px-4">
+        <div id="box" class="toc col-xl-3 col-lg-3 order-1 order-lg-2" role="doc-toc">
+            <div id="menu-overview" class="link-page horizon-box">
+                <button id="overview-button" class="btn btn-ov" onclick="hideshow()">Overview  <img id="button-img" class="filter-icon" src="/static/components/Itinerary/arrow-up.svg" style="height:15px; padding-left: 4px;"></button>
+                <div id="overview-links">
+                    <div id="TOC" role="doc-toc">
+                        <ul class="overview-item"><ul>
+<li><a href="#key-objectives">Key Objectives</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#at-the-beginning-of-the-semester">At the beginning of the semester</a></li>
+<li><a href="#extension-requests">Extension Requests</a>
+<ul>
+<li><a href="#how-to-handle-extension-request-form-submission">How to handle extension request form submission</a></li>
+</ul></li>
+<li><a href="#one-on-ones">One-on-Ones</a>
+<ul>
+<li><a href="#how-to-handle-one-on-one-form-submission">How to handle one on one form submission</a></li>
+</ul></li>
+<li><a href="#how-to-add-tas-to-the-shared-mailbox">How to add TAs to the shared mailbox</a></li>
+<li><a href="#future-directions-for-outreach">Future Directions for Outreach</a></li>
+</ul>
+</</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h2 id="key-objectives">Key Objectives</h2>
 <p>Currently, the Outreach Team’s primary responsibilities are:</p>
 <blockquote>
 <p>Arranging extensions for students on projects and exercises</p>
@@ -150,7 +177,10 @@
 <p>Contributors: Margaret Lewis, Lizzie Abouchar</p>
 </blockquote>
 </div>
-            </div>
+
+       
+
+    </div> 
     </div>
 
     </div>
@@ -185,15 +215,15 @@
 
     <!-- Load our React components. -->
 
-    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695086132.301671"></script>
-        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695086132.301671"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695086132.301671"></script>
+    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695087431.560032"></script>
+        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695087431.560032"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695087431.560032"></script>
     <script src="/static/scripts/log-in-handler.js"></script>
 
     

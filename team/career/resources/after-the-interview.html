@@ -7,7 +7,7 @@
     <title> After the Interview - COMP110 - 22F</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/static/styles.css?v=1695086133.9005318">
+    <link rel="stylesheet" href="/static/styles.css?v=1695087433.3130138">
 </head>
 
 <body id="body" class="absolute-page container">
@@ -61,8 +61,24 @@
             <h2 >After the Interview</h2>
             <hr class="title"/>
         </div>
-    <div class="container">
-                <div class="content"><p>It’s tempting to immediately forget about the whole thing the second you finish an interview, but if you can hang in there for a few minutes afterward there is a benefit to doing some cleanup and tying of loose ends first. Below is more information about how and why to do this.</p>
+    <script src="/static/scripts/toggle-handler.js"></script>
+    
+    <div class="row px-4">
+        <div id="box" class="toc col-xl-3 col-lg-3 order-1 order-lg-2" role="doc-toc">
+            <div id="menu-overview" class="link-page horizon-box">
+                <button id="overview-button" class="btn btn-ov" onclick="hideshow()">Overview  <img id="button-img" class="filter-icon" src="/static/components/Itinerary/arrow-up.svg" style="height:15px; padding-left: 4px;"></button>
+                <div id="overview-links">
+                    <div id="TOC" role="doc-toc">
+                        <ul class="overview-item"><ul>
+<li><a href="#interview-notes">Interview Notes</a></li>
+<li><a href="#purpose">Purpose</a></li>
+</ul>
+</</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><p>It’s tempting to immediately forget about the whole thing the second you finish an interview, but if you can hang in there for a few minutes afterward there is a benefit to doing some cleanup and tying of loose ends first. Below is more information about how and why to do this.</p>
 <h2 id="interview-notes">Interview Notes</h2>
 <p>This is a hard habit to get into, but it can be very beneficial. When putting an interview on your schedule, leave an extra ~30 minutes afterward for unwinding and reviewing the experience. Specifically, take note of these aspects of the interview (to the extent that you can remember):</p>
 <ul>
@@ -80,7 +96,10 @@
 <p>As mentioned above, you can learn a lot from every interview, whether it went well or not so well. Forcing yourself to focus on how it went immediately after the fact is good since the longer you wait the more you forget, and its additional benefits are two-fold: you can be more confident about what went well and things you had fun with in the interview, and you can give yourself some constructive feedback into what should get more focus next time you practice. Also, knocking that out while it’s still fresh in your mind means you don’t have to drag it out or dwell on it any more!</p>
 <p>The other nice thing about writing all this down and keeping it in one place is that you’ll build up a record of the processes you go through. You’re giving your future self more resources and personalized feedback to review the next time you have an interview coming up. It’s an extra nice bonus if you happen to interview with the same company again later, since you’ll be able to look back on what their specific process is like. It’s also cool to see all the work you put in and how you change and improve over time!</p>
 </div>
-            </div>
+
+       
+
+    </div> 
     </div>
 
     </div>
@@ -115,15 +134,15 @@
 
     <!-- Load our React components. -->
 
-    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695086133.9005318"></script>
-        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695086133.9005318"></script>
-    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695086133.9005318"></script>
+    <script type="text/babel" src="/static/components//Itinerary/EventSection.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/DateSection.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dates.tsx?cache=1695087433.3130138"></script>
+        <script type="text/babel" src="/static/components//Itinerary/DropdownButton.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Dropdown.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Search.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButtons.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/PillButton.tsx?cache=1695087433.3130138"></script>
+    <script type="text/babel" src="/static/components//Itinerary/Itinerary.jsx?cache=1695087433.3130138"></script>
     <script src="/static/scripts/log-in-handler.js"></script>
 
     
