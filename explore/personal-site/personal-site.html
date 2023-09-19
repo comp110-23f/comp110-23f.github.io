@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1695165659.565426">
+  <link rel="stylesheet" href="/static/styles.css?v=1695167721.5132535">
 </head>
 
 <body>
@@ -65,7 +65,9 @@
 <li><a href="#creating-a-github-repository-for-your-site-named-site-name">Creating a Github repository for your site named <code>&lt;site-name&gt;</code></a></li>
 <li><a href="#linking-your-site-to-github">Linking Your Site to Github</a></li>
 <li><a href="#configure-a-publishing-source-for-your-github-pages-site">Configure a publishing source for your GitHub Pages site</a></li>
+<li><a href="#add-content">Add Content</a></li>
 <li><a href="#make-it-pretty">Make it Pretty!</a></li>
+<li><a href="#more-info">More Info</a></li>
 </ul>
 </</ul>
                     </div>
@@ -77,10 +79,17 @@
 <ol start="0" type="1">
 <li><p>First, make sure you have all of the prerequisites installed by going to <a href="https://jekyllrb.com/docs/installation/">this link</a> and checking under the “Requirements” tab.</p></li>
 <li><p>Open your terminal and use the <code>cd</code> command to navigate to wherever you want to have your site. For example, I’ll want my site file to be stored in documents, so I’ll type <code>cd Documents</code>.</p></li>
-<li><p>Now make a new directory where you’ll store all of your site stuff! Use the command <code>mkdir website</code>, and then enter that directory using the command <code>cd website</code>.</p></li>
 <li><p>Now run the following command to install Jekyll: <code>gem install jekyll bundler</code></p></li>
-<li><p>To create your first Jekyll project, run the following command: <code>jekyll new &lt;site-name&gt;</code>, where <code>&lt;site-name&gt;</code> is whatever you want to call your site.</p></li>
-<li><p>Now, you’ll have a folder entitled <code>&lt;site-name&gt;</code>! You can go ahead and open it in Visual Studio to edit your site! (We’ll get back to that later…)</p></li>
+<li><p>To create your first Jekyll project, run the following command: <code>jekyll new --skip-bundle &lt;site-name&gt;</code>, where <code>&lt;site-name&gt;</code> is whatever you want to call your site.</p></li>
+<li><p>Now, you’ll have a folder entitled <code>&lt;site-name&gt;</code>! Open Visual Studio and then open the directory site you just created! (If you installed it in your Documents folder, it’ll be inside Documents &gt; <code>&lt;site-name&gt;</code>).</p></li>
+<li><p>You’ll see a file called “Gemfile”. Click to open that file. We are going to modify it!</p></li>
+<li><p>In Gemfile, Add “#” to the beginning of the line that starts with <code>gem "jekyll"</code> to comment out this line.</p></li>
+<li><p>Add the github-pages gem by editing the line starting with <code># gem "github-pages"</code>. Change this line to:</p></li>
+</ol>
+<p><code>gem "github-pages", "~&gt; 228", group: :jekyll_plugins</code></p>
+<p>Then save and close the Gemfile!</p>
+<ol start="8" type="1">
+<li>In your terminal, run <code>bundle install</code></li>
 </ol>
 <h1 id="creating-a-github-repository-for-your-site-named-site-name">Creating a Github repository for your site named <code>&lt;site-name&gt;</code></h1>
 <p>Now you need to connect this directory to Github!</p>
@@ -92,7 +101,7 @@
 <h1 id="linking-your-site-to-github">Linking Your Site to Github</h1>
 <p>Now we want to link the site you just made on your computer with Github!</p>
 <ol type="1">
-<li><p>Open Visual Studio and then open the directory site you just created! (If you installed it in your Documents folder, it’ll be inside Documents &gt; website &gt; <code>&lt;site-name&gt;</code>).</p></li>
+<li><p>Open Visual Studio and then open the directory site you just created! (If you installed it in your Documents folder, it’ll be inside Documents &gt; <code>&lt;site-name&gt;</code>).</p></li>
 <li><p>Open the command palette, and type <code>Git: Initialize Repository</code> you can select <code>&lt;site-name&gt;</code> as your workspace folder.</p></li>
 <li><p>Open the command palette again and type <code>Git: Add Remote</code> and input the link to your git repo (<code>https://github.com/&lt;github-username&gt;/&lt;site-name&gt;.git</code>). When prompted, you can name your remote “origin”.</p></li>
 <li><p>Commit your changes and push to origin!</p></li>
@@ -101,8 +110,11 @@
 <p>Follow steps 1-8 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch">here</a>. (For step 1, you can choose your “main” branch.)</p>
 <p><img class="img-fluid" src="/static/assets/f23/pages-branch.png" alt="Image of Github Pages settings page under the 'branch' header. 'main' is selected as the branch. "  /></p>
 <p>After you do this, your site should be live at <code>https://&lt;github-username&gt;.github.io/&lt;site-name&gt;/</code></p>
+<h1 id="add-content">Add Content</h1>
 <h1 id="make-it-pretty">Make it Pretty!</h1>
 <p>Now you can add a Jekyll template to your site to style it! You can find more information on how to do that <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">here</a>.</p>
+<h1 id="more-info">More Info</h1>
+<p>More info for general debugging can be found <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll?platform=mac">here</a></p>
 </div>
 
        
