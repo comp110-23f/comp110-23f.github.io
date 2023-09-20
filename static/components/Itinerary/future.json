@@ -54,7 +54,9 @@
             "title": "Quiz 1",
             "date": "2023-10-03",
             "deadline": "2023-10-03",
-            "links": {}
+            "links": {
+                "What to Expect": "/resources/quiz-expectations.html"
+            }
         }
     ],
     "2023-10-04": [],
