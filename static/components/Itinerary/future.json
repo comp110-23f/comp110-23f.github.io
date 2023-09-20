@@ -1,6 +1,4 @@
 {
-    "2023-09-16": [],
-    "2023-09-17": [],
     "2023-09-18": [],
     "2023-09-19": [
         {
@@ -23,7 +21,19 @@
             "title": "Structured Wordle (Due Wednesday 9/27)",
             "date": "2023-09-21",
             "deadline": "2023-09-27",
-            "links": {}
+            "links": {
+                "": "/exercises/ex03.html"
+            }
+        },
+        {
+            "kind": "VL",
+            "n": 3,
+            "title": "Virtual Lesson (Due Friday 9/22)",
+            "date": "2023-09-21",
+            "deadline": "2023-09-22",
+            "links": {
+                "": "/virtual-classes/VL03.html"
+            }
         }
     ],
     "2023-09-22": [],
