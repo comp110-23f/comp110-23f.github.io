@@ -1,5 +1,4 @@
 {
-    "2023-09-18": [],
     "2023-09-19": [
         {
             "kind": "CL",
@@ -55,7 +54,9 @@
             "date": "2023-10-03",
             "deadline": "2023-10-03",
             "links": {
-                "What to Expect": "/resources/quiz-expectations.html"
+                "What to Expect": "/resources/quiz-expectations.html",
+                "Practice Problems *(Coming soon)*": "",
+                "Covered Topics": "/resources/qz01-concepts.html"
             }
         }
     ],
