@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1695385862.981563">
+  <link rel="stylesheet" href="/static/styles.css?v=1695386341.1202438">
 </head>
 
 <body>
@@ -125,11 +125,35 @@
 <li><p>Lines contained in an <code>else</code> branch in Python do not have to be indented. (T/F)</p></li>
 <li><p>You can name a variable <code>else</code> in your program without Python confusing your variable’s name and the <code>else</code> keyword. (If you are unsure, this is a good one to try yourself!) (T/F)</p></li>
 <li><p>All subquestions of this problem will refer to this code snippet:</p>
-<p>’’’ x: str = int(input(“Pick a number:”)) y: int = 10 z: int = 2 x = x - 1 if x &lt; 10: print(“A”) elif (x % z) == 0: print (“B”) if x == (y + z): print(“C”) else: print(“D”) ’’’ For the following subquestions, answer with a valid input value for n that would cause the given letter to print. It is OK for your input to cause other letters to print as well. If there is no such value, write “Unreachable”.<br />
-18.1 <code>A</code> 18.2 <code>B</code> 18.3 <code>C</code> 18.4 <code>D</code></p></li>
+<pre><code>x: str = int(input(&quot;Pick a number: &quot;))
+y: int = 10
+z: int = 2
+x = x - 1
+if x &lt; 10:
+    print(&quot;A&quot;)
+elif (x % z) == 0:
+    print (&quot;B&quot;)
+if x == (y + z):
+    print(&quot;C&quot;)
+else: 
+    print(&quot;D&quot;)</code></pre></li>
 </ol>
-<p>Now, answer with a valid input value for n that would cause the <em>exact</em> given letter(s) to print (no other letters). If there is no such value, write “Unreachable”.<br />
-18.5 “A” “C” 18.6 “B” “C” 18.7 “C” 18.8 “D”</p>
+<p>For the following subquestions, answer with a valid input value for <code>x</code> that would cause the given letter to print. It is OK for your input to cause other letters to print as well. If there is no such value, write “Unreachable”.</p>
+<p>18.1 <code>A</code></p>
+<p>18.2 <code>B</code></p>
+<p>18.3 <code>C</code></p>
+<p>18.4 <code>D</code></p>
+<p>Now, answer with a valid input value for <code>x</code> that would cause the <em>exact</em> given letter(s) to print (no other letters). If there is no such value, write “Unreachable”.<br />
+18.5</p>
+<pre><code>A
+C</code></pre>
+<p>18.6</p>
+<pre><code>B
+C</code></pre>
+<p>18.7</p>
+<pre><code>C</code></pre>
+<p>18.8</p>
+<pre><code>D</code></pre>
 <h1 id="solutions">Solutions</h1>
 <h2 id="memory-diagrams-1">Memory Diagrams</h2>
 <ol type="1">
@@ -159,11 +183,7 @@
 <li>False</li>
 <li>False</li>
 <li>False</li>
-<li>18.1. 16.0<br />
-18.2. 2.0<br />
-18.3. -3.0<br />
-18.4. 3.0<br />
-18.5. 1</li>
+<li>(<em>TODO</em>)</li>
 <li>False</li>
 </ol>
 </div>
