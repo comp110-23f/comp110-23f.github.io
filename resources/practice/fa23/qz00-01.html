@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1695653648.120028">
+  <link rel="stylesheet" href="/static/styles.css?v=1695653648.3064418">
 </head>
 
 <body>
@@ -64,17 +64,19 @@
 <li><a href="#quiz-concepts">Quiz Concepts</a></li>
 <li><a href="#questions">Questions</a>
 <ul>
-<li><a href="#memory-diagrams">Memory Diagrams</a></li>
 <li><a href="#data-types">Data Types</a></li>
 <li><a href="#expressions">Expressions</a></li>
 <li><a href="#conditionals">Conditionals</a></li>
+<li><a href="#memory-diagrams-code-tracing">Memory Diagrams + Code Tracing</a></li>
+<li><a href="#while-loops">While Loops</a></li>
 </ul></li>
 <li><a href="#solutions">Solutions</a>
 <ul>
-<li><a href="#memory-diagrams-1">Memory Diagrams</a></li>
-<li><a href="#data-types-1">Data Types</a></li>
-<li><a href="#expressions-1">Expressions</a></li>
-<li><a href="#conditionals-1">Conditionals</a></li>
+<li><a href="#data-types-solutions">Data Types Solutions</a></li>
+<li><a href="#expressions-solutions">Expressions Solutions</a></li>
+<li><a href="#conditionals-solutions">Conditionals Solutions</a></li>
+<li><a href="#memory-diagram-solutions">Memory Diagram Solutions</a></li>
+<li><a href="#while-loop-solutions">While Loop Solutions</a></li>
 </ul></li>
 </ul>
 </</ul>
@@ -86,102 +88,100 @@
 <p>Quiz 01 will cover both the concepts that would’ve been on Quiz 00 and Quiz 01. (However, it won’t be any longer than a typical quiz.)</p>
 <p>You can find a full list of concepts <a href="/resources/qz01-concepts.html">here</a>.</p>
 <h1 id="questions">Questions</h1>
-<p>The quiz itself will be similar in difficulty but longer in length than these practice questions. In addition to these questions, you should review all of your lesson responses on Gradescope. The kinds of questions you responded to on Gradescope will also be on the quiz.</p>
-<p>Solutions for each problem can be found at the bottom of this page. (But if you’re unsure, before looking up the solution, try it out in Visual Studio!)</p>
-<h2 id="memory-diagrams">Memory Diagrams</h2>
-<ol type="1">
-<li>Produce a memory diagram for the following code snippet, being sure to include its stack and output.</li>
-</ol>
-<p><img src="/static/practice_worksheets/fa21/qz0-question13.png" /></p>
-<ol start="2" type="1">
-<li>Produce a memory diagram for the following code snippet, being sure to include its stack and output.</li>
-</ol>
-<p><img src="/static/practice_worksheets/fa21/qz00-question14.png" /></p>
+<p>The quiz itself will be similar in difficulty to these practice questions. In addition to these questions, you should review all of your lesson responses on Gradescope. The kinds of questions you responded to on Gradescope will also be on the quiz.</p>
+<p>Solutions for each problem can be found at the bottom of this page. (But if you’re unsure, before looking up the solution, try figuring it out on your own or testing it out in Visual Studio!)</p>
 <h2 id="data-types">Data Types</h2>
-<ol start="3" type="1">
-<li><code>str</code> literals in Python can be surrounded in either single-quote characters (<code>'like this'</code>) or double-quote characters (<code>"like this"</code>), though in COMP110 we prefer the latter. (T/F)</li>
+<ol type="1">
+<li><code>str</code> literals in Python can be surrounded in either single-quote characters (<code>'like this'</code>) or double-quote characters (<code>"like this"</code>), though in COMP110 we prefer the double-quotes. (T/F)</li>
 <li><code>TRUE</code> and <code>FALSE</code> are valid bool values in Python. (T/F)</li>
 <li>An <code>int</code> literal can begin with a zero, but cannot end with a zero. (T/F)</li>
 <li>What function can we use to identify the type classification of any object in Python?</li>
-<li>What is the resulting data type of the following expression? <code>int("20")</code></li>
 </ol>
+<p><a href="#data-types-solutions">Solutions</a></p>
 <h2 id="expressions">Expressions</h2>
-<ol start="8" type="1">
-<li>What is the evaluation of the following expression? <code>type(9 / len( str(110))</code></li>
-<li>What is the result of the following expression? <code>"440" + "20"</code></li>
+<ol type="1">
+<li>What is the resulting <em>value</em> and <em>data type</em> of the following expression? <code>int("20")</code></li>
+<li>What is the resulting <em>value</em> and <em>data type</em> of the following expression? <code>str(2023) + str(2023)</code></li>
+<li>What is the resulting value of the following expression? <code>type(9 / len( str(110))</code></li>
+<li>What is the resulting value of the following expression? <code>"440" + "20"</code></li>
 <li>What value of x would cause the following expression to evaluate to <code>True</code>? <code>(3 + x) == (55 % 2 ** 4)</code></li>
 <li>What value does the following expression result in, and what is its type? <code>2 + 2 / 2 ** (2 * 0)</code></li>
-<li>Using subscription syntax and concatenation, write an expression that evaluates to <code>"tar"</code> using the following string: <code>“the brown, lazy dog!"</code>.</li>
-<li>What data type do expressions with relational operators evaluate to?</li>
+<li>Using subscription syntax and concatenation, write an expression that evaluates to <code>"tar"</code> using the following string: <code>“Saturday"</code>.</li>
+<li>What data type do expressions with <em>relational operators</em> typically evaluate to?</li>
 <li>What does the following expression evaluate to? <code>int("10" + "40") &gt; 100 * 2</code></li>
 </ol>
+<p><a href="#expressions-solutions">Solutions</a></p>
 <h2 id="conditionals">Conditionals</h2>
-<ol start="15" type="1">
+<ol type="1">
 <li><p>Every <code>if</code> statement must be followed by a paired <code>else</code> branch. (T/F)</p></li>
 <li><p>Lines contained in an <code>else</code> branch in Python do not have to be indented. (T/F)</p></li>
 <li><p>You can name a variable <code>else</code> in your program without Python confusing your variable’s name and the <code>else</code> keyword. (If you are unsure, this is a good one to try yourself!) (T/F)</p></li>
 <li><p>All subquestions of this problem will refer to this code snippet:</p>
-<pre><code>x: str = int(input(&quot;Pick a number: &quot;))
-y: int = 10
-z: int = 2
-x = x - 1
-if x &lt; 10:
-    print(&quot;A&quot;)
-elif (x % z) == 0:
-    print (&quot;B&quot;)
-if x == (y + z):
-    print(&quot;C&quot;)
-else: 
-    print(&quot;D&quot;)</code></pre></li>
+<pre><code> x: str = int(input(&quot;Pick a number: &quot;))
+ y: int = 10
+ z: int = 2
+ x = x - 1
+ if x &lt; 10:
+     print(&quot;A&quot;)
+ elif (x % z) == 0:
+     print (&quot;B&quot;)
+ if x == (y + z):
+     print(&quot;C&quot;)
+ else: 
+     print(&quot;D&quot;)</code></pre></li>
 </ol>
 <p>For the following subquestions, answer with a valid input value for <code>x</code> that would cause the given letter to print. It is OK for your input to cause other letters to print as well. If there is no such value, write “Unreachable”.</p>
-<p>18.1 <code>A</code></p>
-<p>18.2 <code>B</code></p>
-<p>18.3 <code>C</code></p>
-<p>18.4 <code>D</code></p>
+<p>4.1 <code>A</code></p>
+<p>4.2 <code>B</code></p>
+<p>4.3 <code>C</code></p>
+<p>4.4 <code>D</code></p>
 <p>Now, answer with a valid input value for <code>x</code> that would cause the <em>exact</em> given letter(s) to print (no other letters). If there is no such value, write “Unreachable”.<br />
-18.5</p>
+4.5</p>
 <pre><code>A
 C</code></pre>
-<p>18.6</p>
+<p>4.6</p>
 <pre><code>B
 C</code></pre>
-<p>18.7</p>
+<p>4.7</p>
 <pre><code>C</code></pre>
-<p>18.8</p>
+<p>4.8</p>
 <pre><code>D</code></pre>
-<h1 id="solutions">Solutions</h1>
-<h2 id="memory-diagrams-1">Memory Diagrams</h2>
+<p><a href="#conditionals-solutions">Solutions</a></p>
+<h2 id="memory-diagrams-code-tracing">Memory Diagrams + Code Tracing</h2>
 <ol type="1">
-<li><img src="/static/practice_worksheets/fa21/qz0-solution13.png" /></li>
-<li><img src="/static/practice_worksheets/fa21/qz0-solution14.png" /></li>
+<li>Produce a memory diagram for the following code snippet, being sure to include its stack and output.<br />
+<img src="/static/practice_worksheets/sp23/q1.png" /></li>
 </ol>
-<h2 id="data-types-1">Data Types</h2>
-<ol start="3" type="1">
-<li>T</li>
-<li>F</li>
-<li>F</li>
-<li><code>type()</code></li>
-<li>int</li>
+<p>1.1 What would happen if <code>while l1_idx &lt; len(WORD)</code> in line 8 was replaced with <code>while l1_idx &lt; len(WORD) - 1</code>? Why?</p>
+<p>1.2 What would happen if <code>l2_idx=0</code> was moved to inside the while loop on line 13? In other words, what if lines 11-13 were changed to: <img src="/static/practice_worksheets/sp23/q1_1.png" /></p>
+<p>1.3 What would happen if, in line 16, <code>if (t1 == t2) and (l1_idx != l2_idx):</code> was replaced with <code>if (t1 == t2):</code>? Why?</p>
+<p>1.4 What would happen if line 18 was removed? Why?</p>
+<p>1.5. What would happen if the <code>&lt;</code> symbol in line 8 was replaced with <code>&lt;=</code>? Why?</p>
+<ol start="2" type="1">
+<li>Produce a memory diagram for the following code snippet, being sure to include its stack and output.<br />
+<img src="/static/practice_worksheets/sp23/q2.png" /></li>
 </ol>
-<h2 id="expressions-1">Expressions</h2>
+<p>2.1 Why is it that main() is defined above f() and g(), but we are able to call f() and g() inside main without errors?</p>
+<p>2.2 On line 5, when <code>print(g(f(3)))</code> is called, is the code block inside of the <code>while</code> loop ever entered? Why or why not?</p>
+<p>2.3 What would happen if a line 22 was added that said <code>print(x)</code>. Why?</p>
+<h2 id="while-loops">While Loops</h2>
 <ol start="8" type="1">
-<li><code>&lt;class 'float'&gt;</code></li>
-<li>“44020”</li>
-<li>4</li>
-<li>4.0</li>
-<li>“the brown, lazy dog!”[0] + “the brown, lazy dog!”[12] + “the brown, lazy dog!”[5]</li>
-<li>bool</li>
-<li>True</li>
+<li><p>Given the following code snippet, what is the printed output once it completes?<br />
+<img src="/static/practice_worksheets/fa21/qz01-question8.png" /></p></li>
+<li><p>Given the following code snippet, what is the printed output once it completes?<br />
+<img src="/static/practice_worksheets/fa21/qz01-question9.png" /></p></li>
 </ol>
-<h2 id="conditionals-1">Conditionals</h2>
-<ol start="15" type="1">
-<li>False</li>
-<li>False</li>
-<li>False</li>
-<li>(<em>TODO</em>)</li>
-<li>False</li>
-</ol>
+<h1 id="solutions">Solutions</h1>
+<h2 id="data-types-solutions">Data Types Solutions</h2>
+<p><em>(Coming Soon!)</em></p>
+<h2 id="expressions-solutions">Expressions Solutions</h2>
+<p><em>(Coming Soon!)</em></p>
+<h2 id="conditionals-solutions">Conditionals Solutions</h2>
+<p><em>(Coming Soon!)</em></p>
+<h2 id="memory-diagram-solutions">Memory Diagram Solutions</h2>
+<p><em>(Coming Soon!)</em></p>
+<h2 id="while-loop-solutions">While Loop Solutions</h2>
+<p><em>(Coming Soon!)</em></p>
 </div>
 
        
@@ -189,7 +189,7 @@ C</code></pre>
     </div> 
 
     <div class="authors-box bg-dark mt-4 py-3 ps-4">
-      <span> Contributor(s):        Megan Zhang,        David Karash,        Catherine Roberts, Alyssa Lytle</span>
+      <span> Contributor(s):        Megan Zhang,        David Karash, Alyssa Lytle</span>
     </div>
   </div>
   <div class='link-page mt-3 container'>

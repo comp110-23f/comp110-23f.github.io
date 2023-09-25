@@ -223,7 +223,18 @@
     "2023-09-25": [],
     "2023-09-26": [],
     "2023-09-27": [],
-    "2023-09-28": [],
+    "2023-09-28": [
+        {
+            "kind": "VL",
+            "n": 4,
+            "title": "Virtual Lesson (Due Friday 9/29)",
+            "date": "2023-09-28",
+            "deadline": "2023-09-29",
+            "links": {
+                "": "/virtual-classes/VL04.html"
+            }
+        }
+    ],
     "2023-09-29": [],
     "2023-09-30": [],
     "2023-10-01": [],
@@ -237,7 +248,7 @@
             "deadline": "2023-10-03",
             "links": {
                 "What to Expect": "/resources/quiz-expectations.html",
-                "Practice Problems *(Coming soon)*": "",
+                "Practice Problems": "/resources/practice/fa23/qz00-01.html",
                 "Covered Topics": "/resources/qz01-concepts.html"
             }
         }

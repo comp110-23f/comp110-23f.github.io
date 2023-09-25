@@ -1,47 +1,21 @@
 {
-    "2023-09-19": [
-        {
-            "kind": "CL",
-            "n": 3,
-            "title": "Practice with bool Expressions and While Statements",
-            "date": "2023-09-19",
-            "deadline": "None",
-            "links": {
-                "Lecture Video": "https://youtube.com/live/IoIC2Aq7gDE?feature=share",
-                "Lecture Slides": "/static/slides/f23/CL03.pdf"
-            }
-        }
-    ],
-    "2023-09-20": [],
-    "2023-09-21": [
-        {
-            "kind": "EX",
-            "n": 3,
-            "title": "Structured Wordle (Due Wednesday 9/27)",
-            "date": "2023-09-21",
-            "deadline": "2023-09-27",
-            "links": {
-                "": "/exercises/ex03.html"
-            }
-        },
-        {
-            "kind": "VL",
-            "n": 3,
-            "title": "Virtual Lesson (Due Friday 9/22)",
-            "date": "2023-09-21",
-            "deadline": "2023-09-22",
-            "links": {
-                "": "/virtual-classes/VL03.html"
-            }
-        }
-    ],
-    "2023-09-22": [],
     "2023-09-23": [],
     "2023-09-24": [],
     "2023-09-25": [],
     "2023-09-26": [],
     "2023-09-27": [],
-    "2023-09-28": [],
+    "2023-09-28": [
+        {
+            "kind": "VL",
+            "n": 4,
+            "title": "Virtual Lesson (Due Friday 9/29)",
+            "date": "2023-09-28",
+            "deadline": "2023-09-29",
+            "links": {
+                "": "/virtual-classes/VL04.html"
+            }
+        }
+    ],
     "2023-09-29": [],
     "2023-09-30": [],
     "2023-10-01": [],
@@ -55,7 +29,7 @@
             "deadline": "2023-10-03",
             "links": {
                 "What to Expect": "/resources/quiz-expectations.html",
-                "Practice Problems *(Coming soon)*": "",
+                "Practice Problems": "/resources/practice/fa23/qz00-01.html",
                 "Covered Topics": "/resources/qz01-concepts.html"
             }
         }

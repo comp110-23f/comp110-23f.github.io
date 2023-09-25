@@ -180,5 +180,42 @@
     "2023-09-15": [],
     "2023-09-16": [],
     "2023-09-17": [],
-    "2023-09-18": []
+    "2023-09-18": [],
+    "2023-09-19": [
+        {
+            "kind": "CL",
+            "n": 3,
+            "title": "Practice with bool Expressions and While Statements",
+            "date": "2023-09-19",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/IoIC2Aq7gDE?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL03.pdf"
+            }
+        }
+    ],
+    "2023-09-20": [],
+    "2023-09-21": [
+        {
+            "kind": "EX",
+            "n": 3,
+            "title": "Structured Wordle (Due Wednesday 9/27)",
+            "date": "2023-09-21",
+            "deadline": "2023-09-27",
+            "links": {
+                "": "/exercises/ex03.html"
+            }
+        },
+        {
+            "kind": "VL",
+            "n": 3,
+            "title": "Virtual Lesson (Due Friday 9/22)",
+            "date": "2023-09-21",
+            "deadline": "2023-09-22",
+            "links": {
+                "": "/virtual-classes/VL03.html"
+            }
+        }
+    ],
+    "2023-09-22": []
 }
