@@ -1,3 +1,14 @@
+const NUM_QUIZZES = 3
+const NUM_EX = 10
+const NUM_RD = 3
+const WEIGHTS = {
+    "EX" : .35,
+    "LS" : .1,
+    "CQ" : .1,
+    "QZFN" : .4,
+    "RD" : .5
+}
+
 function set_rel() {
     document.getElementById("relative").setAttribute("class", "grade-type-selected");
     document.getElementById("absolute").setAttribute("class", "grade-type-unselected");
@@ -31,11 +42,11 @@ function ls_toggle() {
 
 function calculate_grade() {
     let avg = 0;
-    avg += Number(document.getElementById("ex-avg").value)*0.35;
-    avg += Number(document.getElementById("rd-avg").value)*0.05;
-    avg += Number(document.getElementById("ls-avg").value)*0.10;
-    avg += Number(document.getElementById("cq-avg").value)*0.10;
-    avg += Number(qz_avg())*0.40;
+    avg += Number(document.getElementById("ex-avg").value)*WEIGHTS["EX"];
+    avg += Number(document.getElementById("rd-avg").value)*WEIGHTS["RD"];
+    avg += Number(document.getElementById("ls-avg").value)*WEIGHTS["LS"];
+    avg += Number(document.getElementById("cq-avg").value)*WEIGHTS["CQ"];
+    avg += Number(qz_avg());
 
     
     document.getElementById("final-grade").value = avg.toFixed(2);
@@ -101,12 +112,13 @@ function qz_avg() {
     let qz02 = 0;
     let qz03 = 0;
     let final = 0;
-    let quantity = 1;
-
-    if (document.getElementById("qz00cb").checked === true) {
-        qz00 += Number(document.getElementById("qz00").value);
-        quantity += 1;
-    }
+    let quantity = 0;
+    let quiz_weight = WEIGHTS["QZFN"]/(NUM_QUIZZES + 1);
+   
+    // if (document.getElementById("qz00cb").checked === true) {
+    //     qz00 += Number(document.getElementById("qz00").value);
+    //     quantity += 1;
+    // }
     
     if (document.getElementById("qz01cb").checked === true) {
         qz01 += Number(document.getElementById("qz01").value);
@@ -125,17 +137,26 @@ function qz_avg() {
 
     final += Number(document.getElementById("final").value);
 
-    if (quantity > 4) {
-        let min_qz = Math.min(qz00, qz01, qz02, qz03);
+    if (quantity >= NUM_QUIZZES) {
+        let min_qz = Math.min(qz01, qz02, qz03);
         if (min_qz < final) {
-            avg -= min_qz * 0.1;
+            avg -= min_qz * quiz_weight;
             quantity -= 1
         }
     }
 
-    avg += final * (0.5 - 0.1*quantity);
-    avg += qz00*0.1 + qz01*0.1 + qz02*0.1 + qz03*0.1;
-    avg = avg/0.4
+    // if (quantity > 4) {
+    //     let min_qz = Math.min(qz00, qz01, qz02, qz03);
+    //     if (min_qz < final) {
+    //         avg -= min_qz * 0.1;
+    //         quantity -= 1
+    //     }
+    // }
+
+    avg += final * (WEIGHTS["QZFN"] - quiz_weight*quantity);
+    // avg += qz00*0.1 + qz01*0.1 + qz02*0.1 + qz03*0.1;
+    avg += quiz_weight * (qz01 + qz02 + qz03)
+    //avg = avg/0.4
 
 
     return avg
