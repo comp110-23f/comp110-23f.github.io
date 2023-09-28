@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1695867603.5420446">
+  <link rel="stylesheet" href="/static/styles.css?v=1695910793.2083373">
 </head>
 
 <body>
@@ -149,10 +149,34 @@ C</code></pre>
 <p><a href="#conditionals-solutions">Solutions</a></p>
 <h2 id="while-loops-basic">While Loops Basic</h2>
 <ol type="1">
-<li><p>Given the following code snippet, what is the printed output once it completes?<br />
-<img src="/static/practice_worksheets/fa21/qz01-question8.png" /></p></li>
-<li><p>Given the following code snippet, what is the printed output once it completes?<br />
-<img src="/static/practice_worksheets/fa21/qz01-question9.png" /></p></li>
+<li><p>Given the following code snippet, what is the printed output once it completes?</p>
+<pre><code> &quot;&quot;&quot;Loops Practice!&quot;&quot;&quot;
+
+ x: int = 0
+ y: int = 3
+ z: str = &quot;1&quot;
+
+ while x &lt; y:
+     z = z + str(y) + str(x)
+     x = x + 1
+
+ print(x)
+ print(y)
+ print(z)</code></pre></li>
+<li><p>Given the following code snippet, what is the printed output once it completes?</p>
+<pre><code> &quot;&quot;&quot;Loops Practice!&quot;&quot;&quot;
+
+ x: int = 10
+ result: str = &quot;&quot;
+
+ while x &gt;= 0:
+     if x % 3 &gt; 0:
+         result = result + str(x)
+     else:
+         result = str(x) + result
+     x = x - 1
+
+ print(result)</code></pre></li>
 </ol>
 <p><a href="#while-loops-basics-solutions">Solutions</a></p>
 <h2 id="while-loops-functions">While Loops + Functions</h2>
