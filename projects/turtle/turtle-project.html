@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1695912867.3468263">
+  <link rel="stylesheet" href="/static/styles.css?v=1695927066.952312">
 </head>
 
 <body>
@@ -52,8 +52,43 @@
       </div>
     </div>
 
-    <div class="container">
-                <div class="content"><h2 id="overview">Overview</h2>
+    <script src="/static/scripts/toggle-handler.js"></script>
+    
+    <div class="row px-4">
+        <div id="box" class="toc col-xl-3 col-lg-3 order-1 order-lg-2" role="doc-toc">
+            <div id="menu-overview" class="link-page horizon-box">
+                <button id="overview-button" class="btn btn-ov" onclick="hideshow()">Overview  <img id="button-img" class="filter-icon" src="/static/components/Itinerary/arrow-up.svg" style="height:15px; padding-left: 4px;"></button>
+                <div id="overview-links">
+                    <div id="TOC" role="doc-toc">
+                        <ul class="overview-item"><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#requirements">Requirements</a>
+<ul>
+<li><a href="#drawing-functions-40-points-total">0. Drawing functions (40 points total)</a></li>
+<li><a href="#main-10-points-total">1. Main (10 points total):</a></li>
+<li><a href="#draw-something-twice-10-points-total">2. Draw something twice (10 points total):</a></li>
+<li><a href="#loop-usage-10-points-total">3. loop usage (10 points total):</a></li>
+<li><a href="#fill-color-5-points-total">4. Fill color (5 points total):</a></li>
+<li><a href="#marker-color-5-points-total">5. Marker color (5 points total):</a></li>
+<li><a href="#types-linting-documentation-10-points-total">6. Types, Linting, Documentation (10 points total):</a></li>
+<li><a href="#above-and-beyond-breaks-up-complex-functions-5-points-total">7. Above and beyond – breaks up complex functions (5 points total):</a></li>
+<li><a href="#above-and-beyond-try-something-fun-5-points-total">8. Above and beyond – try something fun! (5 points total):</a></li>
+</ul></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#have-fun-get-creative">Have fun, get creative!</a></li>
+<li><a href="#submission-instructions">Submission Instructions</a></li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a>
+<ul>
+<li><a href="#how-can-i-get-my-scene-to-render-faster">How can I get my scene to render faster?</a></li>
+</ul></li>
+</ul>
+</</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h2 id="overview">Overview</h2>
 <p>In this project you will design a structured program <em>and a beautifully artistic scene painted painstakingly on your screen, and ours, by our little <code>Turtle</code> friends</em>.</p>
 <p>Before beginning this project, you should complete the <a href="/projects/turtle/turtle-tutorial.html">Turtle Graphics Introduction Tutorial</a>.</p>
 <p>The scene you choose to create should have some element in it that repeats / is reused at least three times. Perhaps it’s a forest of trees, or a house with many windows, or a flock of birds scattered in the distance, maybe it’s stars in the night sky, or snowflakes floating fancily about. Pick a scene that sparks joy and transports you to a place of <a href="https://www.youtube.com/watch?v=kE5pSH3lQxU">hygge</a> and happiness.</p>
@@ -90,7 +125,7 @@
 <li>Impress us by trying out something you find interesting! Describe what you are attempting here in the file’s <code>docstring</code> so we know what to look for. Remember, a <code>docstring</code> can span more than one line, it just ends with the <code>"""</code>. Some ideas you could try for here:</li>
 </ol>
 <ul>
-<li>Read through the <code>Turtle</code> documentation page to find a function to use that we did not make use of in the turtle tutorial and make use of it in your project: <a href="https://docs.python.org/3.8/library/turtle.html#turtle-methods" class="uri">https://docs.python.org/3.8/library/turtle.html#turtle-methods</a></li>
+<li>Read through the <code>Turtle</code> documentation page to find a function to use that we did not make use of in the turtle tutorial and make use of it in your project: <a href="https://docs.python.org/3.11/library/turtle.html#turtle-methods" class="uri">https://docs.python.org/3.11/library/turtle.html#turtle-methods</a></li>
 <li>Use loops and procedures in clever ways to draw an interesting pattern or complex component</li>
 <li>Make clever use of randomness in your scene by using a function imported from the <code>random</code> module: https://docs.python.org/3.8/library/random.html</li>
 <li>Go above and beyond with a scene more complex than could be achieved with only four components added to it.</li>
@@ -169,7 +204,10 @@
 <span id="cb4-7"><a href="#cb4-7"></a>    </span></code></pre></div>
 <p>Note that updating the speed of your rendering in this way is entirely optional and not expected.</p>
 </div>
-            </div>
+
+       
+
+    </div> 
 
     <div class="authors-box bg-dark mt-4 py-3 ps-4">
       <span> Contributor(s):        Kris Jordan, Ezri White</span>
