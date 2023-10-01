@@ -219,5 +219,32 @@
     ],
     "2023-09-22": [],
     "2023-09-23": [],
-    "2023-09-24": []
+    "2023-09-24": [],
+    "2023-09-25": [],
+    "2023-09-26": [
+        {
+            "kind": "CL",
+            "n": 4,
+            "title": "while Loops and Functions",
+            "date": "2023-09-26",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/1oGuZTstDi0?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL04.pdf"
+            }
+        }
+    ],
+    "2023-09-27": [],
+    "2023-09-28": [
+        {
+            "kind": "VL",
+            "n": 4,
+            "title": "Virtual Lesson (Due Friday 9/29)",
+            "date": "2023-09-28",
+            "deadline": "2023-09-29",
+            "links": {
+                "": "/virtual-classes/VL04.html"
+            }
+        }
+    ]
 }
