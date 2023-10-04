@@ -18,6 +18,16 @@
     "2023-10-04": [],
     "2023-10-05": [
         {
+            "kind": "VL",
+            "n": 5,
+            "title": "Virtual Lesson (Due Friday 10/6)",
+            "date": "2023-10-05",
+            "deadline": "2023-10-06",
+            "links": {
+                "": "/virtual-classes/VL05.html"
+            }
+        },
+        {
             "kind": "EX",
             "n": 4,
             "title": "List Utils (Due Wednesday 10/11)",
