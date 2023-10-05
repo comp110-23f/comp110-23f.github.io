@@ -51,43 +51,41 @@
     "2023-10-07": [],
     "2023-10-08": [],
     "2023-10-09": [],
-    "2023-10-10": [],
+    "2023-10-10": [
+        {
+            "kind": "EX",
+            "n": 5,
+            "title": "Turtle (Due Monday 10/23)",
+            "date": "2023-10-10",
+            "deadline": "2023-10-23",
+            "links": {}
+        }
+    ],
     "2023-10-11": [],
     "2023-10-12": [],
     "2023-10-13": [],
     "2023-10-14": [],
     "2023-10-15": [],
     "2023-10-16": [],
-    "2023-10-17": [
-        {
-            "kind": "EX",
-            "n": 5,
-            "title": "List Utils + Unit Tests (Due Monday 10/23)",
-            "date": "2023-10-17",
-            "deadline": "2023-10-23",
-            "links": {
-                "": "/exercises/list-unit-tests.html"
-            }
-        }
-    ],
+    "2023-10-17": [],
     "2023-10-18": [],
     "2023-10-19": [],
     "2023-10-20": [],
     "2023-10-21": [],
     "2023-10-22": [],
     "2023-10-23": [],
-    "2023-10-24": [],
-    "2023-10-25": [],
-    "2023-10-26": [
+    "2023-10-24": [
         {
             "kind": "EX",
             "n": 6,
-            "title": "Turtle (Due Wednesday 11/1)",
-            "date": "2023-10-26",
+            "title": "Dictionary Utils (Due Wednesday 11/1)",
+            "date": "2023-10-24",
             "deadline": "2023-11-01",
             "links": {}
         }
     ],
+    "2023-10-25": [],
+    "2023-10-26": [],
     "2023-10-27": [],
     "2023-10-28": [],
     "2023-10-29": [],
@@ -107,7 +105,7 @@
         {
             "kind": "EX",
             "n": 7,
-            "title": "Dictionary Utils (Due Wednesday 11/8)",
+            "title": "Dictionary Unit Tests (Due Wednesday 11/8)",
             "date": "2023-11-02",
             "deadline": "2023-11-08",
             "links": {}
@@ -123,7 +121,7 @@
         {
             "kind": "EX",
             "n": 8,
-            "title": "Data Wrangling (Due Wednesday 11/15)",
+            "title": "River Simulation (Due Wednesday 11/15)",
             "date": "2023-11-09",
             "deadline": "2023-11-15",
             "links": {}
@@ -149,7 +147,7 @@
         {
             "kind": "EX",
             "n": 9,
-            "title": "River Simulation (Due Monday 11/27)",
+            "title": "Simpy (Due Monday 11/27)",
             "date": "2023-11-16",
             "deadline": "2023-11-27",
             "links": {}
@@ -179,7 +177,7 @@
         {
             "kind": "EX",
             "n": 10,
-            "title": "Simpy (Due Wednesday 12/6)",
+            "title": "Data Wrangling (Due Wednesday 12/6)",
             "date": "2023-11-28",
             "deadline": "2023-12-06",
             "links": {}
