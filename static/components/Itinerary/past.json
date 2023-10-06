@@ -250,5 +250,20 @@
     "2023-09-29": [],
     "2023-09-30": [],
     "2023-10-01": [],
-    "2023-10-02": []
+    "2023-10-02": [],
+    "2023-10-03": [
+        {
+            "kind": "QZ",
+            "n": 1,
+            "title": "Quiz 1",
+            "date": "2023-10-03",
+            "deadline": "2023-10-03",
+            "links": {
+                "What to Expect": "/resources/quiz-expectations.html",
+                "Practice Problems": "/resources/practice/fa23/qz00-01.html",
+                "Covered Topics": "/resources/qz01-concepts.html",
+                "Review Session (Passcode: S&VD1wYx)": "https://unc.zoom.us/rec/share/GdwaEQAGdsz_Bqj8DWcAGC4y-HJUXzIWl77WMR9CvWNpVahT00h_pJomvXE8mDkq.3J09al__eEEAantC"
+            }
+        }
+    ]
 }

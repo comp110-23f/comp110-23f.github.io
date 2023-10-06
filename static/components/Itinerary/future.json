@@ -1,19 +1,4 @@
 {
-    "2023-10-03": [
-        {
-            "kind": "QZ",
-            "n": 1,
-            "title": "Quiz 1",
-            "date": "2023-10-03",
-            "deadline": "2023-10-03",
-            "links": {
-                "What to Expect": "/resources/quiz-expectations.html",
-                "Practice Problems": "/resources/practice/fa23/qz00-01.html",
-                "Covered Topics": "/resources/qz01-concepts.html",
-                "Review Session (Passcode: S&VD1wYx)": "https://unc.zoom.us/rec/share/GdwaEQAGdsz_Bqj8DWcAGC4y-HJUXzIWl77WMR9CvWNpVahT00h_pJomvXE8mDkq.3J09al__eEEAantC"
-            }
-        }
-    ],
     "2023-10-04": [],
     "2023-10-05": [
         {
@@ -53,13 +38,25 @@
     "2023-10-09": [],
     "2023-10-10": [
         {
+            "kind": "CL",
+            "n": 5,
+            "title": "Practice with Lists",
+            "date": "2023-10-10",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": "/static/slides/f23/CL05.pdf"
+            }
+        },
+        {
             "kind": "EX",
             "n": 5,
             "title": "Turtle (Due Monday 10/23)",
             "date": "2023-10-10",
             "deadline": "2023-10-23",
             "links": {
-                "Instructions": "",
+                "Introduction": "/projects/turtle/turtle-tutorial.html",
+                "Instructions": "/projects/turtle/turtle-project.html",
                 "MOTA (Museum of Turtle Art)": "/projects/guggenheim/index.html"
             }
         }
