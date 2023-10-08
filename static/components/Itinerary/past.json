@@ -265,5 +265,38 @@
                 "Review Session (Passcode: S&VD1wYx)": "https://unc.zoom.us/rec/share/GdwaEQAGdsz_Bqj8DWcAGC4y-HJUXzIWl77WMR9CvWNpVahT00h_pJomvXE8mDkq.3J09al__eEEAantC"
             }
         }
+    ],
+    "2023-10-04": [],
+    "2023-10-05": [
+        {
+            "kind": "VL",
+            "n": 5,
+            "title": "Virtual Lesson (Due Friday 10/6)",
+            "date": "2023-10-05",
+            "deadline": "2023-10-06",
+            "links": {
+                "": "/virtual-classes/VL05.html"
+            }
+        },
+        {
+            "kind": "EX",
+            "n": 4,
+            "title": "List Utils (Due Wednesday 10/11)",
+            "date": "2023-10-05",
+            "deadline": "2023-10-11",
+            "links": {
+                "": "/exercises/ex04.html"
+            }
+        },
+        {
+            "kind": "RD",
+            "n": 1,
+            "title": "Reading: Weapons of Math Destruction (Due Wednesday 10/25)",
+            "date": "2023-10-05",
+            "deadline": "2023-10-25",
+            "links": {
+                "": "https://gradescope.com"
+            }
+        }
     ]
 }
