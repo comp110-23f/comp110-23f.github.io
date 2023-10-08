@@ -12,6 +12,9 @@ const WEIGHTS = {
 function set_rel() {
     document.getElementById("relative").setAttribute("class", "grade-type-selected");
     document.getElementById("absolute").setAttribute("class", "grade-type-unselected");
+    document.getElementById("qz01cb").checked = false;
+    document.getElementById("qz02cb").checked = false;
+    document.getElementById("qz03cb").checked = false;
 
     let elements = document.getElementsByTagName("input")
     Array.from(elements).forEach(element => {
@@ -22,7 +25,7 @@ function set_rel() {
 
 function set_abs() {
     document.getElementById("absolute").setAttribute("class", "grade-type-selected");
-    // document.getElementById("relative").setAttribute("class", "grade-type-unselected");
+    document.getElementById("relative").setAttribute("class", "grade-type-unselected");
     
     let elements = document.getElementsByTagName("input")
     Array.from(elements).forEach(element => {
@@ -47,7 +50,6 @@ function calculate_grade() {
     avg += Number(document.getElementById("ls-avg").value)*WEIGHTS["LS"];
     avg += Number(document.getElementById("cq-avg").value)*WEIGHTS["CQ"];
     avg += Number(qz_avg());
-
     
     document.getElementById("final-grade").value = avg.toFixed(2);
 }
@@ -57,28 +59,56 @@ function avg_1drop(id_format, quantity) {
     let sum = 0;
     let min = Number(document.getElementById(id_format + 0).value);;
     let curr = 0;
+    let und_count = 0;
+    let relative = false;
+    if (document.getElementById("relative").getAttribute("class") === "grade-type-selected") {
+        relative = true;
+    }
 
     for (let i = 0; i < quantity; i++) {
         if (i >= 10) {
             id_format = id_format.replace('0', '');
         }
 
+        
         curr = Number(document.getElementById(id_format + i).value);
+
         sum += curr;
+        if (curr === 0) {
+            und_count += 1;
+        }
+
         min = Math.min(curr, min)
     }
 
-    sum = sum - min;
-    document.getElementById(id_format[0] + id_format[1] + "-avg").value = (sum/(quantity - 1)).toFixed(2);
+    if (relative) {
+        quantity -= und_count;
+        if (und_count === 0) {
+            sum -= min;
+            quantity -= 1;
+        }
+    } else {
+        sum -= min;
+        quantity -= 1;
+    }
+
+    document.getElementById(id_format[0] + id_format[1] + "-avg").value = (sum/(quantity)).toFixed(2);
 
     return sum/(quantity - 1);
 }
 
 
 function avg_2drops(id_format, quantity) {
+    let relative = false;
+    if (document.getElementById("relative").getAttribute("class") === "grade-type-selected") {
+        relative = true;
+    }
+
+
     let min = [Number(document.getElementById(id_format + '0').value), Number(document.getElementById(id_format + '1').value)]
     let sum = 0;
     let curr = 0;
+    let und_count = 0;
     
     for (let i = 0; i < quantity; i++) {
         if (i >= 10) {
@@ -87,18 +117,36 @@ function avg_2drops(id_format, quantity) {
 
 
         curr = Number(document.getElementById(id_format + i).value);
+        if (curr === 0) {
+            und_count += 1;
+        }
+
         sum += curr;
 
-        if (min[0] >= curr) {
-            min[0] = curr;
-        } else if (min[1] >= curr) {
+        if (min[0] > curr) {
+            if ((relative && curr !== 0) || !relative) {
+                min[0] = curr;
+            }
+        } else if (min[1] > curr) {
             min[1] = curr;
         }
     }
-
-    sum -= min[0];
-    sum -= min[1];
-    quantity -= 2;
+    
+    if (relative) {
+        quantity -= und_count;
+        if (und_count === 1) {
+            sum -= min[0];
+            quantity -= 1
+        } else if (und_count === 0) {
+            sum -= min[0];
+            sum -= min[1];
+            quantity -= 2;
+        }
+    } else {
+        sum -= min[0];
+        sum -= min[1];
+        quantity -= 2;
+    }
     document.getElementById(id_format[0] + id_format[1] + "-avg").value  = (sum/(quantity)).toFixed(2);
 
     return sum/(quantity);
@@ -107,18 +155,17 @@ function avg_2drops(id_format, quantity) {
 
 function qz_avg() {
     let avg = 0;
-    let qz00 = 0;
     let qz01 = 0;
     let qz02 = 0;
     let qz03 = 0;
     let final = 0;
     let quantity = 0;
     let quiz_weight = WEIGHTS["QZFN"]/(NUM_QUIZZES + 1);
-   
-    // if (document.getElementById("qz00cb").checked === true) {
-    //     qz00 += Number(document.getElementById("qz00").value);
-    //     quantity += 1;
-    // }
+
+    let relative = false;
+    if (document.getElementById("relative").getAttribute("class") === "grade-type-selected") {
+        relative = true;
+    }
     
     if (document.getElementById("qz01cb").checked === true) {
         qz01 += Number(document.getElementById("qz01").value);
@@ -145,18 +192,13 @@ function qz_avg() {
         }
     }
 
-    // if (quantity > 4) {
-    //     let min_qz = Math.min(qz00, qz01, qz02, qz03);
-    //     if (min_qz < final) {
-    //         avg -= min_qz * 0.1;
-    //         quantity -= 1
-    //     }
-    // }
+    if ((relative && final !== 0) || !relative) {
+        console.log(final)
+        avg += final * (WEIGHTS["QZFN"] - quiz_weight*quantity);
+    }
+    
 
-    avg += final * (WEIGHTS["QZFN"] - quiz_weight*quantity);
-    // avg += qz00*0.1 + qz01*0.1 + qz02*0.1 + qz03*0.1;
     avg += quiz_weight * (qz01 + qz02 + qz03)
-    //avg = avg/0.4
 
 
     return avg
