@@ -1,6 +1,4 @@
 {
-    "2023-10-06": [],
-    "2023-10-07": [],
     "2023-10-08": [],
     "2023-10-09": [],
     "2023-10-10": [
@@ -11,7 +9,7 @@
             "date": "2023-10-10",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
+                "Lecture Video": "https://youtube.com/live/Olw6surse1k?feature=share",
                 "Lecture Slides": "/static/slides/f23/CL05.pdf"
             }
         },
