@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1697072952.011438">
+  <link rel="stylesheet" href="/static/styles.css?v=1697073509.8206637">
 </head>
 
 <body>
@@ -70,12 +70,14 @@
             </div>
         </div>
         <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="snippet">Snippet</h1>
-<pre><code>&quot;&quot;&quot; Practice Memory Diagram &quot;&quot;&quot;
+<pre>
+<code class="python">   """ Practice Memory Diagram """
 
-b: str = &quot;Partner&quot;
-a: str = &quot;Howdy &quot;
-a += b
-print(a)</code></pre>
+    b: str = "Partner"
+    a: str = "Howdy "
+    a += b
+    print(a)
+</code></pre>
 <h1 id="solution">Solution</h1>
 <p><img class="img-fluid" src="/static/assets/f23/basic-00-sol.png" alt="The memory diagram includes a column on the left titled Stack and a column on the right titled Output. The stack contains variable `b` with value ''Partner'' and variable `a` with the original value of ''Howdy'' crossed out and updated to ''Howdy Partner''. The Output has the string `Howdy Partner`. "  /></p>
 <p><em>Image Description:</em> The memory diagram includes a column on the left titled Stack and a column on the right titled Output. The stack contains variable <code>b</code> with value ‘’Partner’’ and variable <code>a</code> with the original value of ‘’Howdy’’ crossed out and updated to ‘’Howdy Partner’’. The Output has the string <code>Howdy Partner</code>. "</p>
@@ -107,7 +109,7 @@ print(a)</code></pre>
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
   <script>hljs.initLineNumbersOnLoad();</script>

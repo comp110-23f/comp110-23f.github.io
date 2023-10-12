@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1697072953.4727414">
+  <link rel="stylesheet" href="/static/styles.css?v=1697073510.9184783">
 </head>
 
 <body>
@@ -70,13 +70,15 @@
             </div>
         </div>
         <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="snippet">Snippet</h1>
-<pre><code>&quot;&quot;&quot; Practice Memory Diagram &quot;&quot;&quot;
+<pre>
+<code class="python">   """ Practice Memory Diagram """
 
-a: str = &quot;a&quot;
-b: str = a + &quot;b&quot; + &quot;b&quot;
-print(b + a)
-a = a + str(len(b))
-print(a)</code></pre>
+    a: str = "a"
+    b: str = a + "b" + "b"
+    print(b + a)
+    a = a + str(len(b))
+    print(a)
+</code></pre>
 <h1 id="solution">Solution</h1>
 <p><img class="img-fluid" src="/static/assets/f23/basic-02-sol.png" alt="The memory diagram includes box on top labeled output, and below that a column on the left titled Stack and a column on the right titled Heap. The stack contains variable `a` with initial value ''a'' crossed out and updated to ''a3'' and variable `b` with the value ''abb''. The Output has the strings `abba` and `a3`. "  /></p>
 <p><em>Image Description:</em></p>
@@ -109,7 +111,7 @@ print(a)</code></pre>
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
   <script>hljs.initLineNumbersOnLoad();</script>
