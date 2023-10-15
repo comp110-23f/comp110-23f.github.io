@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1697406194.5587475">
+  <link rel="stylesheet" href="/static/styles.css?v=1697406191.8325586">
 </head>
 
 <body>
@@ -53,93 +53,57 @@
     </div>
 
     <div class="container">
-                <div class="content"><p>In this exercise you will continue building list utility functions. In contrast with the previous exercise, for EX05 you will get practice writing unit tests for your functions which gives you more reassurance of their correctness and makes testing your functions easier. Your function implementations may only make use of the built-in <code>len</code> function, and a <code>list</code> object’s methods <code>append</code> and <code>pop</code>.</p>
-<p>Specifically off-limits in this exercise are the following capabilities which you would only know if you have prior experience in Python. Making use of any of the following will result in no credit for the function you use them in:</p>
-<ul>
-<li>Cannot use other built-in function besides <code>len</code> - specifically not <code>max</code>, <code>min</code>, <code>slice</code></li>
-<li>Cannot use slice notation in conjunction with the subscription operator</li>
-<li>Cannot use the <code>in</code> operator of Python with lists (but you can use <code>for..in</code> loops!)</li>
-<li>Cannot use the <code>list</code> class’s <code>+</code> or <code>==</code> operators (you can still use <code>+</code> with <code>int</code> and <code>str</code> types, though!) nor built-in methods beyond <code>append</code> and <code>pop</code>
-<ul>
-<li>Note: You can use + and == for <em>individual items</em> and values, just not entire <code>list</code> objects.</li>
-</ul></li>
-</ul>
+                <div class="content"><p>In this exercise, you will return to the dictionary functions you built in the previous exercises. In contrast with EX05, you will get practice writing unit tests for your functions which will give you more reassurance of their correctness and will make testing your functions easier.</p>
 <p>Assignment Outline</p>
 <ul>
-<li><code>only_evens</code> – 25 Points Autograded
+<li><code>invert</code>
 <ul>
-<li>Unit Tests – 5 Points Autograded</li>
+<li>Unit Tests – 18 Points Autograded</li>
 </ul></li>
-<li><code>concat</code> – 25 Points Autograded
+<li><code>count</code>
 <ul>
-<li>Unit Tests – 5 Points Autograded</li>
+<li>Unit Tests – 18 Points Autograded</li>
 </ul></li>
-<li><code>sub</code> – 30 Points Autograded
+<li><code>favorite_color</code>
 <ul>
-<li>Unit Tests – 5 Points Autograded</li>
+<li>Unit Tests – 18 Points Autograded</li>
 </ul></li>
-<li>Style, Linting, Typing – 20 Points Autograded</li>
+<li><code>alphabetizer</code>
+<ul>
+<li>Unit Tests – 18 Points Autograded</li>
+</ul></li>
+<li><code>update_attendance</code>
+<ul>
+<li>Unit Tests – 18 Points Autograded</li>
+</ul></li>
+<li>Style, Linting, Typing – 10 Points Autograded</li>
 </ul>
 <p>Note: Even if your functions are not 100% correct or finished, you can get full credit for the unit tests if you set up a function skeleton and write your tests assuming correct functionality.</p>
 <h2 id="skeleton-code-and-testing-setup">0. Skeleton Code and Testing Setup</h2>
 <p>Create a new <strong>directory</strong> in <code>exercises</code> named <code>ex05</code>. (Right click on <code>exercises</code> and select <code>new folder</code>.)</p>
 <p>Inside the <code>exercises/ex05</code> directory, create a file named <code>utils.py</code>. Add a docstring and establish an <code>__author__</code> variable to be assigned a string with the digits of your PID. This is where you will implement your function skeletons and implementations below.</p>
-<h2 id="only_evens-25-points">1. <code>only_evens</code> – 25 Points</h2>
-<p>This is the first function you will write in <code>utils.py</code>. The other two functions will also be defined in this file.</p>
-<p>Given a <code>list</code> of <code>ints</code>, <code>only_evens</code> should return a new <code>list</code> containing only the elements of the input list that were even. The <code>only_evens</code> function must not modify the list it is given a reference to as a parameter. Example usage:</p>
-<pre class="plaintext"><code>&gt;&gt;&gt; only_evens([1, 2, 3])
-[2]
-&gt;&gt;&gt; only_evens([1, 5, 3])
-[]
-&gt;&gt;&gt; only_evens([4, 4, 4])
-[4, 4, 4]</code></pre>
-<p>Continue by defining a skeleton function with the following signature:</p>
-<ol type="1">
-<li>Name: <code>only_evens</code></li>
-<li>Arguments: A list of integers.</li>
-<li>Returns: A list of integers, containing only the even elements of the input parameter.</li>
-</ol>
-<h2 id="concat-25-points">2. <code>concat</code> – 25 Points</h2>
-<p>In this exercise you will write a function named <code>concat</code>. Given two <code>Lists</code> of <code>ints</code>, <code>concat</code> should generate a new List which contains all of the elements of the first list followed by all of the elements of the second list. Your <code>concat</code> function may not mutate (“modify”) either of its list parameters.</p>
-<p>Define your function with the following signature.</p>
-<ol type="1">
-<li>Name: <code>concat</code></li>
-<li>Parameters: Two lists of ints.</li>
-<li>Returns: A <code>list</code> containing all elements of the first list, followed by all elements of the second list.</li>
-</ol>
-<p><code>concat</code> <em>must NOT</em> mutate (modify) either of the arguments passed to it.</p>
-<h2 id="sub-30-points">3. <code>sub</code> – 30 Points</h2>
-<p>In this exercise you will write a function named <code>sub</code>. Given a <code>list</code> of <code>ints</code>, a start index, and an end index (not inclusive), <code>sub</code> should generate a List which is a subset of the given list, between the specified start index and the end index - 1. This function should <em>not mutate</em> its input list.</p>
-<p>Example usage:</p>
-<pre class="plaintext"><code>&gt;&gt;&gt; a_list = [10, 20, 30, 40]
-&gt;&gt;&gt; sub(a_list, 1, 3)
-[20, 30]</code></pre>
-<p>Next, define a skeleton function with the following signature in <code>ex05/utils.py</code>:</p>
-<ol type="1">
-<li>Name: <code>sub</code></li>
-<li>Parameters: A list and two ints, where the first int serves as a start index and the second int serves as an end index (not inclusive).</li>
-<li>Returns: A List which is a subset of the given list, between the specified start index and the end index - 1.</li>
-</ol>
-<p>If the start index is negative, start from the beginning of the list. If the end index is greater than the length of the list, end with the end of the list.</p>
-<p>If the length of the list is 0, start is greater than or equal to the length of the list, or end is at most 0, return the empty list.</p>
-<h1 id="unit-tests">4. Unit Tests</h1>
-<p>Also inside the <code>exercises/ex05</code> directory, create a file named <code>utils_test.py</code>. Add a docstring and establish an <code>__author__</code> in this file as well.</p>
-<p>For each function from below (<code>only_evens</code>, <code>sub</code>, <code>concat</code>), you are to define at least <strong>3x unit test</strong> functions. Remember that a unit test function starts with <code>test_</code>.</p>
+<h2 id="testing-setup">0. Testing Setup</h2>
+<p>Inside the <code>exercises/ex05</code> directory which you created in the previous exercise, create a file named <code>dictionary_test.py</code>. Add a docstring and establish an <code>__author__</code> variable to be assigned a string with the digits of your PID. This is where you will write unit tests for the 5 functions defined in the <code>dictionary.py</code> file.</p>
+<h2 id="writing-unit-tests">0. Writing Unit Tests</h2>
+<p>For each function (<code>invert</code>, <code>favorite_color</code>, <code>count</code>, <code>alphabetize</code>, <code>update_attendance</code>), you are to define at least <strong>3x unit test</strong> functions. Remember that a unit test function starts with <code>test_</code>.</p>
 <p>The 3 unit tests should consist of:</p>
 <ul>
-<li>One edge case</li>
-<li>Two use cases</li>
+<li>Two use cases: expected use cases of a function</li>
+<li>One edge case: unexpected use cases of a function</li>
 </ul>
 <p>Include descriptive function names and docstrings, so that it captures what is being tested.</p>
 <p>The command to run your tests is <code>python -m pytest exercises/ex05</code> or you can run them using the beaker tab in VSCode if it is working (do note the VSCode testing feature tends to be a bit flaky).</p>
-<p>Once you’re ready to import and begin testing your skeletons, you can add the following import lines, corresponding to the functions you have completed, to do so:</p>
-<pre class="plaintext"><code>from exercises.ex05.utils import only_evens
-from exercises.ex05.utils import sub
-from exercises.ex05.utils import concat</code></pre>
-<p>Once you have completed all functions, you can reduce the three import lines down into a single one for less redundancy in your testing code:</p>
-<pre class="plaintext"><code>from exercises.ex05.utils import only_evens, sub, concat</code></pre>
 <p>If your screen is large enough, you are encouraged to open these files side-by-side in VSCode by dragging the tab of one to the right side of VSCode so that it changes to a split pane view. Closing your file explorer can help give you additional horizontal space.</p>
-<h2 id="make-a-backup-checkpoint-commit">5. Make a Backup Checkpoint “Commit”</h2>
+<h4 id="testing-for-keyerror"><em>Testing for KeyError:</em></h4>
+<p>You may optionally add a test for the invert function to check if the KeyError is being raised. Testing errors requires different syntax than testing normal outputs. If an error is raised then the function never actually returned anything, so we are unable to <code>assert</code> a return value. Instead try the following:</p>
+<ol type="1">
+<li>Make sure to <code>import pytest</code></li>
+<li>Use the following code as an example:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>    <span class="cf">with</span> pytest.raises(<span class="pp">KeyError</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>        my_dictionary <span class="op">=</span> {<span class="st">&#39;alyssa&#39;</span>: <span class="st">&#39;byrnes&#39;</span>, <span class="st">&#39;adam&#39;</span>: <span class="st">&#39;byrnes&#39;</span>}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>        invert(my_dictionary)</span></code></pre></div>
+<h2 id="make-a-backup-checkpoint-commit">1. Make a Backup Checkpoint “Commit”</h2>
 <p>As you make progress on this exercise, making backups is encouraged.</p>
 <ol type="1">
 <li>Open the Source Control panel (Command Palette: “Show SCM” or click the icon with three circles and lines on the activity panel).</li>
@@ -152,7 +116,7 @@ from exercises.ex05.utils import concat</code></pre>
 <li>Press the Check icon to make a <em>Commit</em> (a version) of your work.</li>
 <li>Finally, press the Ellipses icon (…), look for “Pull/Push” submenu, and select “Push to…”, and in the dropdown select your backup repository.</li>
 </ol>
-<h2 id="submit-to-gradescope-for-grading">6. Submit to Gradescope for Grading</h2>
+<h2 id="submit-to-gradescope-for-grading">2. Submit to Gradescope for Grading</h2>
 <p>Login to Gradescope and select the assignment named “EX05 - List Utils and Unit Tests”. You’ll see an area to upload a zip file. To produce a zip file for autograding, return back to Visual Studio Code.</p>
 <p>If you <em>do not</em> see a Terminal at the bottom of your screen, open the Command Palette and search for “View: Toggle Integrated Terminal”.</p>
 <p>Type the following command (all on a single line):</p>
@@ -163,7 +127,7 @@ from exercises.ex05.utils import concat</code></pre>
             </div>
 
     <div class="authors-box bg-dark mt-4 py-3 ps-4">
-      <span> Contributor(s):        Marlee Walls,        Kris Jordan,        Kaki Ryan, Alyssa Byrnes</span>
+      <span> Contributor(s): Vrinda Desai</span>
     </div>
   </div>
   <div class='link-page mt-3 container'>
