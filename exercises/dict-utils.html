@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1697406190.974275">
+  <link rel="stylesheet" href="/static/styles.css?v=1697406435.4246614">
 </head>
 
 <body>
@@ -65,10 +65,10 @@
 <li><a href="#invert">1. <code>invert</code></a></li>
 <li><a href="#favorite-colors">2. <code>favorite colors</code></a></li>
 <li><a href="#count">3. <code>count</code></a></li>
-<li><a href="#alphabetizer">3. <code>alphabetizer</code></a></li>
-<li><a href="#update_attendance">3. <code>update_attendance</code></a></li>
-<li><a href="#make-a-backup-checkpoint-commit">4. Make a Backup Checkpoint “Commit”</a></li>
-<li><a href="#submit-to-gradescope-for-grading">5. Submit to Gradescope for Grading</a></li>
+<li><a href="#alphabetizer">4. <code>alphabetizer</code></a></li>
+<li><a href="#update_attendance">5. <code>update_attendance</code></a></li>
+<li><a href="#make-a-backup-checkpoint-commit">6. Make a Backup Checkpoint “Commit”</a></li>
+<li><a href="#submit-to-gradescope-for-grading">7. Submit to Gradescope for Grading</a></li>
 </ul>
 </</ul>
                     </div>
@@ -78,21 +78,13 @@
         <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><p>In this exercise you will get some practice with some dictionary functions.</p>
 <p>Assignment Outline</p>
 <ul>
-<li><p><code>invert</code> – 20 Points Autograded</p>
-<ul>
-<li>Unit Tests – 5 Points Autograded</li>
-</ul></li>
-<li><p><code>count</code> – 30 Points Autograded</p>
-<ul>
-<li>Unit Tests – 5 Points Autograded</li>
-</ul></li>
-<li><p><code>favorite_colors</code> – 30 Points Autograded</p>
-<ul>
-<li>Unit Tests – 5 Points Autograded</li>
-</ul></li>
-<li><p>Style, Linting, Typing – 20 Points Autograded</p></li>
+<li><code>invert</code> – 10 Points Autograded</li>
+<li><code>count</code> – 10 Points Autograded</li>
+<li><code>favorite_colors</code> – 20 Points Autograded</li>
+<li><code>alphabetizer</code>– 20 Points Autograded</li>
+<li><code>update_attendance</code> – 20 Points Autograded</li>
+<li>Style, Linting, Typing – 20 Points Autograded</li>
 </ul>
-<p>Note: Even if your functions are not 100% correct or finished, you can get full credit for the unit tests if you set up a function skeleton and write your tests assuming correct functionality.</p>
 <h2 id="setup">0. Setup</h2>
 <p>Create a new <strong>directory</strong> in <code>exercises</code> named <code>ex05</code>.</p>
 <p>Inside the <code>exercises/ex05</code> directory, create a file named <code>dictionary.py</code>. Add a docstring and establish an <code>__author__</code> variable to be assigned a string with the digits of your PID. This is where you will implement your function skeletons and implementations below.</p>
@@ -107,15 +99,6 @@
 &gt;&gt;&gt; invert({&#39;kris&#39;: &#39;jordan&#39;, &#39;michael&#39;: &#39;jordan&#39;})
 KeyError</code></pre>
 <p>Similar to how you raised a <code>ValueError</code> in the <code>max</code> function for <code>list</code> utils, the syntax for raising a <code>KeyError</code> is: `raise KeyError(“error message of your choice here!”)</p>
-<h4 id="testing-for-keyerror"><em>Testing for KeyError:</em></h4>
-<p>You may optionally add a test for the invert function to check if the KeyError is being raised. Testing errors requires different syntax than testing normal outputs. If an error is raised then the function never actually returned anything, so we are unable to <code>assert</code> a return value. Instead try the following:</p>
-<ol type="1">
-<li>Make sure to <code>import pytest</code></li>
-<li>Use the following code as an example:</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>    <span class="cf">with</span> pytest.raises(<span class="pp">KeyError</span>):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>        my_dictionary <span class="op">=</span> {<span class="st">&#39;kris&#39;</span>: <span class="st">&#39;jordan&#39;</span>, <span class="st">&#39;michael&#39;</span>: <span class="st">&#39;jordan&#39;</span>}</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>        invert(my_dictionary)</span></code></pre></div>
 <h2 id="favorite-colors">2. <code>favorite colors</code></h2>
 <p>Create a function in your <code>dictionary.py</code> file called <code>favorite_color</code>. It has the following specifications:</p>
 <ol type="1">
@@ -127,7 +110,7 @@ KeyError</code></pre>
 </ol>
 <p>You can also check the correctness of your <code>favorite_color</code> function by calling it in <code>main</code>, printing the result, then running the program with the same command from above.</p>
 <p>An example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a>    <span class="bu">print</span>(favorite_color({<span class="st">&quot;Marc&quot;</span>: <span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;Ezri&quot;</span>: <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;Kris&quot;</span>: <span class="st">&quot;blue&quot;</span>}))</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>    <span class="bu">print</span>(favorite_color({<span class="st">&quot;Marc&quot;</span>: <span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;Ezri&quot;</span>: <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;Kris&quot;</span>: <span class="st">&quot;blue&quot;</span>}))</span></code></pre></div>
 <p>The results of which would look like:</p>
 <pre class="plaintext"><code>$ python -m exercises.ex05.favorite_color
 blue</code></pre>
@@ -149,11 +132,11 @@ blue</code></pre>
 </ol></li>
 <li>Return the resulting dictionary.</li>
 </ol>
-<h2 id="alphabetizer">3. <code>alphabetizer</code></h2>
+<h2 id="alphabetizer">4. <code>alphabetizer</code></h2>
 <p>Given a <code>list[str]</code>, this function will produce a <code>dict[str, list[str]]</code> where each key is a unique letter in the alphabet and each value is a list of the words that begin with that letter.</p>
 <ul>
 <li>Function name: <code>alphabetizer</code></li>
-<li>Parameter: <code>list[str]</code> - list of values to categorize into different lists</li>
+<li>Parameter: <code>list[str]</code> - list of words to categorize into different lists</li>
 <li>Return Type: <code>dict[str, list[str]]</code> - a dictionary of the letters and the lists of words that belong to that letter</li>
 </ul>
 <p>Example usage:</p>
@@ -161,7 +144,7 @@ blue</code></pre>
 {&#39;c&#39;: [&#39;cat&#39;, &#39;car&#39;], &#39;a&#39;: [&#39;apple&#39;, &#39;angry&#39;], &#39;b&#39;: [&#39;boy&#39;, &#39;bad&#39;]}
 &gt;&gt;&gt; alphabetizer([&quot;Python&quot;, &quot;sugar&quot;, &quot;Turtle&quot;, &quot;party&quot;, &quot;table&quot;])
 {&#39;p&#39;: [&#39;Python&#39;, &#39;party&#39;], &#39;s&#39;: [&#39;sugar&#39;], &#39;t&#39;: [&#39;Turtle&#39;, &#39;table&#39;]}</code></pre>
-<h2 id="update_attendance">3. <code>update_attendance</code></h2>
+<h2 id="update_attendance">5. <code>update_attendance</code></h2>
 <p>Given a <code>dict[, list[str]]</code>, this function will <em>mutate</em> and return that dictionary. It should meet the following specifications:</p>
 <ol type="1">
 <li>It has three parameters:</li>
@@ -171,15 +154,15 @@ blue</code></pre>
 <li>Update the <code>dict[, list[str]]</code> that was passed in with the new attendance information, then return it.</li>
 </ol>
 <p>An example:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>    attedance_log: <span class="bu">dict</span> <span class="op">=</span> {<span class="st">&quot;Monday&quot;</span>: [<span class="st">&quot;Vrinda&quot;</span>, <span class="st">&quot;Kaleb&quot;</span>], </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a>                           <span class="st">&quot;Tuesday&quot;</span>: [<span class="st">&quot;Alyssa&quot;</span>]}</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a>    update_attendance(attendance_log, <span class="st">&quot;Tuesday&quot;</span> , <span class="st">&quot;Vrinda&quot;</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a>    update_attendance(attendance_log, <span class="st">&quot;Wednesday&quot;</span> , <span class="st">&quot;Kaleb&quot;</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a>    <span class="bu">print</span>(attendance_log)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>    attedance_log: <span class="bu">dict</span> <span class="op">=</span> {<span class="st">&quot;Monday&quot;</span>: [<span class="st">&quot;Vrinda&quot;</span>, <span class="st">&quot;Kaleb&quot;</span>], </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a>                           <span class="st">&quot;Tuesday&quot;</span>: [<span class="st">&quot;Alyssa&quot;</span>]}</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a>    update_attendance(attendance_log, <span class="st">&quot;Tuesday&quot;</span> , <span class="st">&quot;Vrinda&quot;</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a>    update_attendance(attendance_log, <span class="st">&quot;Wednesday&quot;</span> , <span class="st">&quot;Kaleb&quot;</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a>    <span class="bu">print</span>(attendance_log)</span></code></pre></div>
 <p>The results of which would look like:</p>
 <pre class="plaintext"><code>$ python -m exercises.ex05.update_attendance
 {&#39;Monday&#39;: [&#39;Vrinda&#39;, &#39;Kaleb&#39;], &#39;Tuesday&#39;: [&#39;Alyssa&#39;, &#39;Vrinda&#39;], &#39;Wednesday&#39;: [&#39;Kaleb&#39;]}</code></pre>
-<h2 id="make-a-backup-checkpoint-commit">4. Make a Backup Checkpoint “Commit”</h2>
+<h2 id="make-a-backup-checkpoint-commit">6. Make a Backup Checkpoint “Commit”</h2>
 <p>As you make progress on this exercise, making backups is encouraged.</p>
 <ol type="1">
 <li>Open the Source Control panel (Command Palette: “Show SCM” or click the icon with three circles and lines on the activity panel).</li>
@@ -192,7 +175,7 @@ blue</code></pre>
 <li>Press the Check icon to make a <em>Commit</em> (a version) of your work.</li>
 <li>Finally, press the Ellipses icon (…), look for “Pull/Push” submenu, and select “Push to…”, and in the dropdown select your backup repository.</li>
 </ol>
-<h2 id="submit-to-gradescope-for-grading">5. Submit to Gradescope for Grading</h2>
+<h2 id="submit-to-gradescope-for-grading">7. Submit to Gradescope for Grading</h2>
 <p>Login to Gradescope and select the assignment named “EX05 - Dictionaries.”. You’ll see an area to upload a zip file. To produce a zip file for autograding, return back to Visual Studio Code.</p>
 <p>If you <em>do not</em> see a Terminal at the bottom of your screen, open the Command Palette and search for “View: Toggle Integrated Terminal”.</p>
 <p>Type the following command (all on a single line):</p>
