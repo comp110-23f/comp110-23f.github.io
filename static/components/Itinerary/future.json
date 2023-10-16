@@ -15,6 +15,16 @@
                 "Lecture Slides": "",
                 "Challenge Question Instructions": "/lessons/forloops-CQ.md"
             }
+        },
+        {
+            "kind": "CQ",
+            "n": 4,
+            "title": "loops practice (Due Wednesday 10/18)",
+            "date": "2023-10-17",
+            "deadline": "2023-10-18",
+            "links": {
+                "": "/lessons/forloops-CQ.md"
+            }
         }
     ],
     "2023-10-18": [],

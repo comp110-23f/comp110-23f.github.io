@@ -245,6 +245,16 @@
             "links": {
                 "": "/virtual-classes/VL04.html"
             }
+        },
+        {
+            "kind": "CQ",
+            "n": 3,
+            "title": "Print vs. Return (Due Friday 9/29)",
+            "date": "2023-09-28",
+            "deadline": "2023-09-29",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
         }
     ],
     "2023-09-29": [],

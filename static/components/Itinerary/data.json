@@ -245,6 +245,16 @@
             "links": {
                 "": "/virtual-classes/VL04.html"
             }
+        },
+        {
+            "kind": "CQ",
+            "n": 3,
+            "title": "Print vs. Return (Due Friday 9/29)",
+            "date": "2023-09-28",
+            "deadline": "2023-09-29",
+            "links": {
+                "Assignment": "https://www.gradescope.com/"
+            }
         }
     ],
     "2023-09-29": [],
@@ -345,6 +355,16 @@
                 "Lecture Video": "",
                 "Lecture Slides": "",
                 "Challenge Question Instructions": "/lessons/forloops-CQ.md"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 4,
+            "title": "loops practice (Due Wednesday 10/18)",
+            "date": "2023-10-17",
+            "deadline": "2023-10-18",
+            "links": {
+                "": "/lessons/forloops-CQ.md"
             }
         }
     ],
