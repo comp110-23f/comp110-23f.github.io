@@ -354,7 +354,7 @@
             "links": {
                 "Lecture Video": "",
                 "Lecture Slides": "",
-                "Challenge Question Instructions": "/lessons/forloops-CQ.md"
+                "Challenge Question Instructions": "/lessons/forloops-CQ.html"
             }
         },
         {
@@ -364,7 +364,7 @@
             "date": "2023-10-17",
             "deadline": "2023-10-18",
             "links": {
-                "": "/lessons/forloops-CQ.md"
+                "": "/lessons/forloops-CQ.html"
             }
         }
     ],
