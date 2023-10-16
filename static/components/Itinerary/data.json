@@ -353,7 +353,7 @@
             "deadline": "None",
             "links": {
                 "Lecture Video": "",
-                "Lecture Slides": "",
+                "Lecture Slides": "/static/slides/f23/CL06.pdf",
                 "Challenge Question Instructions": "/lessons/forloops-CQ.html"
             }
         },
