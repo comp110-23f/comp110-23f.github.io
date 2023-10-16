@@ -352,7 +352,7 @@
             "date": "2023-10-17",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
+                "Lecture Video": "https://youtube.com/live/A7rUC9pAZOs?feature=share",
                 "Lecture Slides": "/static/slides/f23/CL06.pdf",
                 "Challenge Question Instructions": "/lessons/forloops-CQ.html"
             }
