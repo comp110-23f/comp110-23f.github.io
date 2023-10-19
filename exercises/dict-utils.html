@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1697668444.9620998">
+  <link rel="stylesheet" href="/static/styles.css?v=1697739818.3127453">
 </head>
 
 <body>
@@ -101,14 +101,13 @@
 <li>Return Type: <code>dict[str, str]</code></li>
 </ul>
 <p>Remember that <strong>keys in a dictionary are unique.</strong> If you encounter more than one of the same key when trying to invert your dictionary, raise a KeyError. Example usage:</p>
-<pre>
-<code class="nohljsln"> >>> invert({'a': 'z', 'b' : 'y', 'c': 'x'})
+<pre><div class="terminal">>>> invert({'a': 'z', 'b' : 'y', 'c': 'x'})
 {'z': 'a', 'y': 'b', 'x': 'c'}
 >>> invert({'apple': 'cat'})
 {'cat': 'apple'}
 >>> invert({'kris': 'jordan', 'michael': 'jordan'})
 KeyError
-</code>
+</div>
 </pre>
 <p>Similar to how you raised a <code>ValueError</code> in the <code>max</code> function for <code>list</code> utils, the syntax for raising a <code>KeyError</code> is: <code>raise KeyError("error message of your choice here!")</code></p>
 <h2 id="favorite-colors">2. <code>favorite colors</code></h2>
@@ -130,9 +129,9 @@ KeyError
 <pre><code>print(favorite_color({&quot;Marc&quot;: &quot;yellow&quot;, &quot;Ezri&quot;: &quot;blue&quot;, &quot;Kris&quot;: &quot;blue&quot;}))</code></pre>
 <p>The results of which would look like:</p>
 <pre>
-<code class="nohljsln">$ python -m exercises.ex06.favorite_color
+<div class="terminal">$ python -m exercises.ex06.favorite_color
 blue
-</code></pre>
+</div></pre>
 <h2 id="count">3. <code>count</code></h2>
 <p>Given a <code>list[str]</code>, this function will produce a <code>dict[str, int]</code> where each key is a unique value in the given list and each value associated is the <em>count</em> of the number of times that value appeared in the input list.</p>
 <ul>
@@ -160,11 +159,11 @@ blue
 </ul>
 <p>Example usage:</p>
 <pre>
-<code class="nohljsln">>>> alphabetizer(["cat", "apple", "boy", "angry", "bad", "car"])
+<div class="terminal">>>> alphabetizer(["cat", "apple", "boy", "angry", "bad", "car"])
 {'c': ['cat', 'car'], 'a': ['apple', 'angry'], 'b': ['boy', 'bad']}
 >>> alphabetizer(["Python", "sugar", "Turtle", "party", "table"])
 {'p': ['Python', 'party'], 's': ['sugar'], 't': ['Turtle', 'table']}
-</code>
+</div>
 </pre>
 <h2 id="update_attendance">5. <code>update_attendance</code></h2>
 <p>Given a <code>dict[, list[str]]</code>, this function will <em>mutate</em> and return that dictionary. It should meet the following specifications:</p>
@@ -176,18 +175,15 @@ blue
 <li>Update the <code>dict[str, list[str]]</code> that was passed in with the new attendance information, then return it.</li>
 </ol>
 <p>An example:</p>
-<pre>
-<code class="python"> attendance_log: dict = {"Monday": ["Vrinda", "Kaleb"], "Tuesday": ["Alyssa"]}
- update_attendance(attendance_log, "Tuesday" , "Vrinda")
- update_attendance(attendance_log, "Wednesday" , "Kaleb")
- print(attendance_log)
-</code>
-</pre>
+<pre><code> attendance_log: dict = {&quot;Monday&quot;: [&quot;Vrinda&quot;, &quot;Kaleb&quot;], &quot;Tuesday&quot;: [&quot;Alyssa&quot;]}
+ update_attendance(attendance_log, &quot;Tuesday&quot; , &quot;Vrinda&quot;)
+ update_attendance(attendance_log, &quot;Wednesday&quot; , &quot;Kaleb&quot;)
+ print(attendance_log)</code></pre>
 <p>The results of which would look like:</p>
 <pre>
-<code class="nohljsln">$ python -m exercises.ex06.update_attendance
+<div class="terminal">$ python -m exercises.ex06.update_attendance
 {'Monday': ['Vrinda', 'Kaleb'], 'Tuesday': ['Alyssa', 'Vrinda'], 'Wednesday': ['Kaleb']}
-</code>
+</div>
 </pre>
 <h2 id="make-a-backup-checkpoint-commit">6. Make a Backup Checkpoint “Commit”</h2>
 <p>As you make progress on this exercise, making backups is encouraged.</p>
@@ -206,7 +202,7 @@ blue
 <p>Login to Gradescope and select the assignment named “EX06 - Dictionaries.”. You’ll see an area to upload a zip file. To produce a zip file for autograding, return back to Visual Studio Code.</p>
 <p>If you <em>do not</em> see a Terminal at the bottom of your screen, open the Command Palette and search for “View: Toggle Integrated Terminal”.</p>
 <p>Type the following command (all on a single line):</p>
-<p><code>python -m tools.submission exercises/ex06</code></p>
+<pre><code>python -m tools.submission exercises/ex06</code></pre>
 <p>In the file explorer pane, look to find the zip file named “yy.mm.dd-hh.mm-exercises-ex06.zip”. The “yy”, “mm”, “dd”, and so on, are timestamps with the current month, day, hour, minute. If you right click on this file and select “Reveal in File Explorer” on Windows or “Reveal in Finder” on Mac, the zip file’s location on your computer will open. Upload this file to Gradescope to submit your work for this exercise.</p>
 <p>Autograding will take a few moments to complete. If there are issues reported, you are encouraged to try and resolve them and resubmit. If for any reason you aren’t receiving full credit and aren’t sure what to try next, come give us a visit in office hours!</p>
 </div>
@@ -237,7 +233,8 @@ blue
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css"> -->
+  <!-- Code Block Formatting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
   <script>hljs.initLineNumbersOnLoad();</script>
