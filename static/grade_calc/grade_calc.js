@@ -6,7 +6,7 @@ const WEIGHTS = {
     "LS" : .1,
     "CQ" : .1,
     "QZFN" : .4,
-    "RD" : .5
+    "RD" : .05
 }
 
 function set_rel() {
@@ -20,6 +20,8 @@ function set_rel() {
     Array.from(elements).forEach(element => {
         element.setAttribute("value", undefined)
     });
+
+    document.getElementById("final-grade").value = 0
 }
 
 
@@ -30,7 +32,7 @@ function set_abs() {
     let elements = document.getElementsByTagName("input")
     Array.from(elements).forEach(element => {
         element.setAttribute("value", 100)
-    });    
+    });
 }
 
 function ls_toggle() {
@@ -44,6 +46,14 @@ function ls_toggle() {
 
 
 function calculate_grade() {
+    if (document.getElementById("relative").getAttribute("class") === "grade-type-selected") {
+        calculate_rel();
+    } else {
+        calculate_abs();
+    }
+}
+
+function calculate_abs() {
     let avg = 0;
     avg += Number(document.getElementById("ex-avg").value)*WEIGHTS["EX"];
     avg += Number(document.getElementById("rd-avg").value)*WEIGHTS["RD"];
@@ -52,6 +62,53 @@ function calculate_grade() {
     avg += Number(qz_avg());
     
     document.getElementById("final-grade").value = avg.toFixed(2);
+}
+
+function calculate_rel() {
+    let avg = 0;
+    let correction = 1;
+    console.log(correction);
+
+    if (Number(document.getElementById("ex-avg").value)*WEIGHTS["EX"] !== 0) {
+        avg += Number(document.getElementById("ex-avg").value)*WEIGHTS["EX"];
+    } else {
+        correction -= WEIGHTS["EX"];
+    }
+    
+    if (Number(document.getElementById("rd-avg").value)*WEIGHTS["RD"] !== 0) {
+        avg += Number(document.getElementById("rd-avg").value)*WEIGHTS["RD"];
+    } else {
+        correction -= WEIGHTS["RD"];
+        console.log(correction)
+    }
+
+    if (Number(document.getElementById("ls-avg").value)*WEIGHTS["LS"] !== 0) {
+        avg += Number(document.getElementById("ls-avg").value)*WEIGHTS["LS"];
+    } else {
+        correction -= WEIGHTS["LS"];
+        console.log(correction)
+    }
+
+    if (Number(document.getElementById("cq-avg").value)*WEIGHTS["CQ"] !== 0) {
+        avg += Number(document.getElementById("cq-avg").value)*WEIGHTS["CQ"];
+    } else {
+        correction -= WEIGHTS["CQ"];
+        console.log(correction)
+    }
+
+    if (Number(qz_avg()) !== 0) {
+        avg += Number(qz_avg());
+    } else {
+        correction -= WEIGHTS["QZFN"];
+        console.log(correction)
+    }
+
+    console.log(correction)
+    avg = avg/Number(correction)
+    console.log(avg);
+    
+    document.getElementById("final-grade").value = avg.toFixed(2);
+    
 }
 
 
@@ -103,8 +160,9 @@ function avg_2drops(id_format, quantity) {
     if (document.getElementById("relative").getAttribute("class") === "grade-type-selected") {
         relative = true;
     }
-
-
+    console.log(sum, " sum");
+    
+    
     let min = [Number(document.getElementById(id_format + '0').value), Number(document.getElementById(id_format + '1').value)]
     let sum = 0;
     let curr = 0;
@@ -147,8 +205,9 @@ function avg_2drops(id_format, quantity) {
         sum -= min[1];
         quantity -= 2;
     }
-    document.getElementById(id_format[0] + id_format[1] + "-avg").value  = (sum/(quantity)).toFixed(2);
+    
 
+    document.getElementById(id_format[0] + id_format[1] + "-avg").value  = (sum/(quantity)).toFixed(2);
     return sum/(quantity);
 }
 
