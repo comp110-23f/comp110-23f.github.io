@@ -405,6 +405,16 @@
             "links": {
                 "": "https://www.gradescope.com/"
             }
+        },
+        {
+            "kind": "CQ",
+            "n": 5,
+            "title": "dicts practice (Due Wednesday 10/25)",
+            "date": "2023-10-24",
+            "deadline": "2023-10-25",
+            "links": {
+                "": "/lessons/dicts-cq.html"
+            }
         }
     ],
     "2023-10-25": [],
@@ -422,7 +432,7 @@
         },
         {
             "kind": "CQ",
-            "n": 5,
+            "n": 6,
             "title": "Unit Tests (Due Monday 11/6)",
             "date": "2023-10-26",
             "deadline": "2023-11-06",
