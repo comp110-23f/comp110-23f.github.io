@@ -381,7 +381,30 @@
             "title": "Dictionary Utils (Due Wednesday 11/1)",
             "date": "2023-10-24",
             "deadline": "2023-11-01",
-            "links": {}
+            "links": {
+                "": "/exercises/dict-utils.html"
+            }
+        },
+        {
+            "kind": "CL",
+            "n": 7,
+            "title": "Dictionaries",
+            "date": "2023-10-24",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/bBxBs7Npa7c?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL07.pdf"
+            }
+        },
+        {
+            "kind": "LS",
+            "n": 17,
+            "title": "Dictionaries (Due Tuesday 10/24)",
+            "date": "2023-10-24",
+            "deadline": "2023-10-24",
+            "links": {
+                "": "https://www.gradescope.com/"
+            }
         }
     ],
     "2023-10-25": [],

@@ -343,5 +343,32 @@
     "2023-10-13": [],
     "2023-10-14": [],
     "2023-10-15": [],
-    "2023-10-16": []
+    "2023-10-16": [],
+    "2023-10-17": [
+        {
+            "kind": "CL",
+            "n": 6,
+            "title": "\"for\" loops",
+            "date": "2023-10-17",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/A7rUC9pAZOs?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL06.pdf",
+                "Challenge Question Instructions": "/lessons/forloops-CQ.html"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 4,
+            "title": "loops practice (Due Wednesday 10/18)",
+            "date": "2023-10-17",
+            "deadline": "2023-10-18",
+            "links": {
+                "": "/lessons/forloops-CQ.html"
+            }
+        }
+    ],
+    "2023-10-18": [],
+    "2023-10-19": [],
+    "2023-10-20": []
 }
