@@ -1,5 +1,4 @@
 {
-    "2023-10-21": [],
     "2023-10-22": [],
     "2023-10-23": [],
     "2023-10-24": [
@@ -37,9 +36,9 @@
         {
             "kind": "CQ",
             "n": 5,
-            "title": "dicts practice (Due Wednesday 10/25)",
+            "title": "dicts practice (Due Friday 10/27)",
             "date": "2023-10-24",
-            "deadline": "2023-10-25",
+            "deadline": "2023-10-27",
             "links": {
                 "": "/lessons/dicts-cq.html"
             }
@@ -61,9 +60,9 @@
         {
             "kind": "CQ",
             "n": 6,
-            "title": "Unit Tests (Due Monday 11/6)",
+            "title": "Unit Tests (Due Friday 10/27)",
             "date": "2023-10-26",
-            "deadline": "2023-11-06",
+            "deadline": "2023-10-27",
             "links": {
                 "": ""
             }
