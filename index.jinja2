@@ -64,7 +64,7 @@ template: home
                 <div class="plans col-md-9">
                     {%- for plan in syllabus[date] -%}
                         <div class="plan {{ plan.kind.value }}">
-                            <span class="kind">{{ plan.kind.name }}{{ "%02d"|format(plan.n) }}</span>
+                            <span class="kind">{{ plan.kind.name }}{{ "%02d"|format(plan.n) }} </span>
                             {%- if plan.links|length > 0 -%}
                                 {%- if plan.links|length == 1 and plan.links[''] -%}
                                     <span class="title"><a href="{{ plan.links[''] }}">{{ plan.title }}</a></span>
@@ -103,7 +103,7 @@ template: home
                 <div class="plans col-md-9">
                     {%- for plan in syllabus[date] -%}
                         <div class="plan {{ plan.kind.value }}">
-                            <span class="kind">{{ plan.kind.name }}{{ "%02d"|format(plan.n) }}</span>
+                            <span class="kind">{{ plan.kind.name }}{{ "%02d"|format(plan.n) }} </span>
                             {%- if plan.links|length > 0 -%}
                                 {%- if plan.links|length == 1 and plan.links[''] -%}
                                     <span class="title"><a href="{{ plan.links[''] }}">{{ plan.title }}</a></span>
