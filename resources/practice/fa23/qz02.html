@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1698189060.388589">
+  <link rel="stylesheet" href="/static/styles.css?v=1698245695.4146152">
 </head>
 
 <body>
@@ -65,7 +65,6 @@
 <ul>
 <li><a href="#conceptual-questions">Conceptual Questions</a></li>
 <li><a href="#memory-diagrams">Memory Diagrams</a></li>
-<li><a href="#code-tracing">Code Tracing</a></li>
 <li><a href="#function-writing">Function Writing</a>
 <ul>
 <li><a href="#autograder-instructions">Autograder instructions:</a></li>
@@ -75,7 +74,7 @@
 <ul>
 <li><a href="#conceptual-questions-1">Conceptual Questions</a></li>
 <li><a href="#memory-diagrams-1">Memory Diagrams</a></li>
-<li><a href="#code-tracing-1">Code Tracing</a></li>
+<li><a href="#code-tracing">Code Tracing</a></li>
 <li><a href="#function-writing-1">Function Writing</a></li>
 </ul></li>
 </ul>
@@ -192,31 +191,29 @@ minor changes/additions
     print(happy)</code></pre>
 <!-- 20. Produce a memory diagram for the following code snippet, being sure to include its stack and output.  
 ![](/static/practice_worksheets/fa21/qz03-question12.png) -->
-<h2 id="code-tracing">Code Tracing</h2>
-<ol start="15" type="1">
-<li>Given the following code snippet, answer the questions below.<br />
-</li>
-</ol>
-<pre><code>    &quot;&quot;&quot;List Practice.&quot;&quot;&quot;
+<!-- ## Code Tracing
+15. Given the following code snippet, answer the questions below.  
+```
+    """List Practice."""
 
     a: int = 3
     b: int = 0
     c: float
 
 
-    def main() -&gt; None:
-        &quot;&quot;&quot;Entry point of program.&quot;&quot;&quot;
+    def main() -> None:
+        """Entry point of program."""
         global a
         global b
         print(fun(a, b))
 
 
-    def fun(a: int, b: int) -&gt; list[int]:
-        &quot;&quot;&quot;A sample function.&quot;&quot;&quot;
+    def fun(a: int, b: int) -> list[int]:
+        """A sample function."""
         global c
         nums: list[int] = []
         if b == 0:
-            while len(nums) &lt; 4:
+            while len(nums) < 4:
                 c = a + b / 2
                 if c % 2 == 0:
                     a += 1
@@ -227,10 +224,12 @@ minor changes/additions
         return nums
 
 
-    if __name__ == &quot;__main__&quot;:
-        main()</code></pre>
-<p>15.1. What is the printed output once the code snippet completes?<br />
-15.2. What are the values of the global variables <code>a</code>, <code>b</code>, and <code>c</code> once the code snippet completes?</p>
+    if __name__ == "__main__":
+        main()
+```
+
+15.1. What is the printed output once the code snippet completes?  
+15.2. What are the values of the global variables `a`, `b`, and `c` once the code snippet completes? -->
 <ol start="16" type="1">
 <li>Given the following code snippet, answer the questions below.<br />
 </li>
@@ -315,13 +314,14 @@ The first g frame has 3 items, RA, RV, and word. G has a return address of 10 an
 The second g frame has 3 items, RA, RV, and word. This frame has a return address of 11 and a return value of 'yay'. The variable word has the previous value of 'happy' crossed out and the final value of 'yay'. 
 Finally, output has the strings yay, yay, and yay on separate lines. "></p></li>
 </ol>
-<h2 id="code-tracing-1">Code Tracing</h2>
-<ol start="15" type="1">
-<li><p>15.1. <code>[3, 7, 10, 13]</code><br />
-15.2. a = 3, b = 0, c = 13.5</p></li>
-<li><p>16.1. <code>[6, 7, 5, 3, 0]</code><br />
+<h2 id="code-tracing">Code Tracing</h2>
+<!-- 15.   
+15.1. `[3, 7, 10, 13]`  
+15.2. a = 3, b = 0, c = 13.5 -->
+<ol start="16" type="1">
+<li>16.1. <code>[6, 7, 5, 3, 0]</code><br />
 16.2. 4<br />
-16.3. 4</p></li>
+16.3. 4</li>
 </ol>
 <h2 id="function-writing-1">Function Writing</h2>
 <p>Note: Your solution does not need to be identical to these, these are just examples of one of many possible solutions.</p>
