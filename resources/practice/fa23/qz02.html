@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1698263563.9858706">
+  <link rel="stylesheet" href="/static/styles.css?v=1698291088.6287777">
 </head>
 
 <body>
@@ -74,7 +74,6 @@
 <ul>
 <li><a href="#conceptual-questions-1">Conceptual Questions</a></li>
 <li><a href="#memory-diagrams-1">Memory Diagrams</a></li>
-<li><a href="#code-tracing">Code Tracing</a></li>
 <li><a href="#function-writing-1">Function Writing</a></li>
 </ul></li>
 </ul>
@@ -94,10 +93,9 @@ minor changes/additions
 <ol type="1">
 <li>Global variables are limited to the scope of the function they are declared in. (T/F)</li>
 <li>Variables can have the same name but store different values if they are defined in a different scope. (T/F)</li>
-<li>Named constants should be used to store values that may change throughout the program. (T/F)</li>
-<li>All pytest test function names must begin with <code>test</code>.</li>
-<li>A test will pass if it does not hit a <code>False</code> assertion or some other type of error.</li>
-<li>Test functions should be written in a file with a name matching the file that the functions are defined in, followed by <code>_test</code>.</li>
+<li>Named constants should be used to store values that may change throughout the program. (T/F) <!-- 4. All pytest test function names must begin with `test`.
+5. A test will pass if it does not hit a `False` assertion or some other type of error.
+6. Test functions should be written in a file with a name matching the file that the functions are defined in, followed by `_test`. --></li>
 <li>When using a <code>for...in</code> loop, on the first line of the loop you must specify the type of the variable (variable refers to <code>i</code> in <code>for i in nums</code>). (T/F)</li>
 <li>In Python dictionaries, each dictionary’s value type must match its key type. (T/F)</li>
 <li>Writing a <code>for...in</code> loop on a <code>dict</code> loops through the keys of a dictionary. (T/F)</li>
@@ -105,7 +103,7 @@ minor changes/additions
 <li>Explain the similarities and differences between Python’s <code>list</code> and <code>dict</code>.</li>
 </ol>
 <h2 id="memory-diagrams">Memory Diagrams</h2>
-<ol start="12" type="1">
+<ol type="1">
 <li>Produce a memory diagram for the following code snippet, being sure to include its stack, heap, and output.<br />
 </li>
 </ol>
@@ -134,7 +132,7 @@ minor changes/additions
 
     if __name__ == &quot;__main__&quot;:
         main()</code></pre>
-<ol start="13" type="1">
+<ol start="2" type="1">
 <li>Produce a memory diagram for the following code snippet, being sure to include its stack, heap, and output.<br />
 </li>
 </ol>
@@ -173,7 +171,7 @@ minor changes/additions
 
     if __name__ == &quot;__main__&quot;:
         main()</code></pre>
-<ol start="14" type="1">
+<ol start="3" type="1">
 <li>Produce a memory diagram for the following code snippet, being sure to include its stack, heap, and output.<br />
 </li>
 </ol>
@@ -230,7 +228,7 @@ minor changes/additions
 
 15.1. What is the printed output once the code snippet completes?  
 15.2. What are the values of the global variables `a`, `b`, and `c` once the code snippet completes? -->
-<ol start="16" type="1">
+<ol start="4" type="1">
 <li>Given the following code snippet, answer the questions below.<br />
 </li>
 </ol>
@@ -265,11 +263,11 @@ minor changes/additions
 
 
     main()</code></pre>
-<p>16.1. What is the value of <code>list_1</code> once the code snippet completes?<br />
-16.2. What is the value of <code>i</code> on line 13 during the <em>last</em> call to <code>change_and_check</code>?<br />
-16.3. How many total frames are created on the stack throughout the run of this program (including the globals frame)?</p>
+<p>4.1. What is the value of <code>list_1</code> once the code snippet completes?<br />
+4.2. What is the value of <code>i</code> on line 13 during the <em>last</em> call to <code>change_and_check</code>?<br />
+4.3. How many total frames are created on the stack throughout the run of this program (including the globals frame)?</p>
 <h2 id="function-writing">Function Writing</h2>
-<ol start="17" type="1">
+<ol type="1">
 <li>Odd and Even: <a href="/static/practice_worksheets/sp23/qz02-pp1.pdf">instructions</a></li>
 <li>Value Exists: <a href="/static/practice_worksheets/sp23/qz02-pp2.pdf">instructions</a></li>
 <li>Short Words: <a href="/static/practice_worksheets/sp23/qz02-pp3.pdf">instructions</a></li>
@@ -281,10 +279,9 @@ minor changes/additions
 <ol type="1">
 <li>False</li>
 <li>True</li>
-<li>False</li>
-<li>True</li>
-<li>True</li>
-<li>True</li>
+<li>False <!-- 4. True
+5. True
+6. True --></li>
 <li>False</li>
 <li>False</li>
 <li>True</li>
@@ -297,7 +294,7 @@ Differences:<br />
 Note: these are not all of the similarities and differences, just some important ones to remember</li>
 </ol>
 <h2 id="memory-diagrams-1">Memory Diagrams</h2>
-<ol start="12" type="1">
+<ol type="1">
 <li><p><img class="img-fluid" src="/static/practice_worksheets/fa21/qz02-solution11.png" alt="The memory diagram includes a column labeled Stack, a column labeled Heap, and a column labeled Output. The stack has 3 frames in the following order from top to bottom: globals, main, and make underscore word. 
 In the Globals frame there are 2 items. First is the label `main` pointing to a function on the heap from lines 3-7. The label make underscore word points to a function on the heap from lines 10-23. 
 The main frame has 4 items, RA, RV, strings, and word. The return address is 27 and the return value is None. The variable `strings` pointing to a list in the Heap. The list is labeled list bracket str close bracket and has 4 rows and 2 columns. The first column has the indices 0, 1, 2, and 3 and the second column has the values 'hey', 'o', 'eh', and 'e'. Finally, the `main` stack frame has the variable `word` with the value of quote H E Y O E H end quote. 
@@ -314,18 +311,19 @@ The first g frame has 3 items, RA, RV, and word. G has a return address of 10 an
 The second g frame has 3 items, RA, RV, and word. This frame has a return address of 11 and a return value of 'yay'. The variable word has the previous value of 'happy' crossed out and the final value of 'yay'. 
 Finally, output has the strings yay, yay, and yay on separate lines. "></p></li>
 </ol>
-<h2 id="code-tracing">Code Tracing</h2>
+<!-- ## Code Tracing
 <!-- 15.   
 15.1. `[3, 7, 10, 13]`  
 15.2. a = 3, b = 0, c = 13.5 -->
-<ol start="16" type="1">
-<li>16.1. <code>[6, 7, 5, 3, 0]</code><br />
-16.2. 4<br />
-16.3. 4</li>
+<p>–&gt;</p>
+<ol start="4" type="1">
+<li>4.1. <code>[6, 7, 5, 3, 0]</code><br />
+4.2. 4<br />
+4.3. 4</li>
 </ol>
 <h2 id="function-writing-1">Function Writing</h2>
 <p>Note: Your solution does not need to be identical to these, these are just examples of one of many possible solutions.</p>
-<ol start="17" type="1">
+<ol type="1">
 <li></li>
 </ol>
 <pre><code>    def odd_and_even(list1: list[int]) -&gt; list[int]:
@@ -339,19 +337,21 @@ Finally, output has the strings yay, yay, and yay on separate lines. "></p></li>
             i += 1
 
         return list2</code></pre>
-<ol start="18" type="1">
+<ol start="2" type="1">
 <li></li>
 </ol>
 <pre><code>    def value_exists(inp_dict: dict[str,int], val: int) -&gt; bool:
+        &quot;&quot;&quot;Return true if val is in inp_dict&quot;&quot;&quot;
         exists: bool = False
         for elem in inp_dict:
             if inp_dict[elem] == val:
                 exists = True
         return exists</code></pre>
-<ol start="19" type="1">
+<ol start="3" type="1">
 <li></li>
 </ol>
 <pre><code>    def short_words(inp_list: list[str]) -&gt; list[str]:
+        &quot;&quot;&quot;Filter out the shorter words&quot;&quot;&quot;
         ret_list = []
         for x in inp_list:
             if len(x) &lt; 5:
