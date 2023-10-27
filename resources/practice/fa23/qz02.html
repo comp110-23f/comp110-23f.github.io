@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1698291997.3770344">
+  <link rel="stylesheet" href="/static/styles.css?v=1698425305.5755248">
 </head>
 
 <body>
@@ -171,22 +171,21 @@ minor changes/additions
 
     if __name__ == &quot;__main__&quot;:
         main()</code></pre>
-<ol start="3" type="1">
-<li>Produce a memory diagram for the following code snippet, being sure to include its stack, heap, and output.<br />
-</li>
-</ol>
-<pre><code>    def g(word: str) -&gt; str:
+<!-- 3. Produce a memory diagram for the following code snippet, being sure to include its stack, heap, and output.  
+```
+    def g(word: str) -> str:
         global happy
-        if len(word) &gt;- 4:
+        if len(word) >- 4:
             word = happy
         else:
-            happy = &quot;yay&quot;
+            happy = "yay"
         return word
 
-    happy: str = &quot;:)&quot;
-    print(g(&quot;yay&quot;))
-    print(g(&quot;happy&quot;))
-    print(happy)</code></pre>
+    happy: str = ":)"
+    print(g("yay"))
+    print(g("happy"))
+    print(happy)
+``` -->
 <!-- 20. Produce a memory diagram for the following code snippet, being sure to include its stack and output.  
 ![](/static/practice_worksheets/fa21/qz03-question12.png) -->
 <!-- ## Code Tracing
@@ -228,7 +227,7 @@ minor changes/additions
 
 15.1. What is the printed output once the code snippet completes?  
 15.2. What are the values of the global variables `a`, `b`, and `c` once the code snippet completes? -->
-<ol start="4" type="1">
+<ol start="3" type="1">
 <li>Given the following code snippet, answer the questions below.<br />
 </li>
 </ol>
@@ -305,20 +304,22 @@ The main frame has 4 items, including the RA, RV, and two variables list undersc
 The first create frame has four items, RA, RV, list underscore 1, and i. The return address is 25 and the return value points to the same list in the heap that the variable list underscore 2 in the previous main frame pointed to. In the create frame, the variable list underscore 1 points to that same list in the heap. The variable i has the previous values of 0, 1, and 2 crossed out and the final value of 3. 
 The second create frame also has four items, RA, RV, list underscore 1 and i. The return address is 27 and the return value is the same list in the heap that the variable list underscore 1 in main pointed to. Within the create frame, list underscore 1 points to that same list in the heap. The variable i has the previous values of 0, 1, and 2 crossed out and the final value of 3.
 The final frame of increase has 5 items, RA, RV, a underscore list, x, and i. The return address is 28 and the return value is None. a_underscore list points to the same list pointed to by list underscore 1 in main and list underscore 1 in the second create frame. The variable x has the value of 2 and the variable i has the previous values of 0, 1, and 2 crossed out and the final value of 3."></p></li>
-<li><p><img class="img-fluid" src="/static/practice_worksheets/sp23/cora1_sol.png" alt="The memory diagram has three columns, labeled stack heap and output. In the stack, there are 3 frames labeled from top to bottom: globals, g, and g. 
+</ol>
+<!-- 3.
+<img class="img-fluid" src="/static/practice_worksheets/sp23/cora1_sol.png" alt="The memory diagram has three columns, labeled stack heap and output. In the stack, there are 3 frames labeled from top to bottom: globals, g, and g. 
 In the globals frame, there are 2 items, g and happy. G points to a function in the heap from lines 1-7. The variable `happy` has the previous value of ':)' crossed out and the final value of 'yay'. 
 The first g frame has 3 items, RA, RV, and word. G has a return address of 10 and a return value of the string 'yay'. The variable word has the value of the string 'yay'. 
 The second g frame has 3 items, RA, RV, and word. This frame has a return address of 11 and a return value of 'yay'. The variable word has the previous value of 'happy' crossed out and the final value of 'yay'. 
-Finally, output has the strings yay, yay, and yay on separate lines. "></p></li>
-</ol>
+Finally, output has the strings yay, yay, and yay on separate lines. ">
+ -->
 <!-- ## Code Tracing
  15.   
 15.1. `[3, 7, 10, 13]`  
 15.2. a = 3, b = 0, c = 13.5 -->
-<ol start="4" type="1">
-<li>4.1. <code>[6, 7, 5, 3, 0]</code><br />
-4.2. 4<br />
-4.3. 4</li>
+<ol start="3" type="1">
+<li><em>Diagram Coming Soon</em> 3.1. <code>[6, 7, 5, 3, 0]</code><br />
+3.2. 4<br />
+3.3. 4</li>
 </ol>
 <h2 id="function-writing-1">Function Writing</h2>
 <p>Note: Your solution does not need to be identical to these, these are just examples of one of many possible solutions.</p>
