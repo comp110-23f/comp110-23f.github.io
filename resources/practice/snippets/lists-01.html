@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Jayden Lim - COMP110 - 23F</title>
+  <title> Practice Memory Diagram - COMP110 - 23F</title>
   <link rel="icon" type="image/png" href="/static/tabbrand.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1698426013.0302815">
+  <link rel="stylesheet" href="/static/styles.css?v=1698426002.7827318">
 </head>
 
 <body>
@@ -44,43 +44,72 @@
     </div>
   </nav>
 
-  <div id="profile-page" class="container">
+  <div id="lessons-page" class="container">
     <div class="row pt-4">
       <div class="col-12">
-        <h1>Jayden Lim</h1>
+        <h1>Practice Memory Diagram</h1>
         <hr class="title" />
       </div>
     </div>
 
-    <div class="container box">
-        <div class="row"><div class="col">
-                <div class="content"><figure>
-<img src="../../../static/profile-photos/jaylim.jpg" alt="" /><figcaption>profile-photo</figcaption>
+    <script src="/static/scripts/toggle-handler.js"></script>
+    
+    <div class="row px-4">
+        <div id="box" class="toc col-xl-3 col-lg-3 order-1 order-lg-2" role="doc-toc">
+            <div id="menu-overview" class="link-page horizon-box">
+                <button id="overview-button" class="btn btn-ov" onclick="hideshow()">Overview  <img id="button-img" class="filter-icon" src="/static/components/Itinerary/arrow-up.svg" style="height:15px; padding-left: 4px;"></button>
+                <div id="overview-links">
+                    <div id="TOC" role="doc-toc">
+                        <ul class="overview-item"><ul>
+<li><a href="#snippet">Snippet</a></li>
+<li><a href="#solution">Solution</a></li>
+</ul>
+</</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="snippet">Snippet</h1>
+<pre><code>def check_quiz(responses: list[bool]) -&gt; int:
+    answer_key: list[bool] = [True, True, False]
+    correct: int = 0
+    idx: int = 0
+    while idx &lt; len(responses):
+        if responses[idx] == answer_key[idx]:
+            correct += 1
+            idx += 1
+        else:
+            idx += 1
+    return correct
+
+def main() -&gt; None:
+    my_quiz: list[bool] = [True, True, True]
+    grade: int = check_quiz(my_quiz)
+    print(f&quot;{grade} out of 3 questions correct.&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+<h1 id="solution">Solution</h1>
+<figure>
+<img src="navyak_solution_4.png" alt="" /><figcaption>navyak_solution_4</figcaption>
 </figure>
-<h2 id="pronouns">Pronouns</h2>
-<p>he/him</p>
-<p></div>
-            </div><div class="col">
-                <div class="content"></p>
-<h2 id="hometown">Hometown</h2>
-<p>Fuquay-Varina, NC</p>
-<h2 id="unc-status">UNC Status</h2>
-<p>Class of 2026</p>
-<h2 id="major">Major</h2>
-<p>Computer Science and Statistics Double-major, Chinese Minor</p>
-<p></div>
-            </div><div class="col">
-                <div class="content"></p>
-<h2 id="interests">Interests</h2>
-<p>Soccer, Basketball, Taekwondo, Weightlifting, FPS Games(COD, Star Wars Battlefront II, Apex Legends), and Anything Water-related</p>
-<h2 id="non-academic-fun-fact">Non-academic fun fact</h2>
-<p>I am remotely related to a famous actress.</p>
+<p><em>Image Description</em></p>
+<p>The Memory Diagram includes one box titled Output and below that box two columns, the left one titled Stack and the right one titled Heap.</p>
+<p>The Stack includes 3 frames in the following order from top to bottom including Globals, main, and check_quiz.</p>
+<p>The Globals frame has 2 variables including check_quiz and main. - check_quiz points to a function on the Heap (lines 1-11). - main points to a function on the Heap (lines 14-17).</p>
+<p>The main frame has 4 items including the RA and RV, and variables named my_quiz and grade. - The RA is defined at line 21. - The RV is None. - my_quiz points to a list[bool] on the Heap. - Indexes 0, 1, 2 and values True, True, True respectively. - grade is 2.</p>
+<p>The check_quiz frame has 6 items including the RA and RV, and variables named responses, answer_key, correct, and idx. - The RA is defined at line 16. - The RV is 2. - responses points to the same list[bool] on the Heap as my_quiz. - answer_key points to a new list[bool] on the Heap. - Indexes 0, 1, 2 and values True, True, False respectively. - correct is 2. - Previous values of correct include 0 and 1, which are now crossed out. - idx is 3. - Previous values of idx include 0, 1, and 2, which are now crossed out.</p>
+<p>The Heap includes 2 function objects, and 2 list[bool] objects.</p>
+<p>Output includes the phrase: “2 out of 3 questions correct.”</p>
 </div>
-            </div></div>
-    </div>
+
+       
+
+    </div> 
 
     <div class="authors-box bg-dark mt-4 py-3 ps-4">
-      <span> Contributor(s): Jayden Lim</span>
+      <span> Contributor(s):        Created by Navya Katraju,        Reviewed by Olivia Xiao, Published by Alyssa Lytle</span>
     </div>
   </div>
   <div class='link-page mt-3 container'>
