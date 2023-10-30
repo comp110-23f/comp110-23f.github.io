@@ -372,5 +372,74 @@
     "2023-10-19": [],
     "2023-10-20": [],
     "2023-10-21": [],
-    "2023-10-22": []
+    "2023-10-22": [],
+    "2023-10-23": [],
+    "2023-10-24": [
+        {
+            "kind": "EX",
+            "n": 6,
+            "title": "Dictionary Utils (Due Wednesday 11/1)",
+            "date": "2023-10-24",
+            "deadline": "2023-11-01",
+            "links": {
+                "": "/exercises/dict-utils.html"
+            }
+        },
+        {
+            "kind": "CL",
+            "n": 7,
+            "title": "Dictionaries",
+            "date": "2023-10-24",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/bBxBs7Npa7c?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL07.pdf"
+            }
+        },
+        {
+            "kind": "LS",
+            "n": 17,
+            "title": "Dictionaries (Due Tuesday 10/24)",
+            "date": "2023-10-24",
+            "deadline": "2023-10-24",
+            "links": {
+                "": "https://www.gradescope.com/"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 5,
+            "title": "dicts practice (Due Friday 10/27)",
+            "date": "2023-10-24",
+            "deadline": "2023-10-27",
+            "links": {
+                "": "/lessons/dicts-cq.html"
+            }
+        }
+    ],
+    "2023-10-25": [],
+    "2023-10-26": [
+        {
+            "kind": "CL",
+            "n": 8,
+            "title": "Unit Tests",
+            "date": "2023-10-26",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/FdVY7kPqZ6s?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL08.pdf"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 6,
+            "title": "Unit Tests (Due Friday 10/27)",
+            "date": "2023-10-26",
+            "deadline": "2023-10-27",
+            "links": {
+                "": "/challenge_questions/unit_tests.html"
+            }
+        }
+    ],
+    "2023-10-27": []
 }
