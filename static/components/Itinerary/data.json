@@ -475,9 +475,9 @@
         {
             "kind": "CQ",
             "n": 7,
-            "title": "Intro to OOP (Due Friday 11/3)",
+            "title": "Intro to OOP (Due Monday 11/6)",
             "date": "2023-11-02",
-            "deadline": "2023-11-03",
+            "deadline": "2023-11-06",
             "links": {
                 "": "/challenge_questions/oop-mutable.html"
             }
