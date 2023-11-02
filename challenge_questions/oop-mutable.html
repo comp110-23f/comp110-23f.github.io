@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1698888024.2525268">
+  <link rel="stylesheet" href="/static/styles.css?v=1698935420.5593696">
 </head>
 
 <body>
@@ -111,7 +111,7 @@
 <li>Return Type: <code>Point</code> *</li>
 <li>Behavior: It should return a new <code>Point</code> with x and y attributes equal to <code>self.x * factor</code> and <code>self.y * factor</code>.</li>
 </ul>
-<p>*Reminder: if we are defining a method that returns its own type (e.g. a method in our <code>Point</code> class that returns a <code>Point</code>) we will actually implement this by declaring its return type as <code>Self</code>. We also need to add the line <code>from typing import Self</code> to the top of our file. For an example, look back at our <code>Pizza</code> class!</p>
+<p>*Reminder: if we are defining a method that returns its own type (e.g. a method in our <code>Point</code> class that returns a <code>Point</code>), we also need to add the line <code>from __future__ import annotations</code> to the top of our file. For an example, look back at our <code>Pizza</code> class!</p>
 <h2 id="checking-your-methods-for-correctness">Checking Your Methods For Correctness</h2>
 <p>You can check your methods by creating a new file in your <code>CQ07</code> file called <code>make_points.py</code> and importing your <code>Point</code> class using <code>from lessons.CQ07.point import Point</code>. Then create a new point and call the methods.</p>
 <h2 id="submission">4. Submission</h2>
