@@ -444,5 +444,19 @@
     "2023-10-27": [],
     "2023-10-28": [],
     "2023-10-29": [],
-    "2023-10-30": []
+    "2023-10-30": [],
+    "2023-10-31": [
+        {
+            "kind": "QZ",
+            "n": 2,
+            "title": "Quiz 2",
+            "date": "2023-10-31",
+            "deadline": "2023-10-31",
+            "links": {
+                "Covered Topics": "/resources/qz02-concepts.html",
+                "Practice Problems": "/resources/practice/fa23/qz02.html",
+                "Review Session Link Monday 6-8 pm (Passcode: SB4&V3?S)": "https://unc.zoom.us/rec/share/BFNvNkEP97yG-3po7PEOzRgadEy456iDNZlh8kFCCwUNkcm62uEozL0vxS79M8is.uzlvPtCZonYjbPlK"
+            }
+        }
+    ]
 }
