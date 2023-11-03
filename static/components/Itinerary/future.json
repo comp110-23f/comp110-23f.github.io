@@ -41,12 +41,12 @@
         {
             "kind": "CL",
             "n": 10,
-            "title": "Classes in Memory",
+            "title": "Classes in Memory + Magic Methods",
             "date": "2023-11-07",
             "deadline": "None",
             "links": {
-                "Lecture Video": "https://youtube.com/live/qjiAz8ReHVY?feature=share",
-                "Lecture Slides": "/static/slides/f23/CL09.pdf"
+                "Lecture Video": "",
+                "Lecture Slides": ""
             }
         }
     ],
