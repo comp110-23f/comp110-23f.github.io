@@ -37,7 +37,19 @@
     "2023-11-04": [],
     "2023-11-05": [],
     "2023-11-06": [],
-    "2023-11-07": [],
+    "2023-11-07": [
+        {
+            "kind": "CL",
+            "n": 10,
+            "title": "Classes in Memory",
+            "date": "2023-11-07",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/qjiAz8ReHVY?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL09.pdf"
+            }
+        }
+    ],
     "2023-11-08": [],
     "2023-11-09": [
         {
