@@ -458,5 +458,40 @@
                 "Review Session Link Monday 6-8 pm (Passcode: SB4&V3?S)": "https://unc.zoom.us/rec/share/BFNvNkEP97yG-3po7PEOzRgadEy456iDNZlh8kFCCwUNkcm62uEozL0vxS79M8is.uzlvPtCZonYjbPlK"
             }
         }
-    ]
+    ],
+    "2023-11-01": [],
+    "2023-11-02": [
+        {
+            "kind": "CL",
+            "n": 9,
+            "title": "Intro to Object Oriented Programming",
+            "date": "2023-11-02",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/qjiAz8ReHVY?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL09.pdf"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 7,
+            "title": "Intro to OOP (Due Monday 11/6)",
+            "date": "2023-11-02",
+            "deadline": "2023-11-06",
+            "links": {
+                "": "/challenge_questions/oop-mutable.html"
+            }
+        },
+        {
+            "kind": "EX",
+            "n": 7,
+            "title": "Dictionary Unit Tests (Due Wednesday 11/8)",
+            "date": "2023-11-02",
+            "deadline": "2023-11-08",
+            "links": {
+                "": "/exercises/dict_unit_tests.html"
+            }
+        }
+    ],
+    "2023-11-03": []
 }

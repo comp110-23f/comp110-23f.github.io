@@ -505,13 +505,24 @@
             "date": "2023-11-07",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
-                "Lecture Slides": ""
+                "Lecture Video": "https://youtube.com/live/8F5zSJ-ctvU?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL10.pdf"
             }
         }
     ],
     "2023-11-08": [],
     "2023-11-09": [
+        {
+            "kind": "CL",
+            "n": 11,
+            "title": "Default Parameters + Union Types",
+            "date": "2023-11-09",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
+            }
+        },
         {
             "kind": "EX",
             "n": 8,
