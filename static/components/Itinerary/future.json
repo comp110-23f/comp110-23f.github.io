@@ -28,6 +28,14 @@
             }
         },
         {
+            "kind": "CQ",
+            "n": 8,
+            "title": "More OOP Practice (Due Monday 11/13)",
+            "date": "2023-11-09",
+            "deadline": "2023-11-13",
+            "links": {}
+        },
+        {
             "kind": "EX",
             "n": 8,
             "title": "River Simulation (Due Wednesday 11/15)",
