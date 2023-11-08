@@ -1,5 +1,4 @@
 {
-    "2023-11-04": [],
     "2023-11-05": [],
     "2023-11-06": [],
     "2023-11-07": [
@@ -20,7 +19,7 @@
         {
             "kind": "CL",
             "n": 11,
-            "title": "Default Parameters + Union Types",
+            "title": "Operator Overloads, Default Parameters, + Union Types",
             "date": "2023-11-09",
             "deadline": "None",
             "links": {
@@ -34,7 +33,9 @@
             "title": "River Simulation (Due Wednesday 11/15)",
             "date": "2023-11-09",
             "deadline": "2023-11-15",
-            "links": {}
+            "links": {
+                "": "/exercises/river-sim.html"
+            }
         },
         {
             "kind": "RD",
