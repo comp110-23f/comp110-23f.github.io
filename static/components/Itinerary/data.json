@@ -529,7 +529,9 @@
             "title": "More OOP Practice (Due Monday 11/13)",
             "date": "2023-11-09",
             "deadline": "2023-11-13",
-            "links": {}
+            "links": {
+                "": "/challenge_questions/magic_methods_etc.html"
+            }
         },
         {
             "kind": "EX",
@@ -540,23 +542,24 @@
             "links": {
                 "": "/exercises/river-sim.html"
             }
-        },
-        {
-            "kind": "RD",
-            "n": 2,
-            "title": "Reading: TBD (Due Wednesday 11/29)",
-            "date": "2023-11-09",
-            "deadline": "2023-11-29",
-            "links": {
-                "": "https://gradescope.com"
-            }
         }
     ],
     "2023-11-10": [],
     "2023-11-11": [],
     "2023-11-12": [],
     "2023-11-13": [],
-    "2023-11-14": [],
+    "2023-11-14": [
+        {
+            "kind": "RD",
+            "n": 2,
+            "title": "Reading: Man versus Machine or Man + Machine? (Due Monday 12/4)",
+            "date": "2023-11-14",
+            "deadline": "2023-12-04",
+            "links": {
+                "": "https://gradescope.com"
+            }
+        }
+    ],
     "2023-11-15": [],
     "2023-11-16": [
         {
