@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1699476281.0736604">
+  <link rel="stylesheet" href="/static/styles.css?v=1699478252.37543">
 </head>
 
 <body>
@@ -172,16 +172,24 @@
 <li><p>It takes no parameters other than <code>self</code> and returns nothing.</p></li>
 <li><p>It should print the following:</p></li>
 </ul>
-<pre><code>~~~ Day x: ~~~
+<pre>
+<div class="terminal">
+~~~ Day x: ~~~
 Fish population: y
-Bear population: z</code></pre>
+Bear population: z
+</div>
+</pre>
 <p>Where <code>x</code> is the current day of the river, <code>y</code> is the number of Fish in the river, and <code>z</code> is the number of Bears in the river.</p>
 <h4 id="implement-1">Implement</h4>
 <p>At the bottom of <code>river_simulation.py</code>, try viewing your river by calling <code>my_river.view_river()</code>.</p>
 <p>When you run <code>python -m exercises.ex08.river_simulation</code>, the output should be:</p>
-<pre><code>~~~ Day 0: ~~~
+<pre>
+<div class="terminal">
+~~~ Day 0: ~~~
 Fish population: 10
-Bear population: 2</code></pre>
+Bear population: 2
+</div>
+</pre>
 <h2 id="simulating-one-day-and-one-week-in-the-river">4. Simulating “one day” and “one week” in the River</h2>
 <p>Now that you have a river with Bears and Fish, you can model how their population updates day-to-day.</p>
 <p><code>Bear</code> and <code>Fish</code> each have their own <code>one_day</code> method. Modify them so they have the following behaviors:</p>
