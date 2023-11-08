@@ -22,8 +22,8 @@
             "date": "2023-11-09",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
-                "Lecture Slides": ""
+                "Lecture Video": "https://youtube.com/live/R38q2c3OrXk?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL11.pdf"
             }
         },
         {
