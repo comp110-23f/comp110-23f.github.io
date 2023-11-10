@@ -1,18 +1,4 @@
 {
-    "2023-11-06": [],
-    "2023-11-07": [
-        {
-            "kind": "CL",
-            "n": 10,
-            "title": "Classes in Memory + Magic Methods",
-            "date": "2023-11-07",
-            "deadline": "None",
-            "links": {
-                "Lecture Video": "https://youtube.com/live/8F5zSJ-ctvU?feature=share",
-                "Lecture Slides": "/static/slides/f23/CL10.pdf"
-            }
-        }
-    ],
     "2023-11-08": [],
     "2023-11-09": [
         {
@@ -59,7 +45,8 @@
             "date": "2023-11-14",
             "deadline": "2023-12-04",
             "links": {
-                "": "https://gradescope.com"
+                "Article": "https://hal.pratt.duke.edu/sites/hal.pratt.duke.edu/files/u10/IS-29-05-Expert%20Opinion%5B1%5D_0.pdf",
+                "Assignment": "https://gradescope.com"
             }
         }
     ],
