@@ -559,6 +559,17 @@
                 "Article": "https://hal.pratt.duke.edu/sites/hal.pratt.duke.edu/files/u10/IS-29-05-Expert%20Opinion%5B1%5D_0.pdf",
                 "Assignment": "https://gradescope.com"
             }
+        },
+        {
+            "kind": "CL",
+            "n": 12,
+            "title": "More OOP in Memory + Intro to Jupyter Notebooks",
+            "date": "2023-11-14",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
+            }
         }
     ],
     "2023-11-15": [],

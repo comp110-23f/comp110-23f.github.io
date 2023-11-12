@@ -1,38 +1,4 @@
 {
-    "2023-11-08": [],
-    "2023-11-09": [
-        {
-            "kind": "CL",
-            "n": 11,
-            "title": "Operator Overloads, Default Parameters, + Union Types",
-            "date": "2023-11-09",
-            "deadline": "None",
-            "links": {
-                "Lecture Video": "https://youtube.com/live/R38q2c3OrXk?feature=share",
-                "Lecture Slides": "/static/slides/f23/CL11.pdf"
-            }
-        },
-        {
-            "kind": "CQ",
-            "n": 8,
-            "title": "More OOP Practice (Due Monday 11/13)",
-            "date": "2023-11-09",
-            "deadline": "2023-11-13",
-            "links": {
-                "": "/challenge_questions/magic_methods_etc.html"
-            }
-        },
-        {
-            "kind": "EX",
-            "n": 8,
-            "title": "River Simulation (Due Wednesday 11/15)",
-            "date": "2023-11-09",
-            "deadline": "2023-11-15",
-            "links": {
-                "": "/exercises/river-sim.html"
-            }
-        }
-    ],
     "2023-11-10": [],
     "2023-11-11": [],
     "2023-11-12": [],
@@ -47,6 +13,17 @@
             "links": {
                 "Article": "https://hal.pratt.duke.edu/sites/hal.pratt.duke.edu/files/u10/IS-29-05-Expert%20Opinion%5B1%5D_0.pdf",
                 "Assignment": "https://gradescope.com"
+            }
+        },
+        {
+            "kind": "CL",
+            "n": 12,
+            "title": "More OOP in Memory + Intro to Jupyter Notebooks",
+            "date": "2023-11-14",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
             }
         }
     ],
