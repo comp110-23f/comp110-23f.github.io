@@ -550,17 +550,6 @@
     "2023-11-13": [],
     "2023-11-14": [
         {
-            "kind": "RD",
-            "n": 2,
-            "title": "Reading: Man versus Machine or Man + Machine? (Due Monday 12/4)",
-            "date": "2023-11-14",
-            "deadline": "2023-12-04",
-            "links": {
-                "Article": "https://hal.pratt.duke.edu/sites/hal.pratt.duke.edu/files/u10/IS-29-05-Expert%20Opinion%5B1%5D_0.pdf",
-                "Assignment": "https://gradescope.com"
-            }
-        },
-        {
             "kind": "CL",
             "n": 12,
             "title": "More OOP in Memory + Intro to Jupyter Notebooks",
@@ -569,6 +558,17 @@
             "links": {
                 "Lecture Video": "",
                 "Lecture Slides": ""
+            }
+        },
+        {
+            "kind": "RD",
+            "n": 2,
+            "title": "Reading: Man versus Machine or Man + Machine? (Due Monday 12/4)",
+            "date": "2023-11-14",
+            "deadline": "2023-12-04",
+            "links": {
+                "Article": "https://hal.pratt.duke.edu/sites/hal.pratt.duke.edu/files/u10/IS-29-05-Expert%20Opinion%5B1%5D_0.pdf",
+                "Assignment": "https://gradescope.com"
             }
         }
     ],
