@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1699804360.7319057">
+  <link rel="stylesheet" href="/static/styles.css?v=1699804871.2226722">
 </head>
 
 <body>
@@ -65,6 +65,7 @@
 <li><a href="#writing-unit-tests">1. Writing Unit Tests</a></li>
 <li><a href="#make-a-backup-checkpoint-commit">2. Make a Backup Checkpoint “Commit”</a></li>
 <li><a href="#submit-to-gradescope-for-grading">3. Submit to Gradescope for Grading</a></li>
+<li><a href="#basic-debugging">Basic Debugging</a></li>
 </ul>
 </</ul>
                     </div>
@@ -108,7 +109,7 @@
 <li>One edge case: unexpected use cases of a function</li>
 </ul>
 <p>Include descriptive function names and docstrings, so that it captures what is being tested.</p>
-<p>The command to run your tests is <code>python -m pytest exercises/ex06</code> or you can run them using the beaker tab in VSCode if it is working (do note the VSCode testing feature tends to be a bit flaky).</p>
+<p>The command to run your tests is <code>python -m pytest exercises/ex06/dictionary_test.py</code> or you can run them using the beaker tab in VSCode if it is working (do note the VSCode testing feature tends to be a bit flaky).</p>
 <p>If your screen is large enough, you are encouraged to open these files side-by-side in VSCode by dragging the tab of one to the right side of VSCode so that it changes to a split pane view. Closing your file explorer can help give you additional horizontal space.</p>
 <h4 id="testing-for-keyerror"><em>Testing for KeyError:</em></h4>
 <p>You may optionally add a test for the invert function to check if the KeyError is being raised. Testing errors requires different syntax than testing normal outputs. If an error is raised then the function never actually returned anything, so we are unable to <code>assert</code> a return value. Instead try the following:</p>
@@ -139,6 +140,9 @@
 <p><code>python -m tools.submission exercises/ex06</code></p>
 <p>In the file explorer pane, look to find the zip file named “yy.mm.dd-hh.mm-exercises-ex06.zip”. The “yy”, “mm”, “dd”, and so on, are timestamps with the current year, month, day, hour, minute. If you right click on this file and select “Reveal in File Explorer” on Windows or “Reveal in Finder” on Mac, the zip file’s location on your computer will open. Upload this file to Gradescope to submit your work for this exercise.</p>
 <p>Autograding will take a few moments to complete. If there are issues reported, you are encouraged to try and resolve them and resubmit. If for any reason you aren’t receiving full credit and aren’t sure what to try next, come give us a visit in office hours!</p>
+<h2 id="basic-debugging">Basic Debugging</h2>
+<p>If you’re not passing autograder tests and don’t know why, try locally running your pytests to see if that gives you more insight! You can do that with the following command in your terminal:</p>
+<p><code>python -m pytest exercises/ex06/dictionary_test.py</code></p>
 </div>
 
        
