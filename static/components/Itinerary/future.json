@@ -4,14 +4,13 @@
     "2023-11-13": [],
     "2023-11-14": [
         {
-            "kind": "CL",
-            "n": 12,
-            "title": "More OOP in Memory + Intro to Jupyter Notebooks",
+            "kind": "VL",
+            "n": 6,
+            "title": "Virtual Lesson: More OOP in Memory + Intro to Jupyter Notebooks (Due Tuesday 11/14)",
             "date": "2023-11-14",
-            "deadline": "None",
+            "deadline": "2023-11-14",
             "links": {
-                "Lecture Video": "/static/slides/f23/CL12.pdf",
-                "Lecture Slides": ""
+                "": "/virtual-classes/VL06.html"
             }
         },
         {
@@ -40,7 +39,7 @@
     "2023-11-16": [
         {
             "kind": "CL",
-            "n": 13,
+            "n": 12,
             "title": "Recursion",
             "date": "2023-11-16",
             "deadline": "None",
