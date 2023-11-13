@@ -556,8 +556,18 @@
             "date": "2023-11-14",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
+                "Lecture Video": "/",
                 "Lecture Slides": ""
+            }
+        },
+        {
+            "kind": "LS",
+            "n": 18,
+            "title": "Jupyter Notebooks (Due Tuesday 11/14)",
+            "date": "2023-11-14",
+            "deadline": "2023-11-14",
+            "links": {
+                "": "https://www.gradescope.com/"
             }
         },
         {
