@@ -72,7 +72,11 @@
             "title": "Quiz 3",
             "date": "2023-11-21",
             "deadline": "2023-11-21",
-            "links": {}
+            "links": {
+                "Covered Topics": "/qz02-concepts.html",
+                "Practice Problems": "/resources/practice/f23/qz03.html",
+                "Review Session": ""
+            }
         }
     ],
     "2023-11-22": [],
