@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1699971576.9956222">
+  <link rel="stylesheet" href="/static/styles.css?v=1700015875.7857323">
 </head>
 
 <body>
@@ -66,7 +66,10 @@
 <li><a href="#conceptual-questions">Conceptual Questions</a></li>
 <li><a href="#memory-diagrams">Memory Diagrams</a></li>
 <li><a href="#class-writing">Class Writing</a></li>
-<li><a href="#function-writing">Function Writing</a></li>
+<li><a href="#function-writing">Function Writing</a>
+<ul>
+<li><a href="#autograder-instructions">Autograder Instructions</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#solutions">Solutions</a>
 <ul>
@@ -114,12 +117,41 @@ minor changes/additions
 <ol type="1">
 <li>This class is slightly challenging, but take it step by step! Create a <code>ChristmasTreeFarm</code> class with the following specifications:
 <ol type="a">
-<li>The <code>ChristmasTreeFarm</code> class should have one attribute: a <code>list[int]</code> named <code>plots</code>. This list will hold values that represent the size of the tree planted in each plot. If the value at an index of the list is 0, then the plot at that index is empty (does not have a tree). Any value other than 0 indicates that a tree is growing in that plot!</li>
-<li>The constructor for the class should take two arguments, both of type int. The first parameter should be called <code>plots</code> and is an <code>int</code> representing the total number of plots in the farm. Notice that the attribute <code>plots</code> and the parameter <code>plots</code> for this constructor are different, and represent different things! The second parameter should be called <code>initial_planting</code> representing the amount of plots that should be planted initially. These initially planted plots will be trees of size 1. The constructor should initialize the <code>plots</code> attribute to an empty <code>list</code>, and then append <code>initial_planting</code> trees of size 1. After that, the constructor should fill the rest of the plots with zeroes to indicate that they are empty!</li>
-<li>The class should define a method called <code>plant</code>. This method should take an argument of type <code>int</code>, representing the plot index at which a tree should be planted. The tree should be size 1 when planted. If this method is called on a plot that already has a tree, the old tree will be uprooted and replaced with a new baby tree (size 1).</li>
-<li>The class should define a method called <code>growth</code>. This method should increase the size of each planted tree by 1. Remember that unplanted plots are represented by a 0 in the <code>plots</code> list.</li>
-<li>The class should define a method called <code>harvest</code>. This method should take an argument called <code>replant</code> of type <code>bool</code> that will determine whether this method replants trees (sets them to size 1 after harvest) or leaves the plots empty (sets them to size 0 after harvest). For our method, trees that are at least size 5 will be harvested. The method will return the count of how many trees were successfully harvested (type <code>int</code>).</li>
-<li>The class should overload the addition operator. This method should be pure and work between two objects of type <code>ChristmasTreeFarm</code>. The method should return a new <code>ChristmasTreeFarm</code> object whose size is the sum of the given <code>ChristmasTreeFarm</code>s, and whose initial plantings are the sum of the number of planted trees in the given <code>ChristmasTreeFarm</code>s.</li>
+<li>The <code>ChristmasTreeFarm</code> class should have one attribute: a <code>list[int]</code> named <code>plots</code>.
+<ul>
+<li>Basic behavior of <code>plots</code> (you will define this later):
+<ul>
+<li>This list will hold values that represent the size of the tree planted in each plot.</li>
+<li>If the value at an index of the list is 0, then the plot at that index is empty (does not have a tree).</li>
+<li>Any value other than 0 indicates that a tree is growing in that plot!</li>
+</ul></li>
+</ul></li>
+<li>The <em>constructor</em> for the class should take two arguments: <code>plots: int</code> and <code>initial_planting: int</code>, both of type int.
+<ul>
+<li>The first parameter, <code>plots</code>, represents the <em>total</em> number of plots in the farm. (Notice that the attribute <code>plots</code> and the parameter <code>plots</code> for this constructor are different, and represent different things!)</li>
+<li>The second parameter, <code>initial_planting</code>, represents the number of plots that that will have trees already planted in them. These initially planted plots will be trees of size 1.</li>
+<li>The constructor should initialize the <code>plots</code> <em>attribute</em> to an empty <code>list</code>, and then append <code>initial_planting</code> trees of size 1. After that, the constructor should fill the rest of the plots with zeroes to indicate that they are empty!</li>
+</ul></li>
+<li>The class should define a method called <code>plant</code>.
+<ul>
+<li>This method should have a parameter of type <code>int</code>, representing the plot index at which a tree should be planted.</li>
+<li>The tree should be size 1 when planted. If this method is called on a plot that already has a tree, the old tree will be uprooted and replaced with a new baby tree (size 1).</li>
+</ul></li>
+<li>The class should define a method called <code>growth</code>.
+<ul>
+<li>This method should increase the size of each planted tree by 1. (Remember that unplanted plots are represented by a 0 in the <code>plots</code> list.)</li>
+</ul></li>
+<li>The class should define a method called <code>harvest</code>.
+<ul>
+<li>This method should have a parameter <code>replant</code> of type <code>bool</code> that will determine whether this method replants trees (sets them to size 1 after harvest) or leaves the plots empty (sets them to size 0 after harvest).</li>
+<li>For this method, trees that are at least size 5 will be harvested. The method will <code>return</code> the count of how many trees were successfully harvested (type <code>int</code>).</li>
+</ul></li>
+<li>The class should <em>overload</em> the addition operator.
+<ul>
+<li>This method should work between two objects of type <code>ChristmasTreeFarm</code>.</li>
+<li>The method should return a new <code>ChristmasTreeFarm</code> object whose size is the sum of the given <code>ChristmasTreeFarm</code>’s, and whose initial plantings are the sum of the number of planted trees in the given <code>ChristmasTreeFarm</code>s.</li>
+</ul></li>
+<li><em>Check your code:</em> If you want to check and see if your code works, you can use the autograder. Check out the instructions below to join the autograder Gradescope if you haven’t yet. (It’s the same one used for QZ02 practice!) For the autograder to work, you need to save your file in your lessons folder, in a folder called “practice” and in a file called “tree_farm.py”. Create the zip folder by running the command: <code>python -m tools.submission lessons/practice</code></li>
 </ol></li>
 </ol>
 <h2 id="function-writing">Function Writing</h2>
@@ -130,6 +162,8 @@ minor changes/additions
 <ol start="2" type="1">
 <li>Write a method called <code>is_valid_course</code> for the <code>Course</code> class. The method should take in a <code>str</code> prerequisite and return a <code>bool</code> that represents whether the course’s <code>level</code> is 400+ and if its <code>prerequisites</code> list contains the given string.</li>
 </ol>
+<h3 id="autograder-instructions">Autograder Instructions</h3>
+<p>Join the Gradescope class for practice problems with the code: 4V7PB5 (Do this by going to your <a href="https://www.gradescope.com/">Gradescope</a> homepage and clicking on “Enroll in Course”) <strong>Do not compress these files before submitting. Simply submit the <code>.py</code> files.</strong></p>
 <h1 id="solutions">Solutions</h1>
 <h2 id="conceptual-questions-1">Conceptual Questions</h2>
 <ol type="1">
