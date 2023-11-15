@@ -590,8 +590,8 @@
             "date": "2023-11-16",
             "deadline": "None",
             "links": {
-                "Lecture Video": "",
-                "Lecture Slides": ""
+                "Lecture Video": "https://youtube.com/live/KK3nd3neFvs?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL12.pdf"
             }
         },
         {
