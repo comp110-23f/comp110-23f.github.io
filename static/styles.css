@@ -201,7 +201,7 @@ code{
   }
   
   .link-page a {
-    -webkit-text-fill-color:#ffffff;
+    -webkit-text-fill-color: rgb(249, 177, 94);
     font-style: normal;
     font-weight: bolder;
     color: white;
@@ -325,12 +325,13 @@ code{
 
 .date {
   font-weight: bold;
+  color: var(--primary-blue);
 }
 
 .kind {
   width: 3.5em;
   display: inline-block;
-  color: var(--primary-blue);
+  color: var(--green);
   font-weight: 700;
 }
 
