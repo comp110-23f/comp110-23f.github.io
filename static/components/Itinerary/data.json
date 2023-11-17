@@ -619,20 +619,7 @@
     "2023-11-18": [],
     "2023-11-19": [],
     "2023-11-20": [],
-    "2023-11-21": [
-        {
-            "kind": "QZ",
-            "n": 3,
-            "title": "Quiz 3",
-            "date": "2023-11-21",
-            "deadline": "2023-11-21",
-            "links": {
-                "Covered Topics": "/qz03-concepts.html",
-                "Practice Problems": "/resources/practice/fa23/qz03.html",
-                "Review Session": ""
-            }
-        }
-    ],
+    "2023-11-21": [],
     "2023-11-22": [],
     "2023-11-23": [],
     "2023-11-24": [],
@@ -640,6 +627,18 @@
     "2023-11-26": [],
     "2023-11-27": [],
     "2023-11-28": [
+        {
+            "kind": "QZ",
+            "n": 3,
+            "title": "Quiz 3",
+            "date": "2023-11-28",
+            "deadline": "2023-11-28",
+            "links": {
+                "Covered Topics": "/qz03-concepts.html",
+                "Practice Problems": "/resources/practice/fa23/qz03.html",
+                "Review Session": ""
+            }
+        },
         {
             "kind": "EX",
             "n": 10,
