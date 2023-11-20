@@ -580,5 +580,40 @@
                 "Assignment": "https://gradescope.com"
             }
         }
-    ]
+    ],
+    "2023-11-15": [],
+    "2023-11-16": [
+        {
+            "kind": "CL",
+            "n": 12,
+            "title": "Recursion",
+            "date": "2023-11-16",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/KK3nd3neFvs?feature=share",
+                "Lecture Slides": "/static/slides/f23/CL12.pdf"
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 9,
+            "title": "Recursion Intro<s><i>(Due Friday 11/17)</i></s> (Extended to Monday 11/20)",
+            "date": "2023-11-16",
+            "deadline": "2023-11-17",
+            "links": {
+                "": "/challenge_questions/recursion.html"
+            }
+        },
+        {
+            "kind": "EX",
+            "n": 9,
+            "title": "Simpy<s><i>(Due Wednesday 11/22)</i></s> (Extended to Wednesday 11/29)",
+            "date": "2023-11-16",
+            "deadline": "2023-11-22",
+            "links": {
+                "": "/exercises/simpy.html"
+            }
+        }
+    ],
+    "2023-11-17": []
 }
