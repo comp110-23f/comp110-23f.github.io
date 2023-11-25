@@ -212,7 +212,7 @@ code{
 
   .link-page a:hover {
 
-    text-shadow: .5px .5px .5px #252c6c;
+    text-shadow: .5px .5px .5px rgb(249, 177, 94);
     text-decoration: underline;
     
   }
