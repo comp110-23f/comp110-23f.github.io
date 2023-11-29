@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> QZ03 Concepts - COMP110 - 23F</title>
+  <title> Challenge Question - COMP110 - 23F</title>
   <link rel="icon" type="image/png" href="/static/tabbrand.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1701289189.3711526">
+  <link rel="stylesheet" href="/static/styles.css?v=1701289192.6505547">
 </head>
 
 <body>
@@ -44,10 +44,10 @@
     </div>
   </nav>
 
-  <div id="resources-page" class="container">
+  <div id="lessons-page" class="container">
     <div class="row pt-4">
       <div class="col-12">
-        <h1>QZ03 Concepts</h1>
+        <h1>Challenge Question</h1>
         <hr class="title" />
       </div>
     </div>
@@ -61,53 +61,36 @@
                 <div id="overview-links">
                     <div id="TOC" role="doc-toc">
                         <ul class="overview-item"><ul>
-<li><a href="#quiz-3-concepts">Quiz 3 Concepts</a>
+<li><a href="#reformatting-data">Reformatting Data</a></li>
+<li><a href="#hints">Hints:</a>
 <ul>
-<li><a href="#more-details-will-be-added-soon"><em>(More details will be added soon!)</em></a></li>
+<li><a href="#write-the-function-to-just-return-a-dict-with-keys-and-empty-lists">1. Write the function to just return a dict with keys and empty lists:</a></li>
+<li><a href="#use-the-column_vals-function">2. Use the <code>column_vals</code> function:</a></li>
 </ul></li>
+<li><a href="#submission">Submission</a></li>
 </ul>
 </</ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="quiz-3-concepts">Quiz 3 Concepts</h1>
-<h2 id="more-details-will-be-added-soon"><em>(More details will be added soon!)</em></h2>
-<ul>
-<li>Quiz 0-2 Concepts plus:</li>
-<li>CL09 Intro to Object Oriented Programming (Classes)
-<ul>
-<li>Syntax for defining a Class and its methods
-<ul>
-<li>Creating a <code>Class</code></li>
-<li>Listing attributes and their types</li>
-<li>Defining a constructor method (<code>__init__</code>)</li>
-<li>Defining a method within the class</li>
-</ul></li>
-<li>Syntax for instantiating a Class and calling methods
-<ul>
-<li>Importing a <code>Class</code> and calling its constructor</li>
-<li>Calling methods on an object of a defined <code>Class</code></li>
-<li>Accessing attributes of an object of a <code>Class</code> (e.g. <code>my_pizza.toppings</code>)</li>
-</ul></li>
-</ul></li>
-<li>CL10 Classes in Memory
-<ul>
-<li>Memory diagram for a Class definition and instantiation</li>
-</ul></li>
-<li>CL10 Magic Methods
-<ul>
-<li>Syntax for defining and calling a magic method</li>
-<li>Writing a <code>__str__</code> magic method</li>
-<li>Diagramming a <code>__str__</code> magic method</li>
-</ul></li>
-<li>Operator Overloads, Default Parameters, + Union Types
-<ul>
-<li>Syntax for defining and calling a magic method that overloads operators</li>
-<li>Writing and Diagramming both <code>__add__</code> and <code>__mul__</code> magic methods</li>
-<li>Writing and Diagramming functions or methods with Default Parameters and Union Types</li>
-</ul></li>
-</ul>
+        <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h2 id="reformatting-data">Reformatting Data</h2>
+<p>As dicussed in class, you will be writing a function called <code>columnar</code> in <code>lessons/data_practice/data_utils.py</code> that takes a variable in the following form:</p>
+<pre><code>  d: list[dict[str,str]] = [{&#39;Day&#39;: &#39;Monday&#39;, &#39;Low&#39;: &#39;56&#39;, &#39;High&#39;: &#39;75&#39;}, {&#39;Day&#39;: &#39;Tuesday&#39;, &#39;Low&#39;: &#39;53&#39;, &#39;High&#39;: &#39;72&#39;}, {&#39;Day&#39;: &#39;Wednesday&#39;, &#39;Low&#39;: &#39;50&#39;, &#39;High&#39;: &#39;72&#39;}]</code></pre>
+<p>and converts it to the form:</p>
+<pre><code>{&#39;Day&#39;: [&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;], &#39;Low&#39;: [&#39;56&#39;, &#39;53&#39;, &#39;50&#39;], &#39;High&#39;: [&#39;75&#39;, &#39;72&#39;, &#39;72&#39;]}</code></pre>
+<h2 id="hints">Hints:</h2>
+<h3 id="write-the-function-to-just-return-a-dict-with-keys-and-empty-lists">1. Write the function to just return a dict with keys and empty lists:</h3>
+<p>In other words, for input:</p>
+<pre><code>  d: list[dict[str,str]] = [{&#39;Day&#39;: &#39;Monday&#39;, &#39;Low&#39;: &#39;56&#39;, &#39;High&#39;: &#39;75&#39;}, {&#39;Day&#39;: &#39;Tuesday&#39;, &#39;Low&#39;: &#39;53&#39;, &#39;High&#39;: &#39;72&#39;}, {&#39;Day&#39;: &#39;Wednesday&#39;, &#39;Low&#39;: &#39;50&#39;, &#39;High&#39;: &#39;72&#39;}]</code></pre>
+<p>It’ll return</p>
+<pre><code>{&#39;Day&#39;: [], &#39;Low&#39;: [], &#39;High&#39;: []}</code></pre>
+<h3 id="use-the-column_vals-function">2. Use the <code>column_vals</code> function:</h3>
+<p>Think about how you can call the column_vals function we defined in class to get the values you need for the lists.</p>
+<h2 id="submission">Submission</h2>
+<p>Create a .zip file by running the following command in your terminal:</p>
+<p><code>python -m tools.submission lessons/data_practice</code></p>
+<p>Then, drag and drop that .zip file into Gradescope!</p>
 </div>
 
        

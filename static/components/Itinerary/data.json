@@ -662,7 +662,7 @@
             "deadline": "None",
             "links": {
                 "Lecture Video": "",
-                "Lecture Slides": ""
+                "Lecture Slides": "/static/slides/f23/CL14.pdf"
             }
         },
         {
@@ -672,7 +672,7 @@
             "date": "2023-11-30",
             "deadline": "2023-12-04",
             "links": {
-                "": ""
+                "": "/challenge_questions/columnar.html"
             }
         },
         {
