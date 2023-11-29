@@ -1,5 +1,4 @@
 {
-    "2023-11-25": [],
     "2023-11-26": [],
     "2023-11-27": [],
     "2023-11-28": [
@@ -14,18 +13,40 @@
                 "Practice Problems": "/resources/practice/fa23/qz03.html",
                 "Review Session 11/27, 6-8 pm (Passcode COMP110)": "https://unc.zoom.us/j/96067874045?pwd=K0NkOHV0OXlIWVFCU25wQWFYd0h3Zz09"
             }
+        }
+    ],
+    "2023-11-29": [],
+    "2023-11-30": [
+        {
+            "kind": "CL",
+            "n": 14,
+            "title": "Working With Data",
+            "date": "2023-11-30",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "",
+                "Lecture Slides": ""
+            }
+        },
+        {
+            "kind": "CQ",
+            "n": 10,
+            "title": "Reformatting Data (Due Monday 12/4)",
+            "date": "2023-11-30",
+            "deadline": "2023-12-04",
+            "links": {
+                "": ""
+            }
         },
         {
             "kind": "EX",
             "n": 10,
-            "title": "Data Wrangling (Due Wednesday 12/6)",
-            "date": "2023-11-28",
-            "deadline": "2023-12-06",
+            "title": "Data Wrangling (Due Friday 12/8)",
+            "date": "2023-11-30",
+            "deadline": "2023-12-08",
             "links": {}
         }
     ],
-    "2023-11-29": [],
-    "2023-11-30": [],
     "2023-12-01": [],
     "2023-12-02": [],
     "2023-12-03": [],
