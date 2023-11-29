@@ -43,7 +43,9 @@
             "title": "Data Wrangling (Due Wednesday 12/6)",
             "date": "2023-11-30",
             "deadline": "2023-12-06",
-            "links": {}
+            "links": {
+                "": "/exercises/data-wrangling.html"
+            }
         }
     ],
     "2023-12-01": [],
