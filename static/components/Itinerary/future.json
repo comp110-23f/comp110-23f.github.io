@@ -61,7 +61,9 @@
             "title": "Final @ 4:00PM",
             "date": "2023-12-08",
             "deadline": "None",
-            "links": {}
+            "links": {
+                "Practice Problems": "/resources/practice/fa23/final-worksheet.html"
+            }
         }
     ]
 }
