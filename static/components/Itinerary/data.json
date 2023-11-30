@@ -666,16 +666,6 @@
             }
         },
         {
-            "kind": "CQ",
-            "n": 10,
-            "title": "Reformatting Data (Due Monday 12/4)",
-            "date": "2023-11-30",
-            "deadline": "2023-12-04",
-            "links": {
-                "": "/challenge_questions/columnar.html"
-            }
-        },
-        {
             "kind": "EX",
             "n": 10,
             "title": "Data Wrangling (Due Wednesday 12/6)",

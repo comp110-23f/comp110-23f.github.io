@@ -1,5 +1,4 @@
 {
-    "2023-11-27": [],
     "2023-11-28": [
         {
             "kind": "QZ",
@@ -25,16 +24,6 @@
             "links": {
                 "Lecture Video": "https://youtube.com/live/-T0zmLUOw-k?feature=share",
                 "Lecture Slides": "/static/slides/f23/CL14.pdf"
-            }
-        },
-        {
-            "kind": "CQ",
-            "n": 10,
-            "title": "Reformatting Data (Due Monday 12/4)",
-            "date": "2023-11-30",
-            "deadline": "2023-12-04",
-            "links": {
-                "": "/challenge_questions/columnar.html"
             }
         },
         {
