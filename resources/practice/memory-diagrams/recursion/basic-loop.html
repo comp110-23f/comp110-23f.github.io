@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1701353699.950048">
+  <link rel="stylesheet" href="/static/styles.css?v=1701353700.122251">
 </head>
 
 <body>
@@ -62,7 +62,10 @@
                     <div id="TOC" role="doc-toc">
                         <ul class="overview-item"><ul>
 <li><a href="#snippet">Snippet</a></li>
-<li><a href="#solution">Solution</a></li>
+<li><a href="#solution">Solution</a>
+<ul>
+<li><a href="#image-description">Image Description</a></li>
+</ul></li>
 </ul>
 </</ul>
                     </div>
@@ -70,21 +73,18 @@
             </div>
         </div>
         <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="snippet">Snippet</h1>
-<pre>
-<code class="python">   """ Practice Memory Diagram """
-
-    a: int = 2
-    b: int = 6
-    if a > b:
-        print(a-b)
-    elif b < 10:
-        print(b/a)
+<pre><code>def loop(x: int):
+    if x &lt; 3:
+        return x
     else:
-        print(a+b)
-    print(b)
-</code></pre>
+        return loop(x-2)
+
+print(loop(6))</code></pre>
 <h1 id="solution">Solution</h1>
-<p><img class="img-fluid" src="/static/assets/f23/elif-00-sol.png" alt="The memory diagram includes a column on the left titled Stack and a column on the right titled Output. The stack contains variable `a` with value 2 and variable `b` with the value 6. The Output has the value 3.0 and the value 6. "  /></p>
+<p><em>(Coming Soon, but this was done in class so you can look at the lecture video!)</em></p>
+<!-- <img class="img-fluid" src="" alt="Image Description Here"  /> -->
+<h2 id="image-description">Image Description</h2>
+<p><em>(Coming Soon)</em></p>
 </div>
 
        
