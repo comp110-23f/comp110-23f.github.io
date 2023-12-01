@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1701445281.4211445">
+  <link rel="stylesheet" href="/static/styles.css?v=1701445570.0095603">
 </head>
 
 <body>
@@ -73,29 +73,29 @@
             </div>
         </div>
         <div id="content" class="content box col-xl-9 col-lg-9 order-2 order-lg-1 pt-3"><h1 id="snippet">Snippet</h1>
-<pre><code>def column_vals(table: list[dict[str, str]], header: str) -&gt; list[str]:
-    &quot;&quot;&quot;Return a list of all values under a specific header.&quot;&quot;&quot;
-    result: list[str] = []
-    # loop through each element (dictionary) of the list
-    for elem in table:
-        # for each dictionary (elem), get the value at key &quot;header&quot; and add that to result
-        result.append(elem[header])
-    return result
+<pre><code>    def column_vals(table: list[dict[str, str]], header: str) -&gt; list[str]:
+        &quot;&quot;&quot;Return a list of all values under a specific header.&quot;&quot;&quot;
+        result: list[str] = []
+        # loop through each element (dictionary) of the list
+        for elem in table:
+            # for each dictionary (elem), get the value at key &quot;header&quot; and add that to result
+            result.append(elem[header])
+        return result
 
 
-def columnar(table: list[dict[str,str]]) -&gt; dict[str, list[str]]:
-    &quot;&quot;&quot;Reformat data so it&#39;s a dictionary with column headers as keys&quot;&quot;&quot;
-    result: dict[str, list[str]] = {}
-    # loop through keys of one row of the table to get the headers
-    first_row: dict[str,str] = table[0]
-    for key in first_row:
-        # for each key (header), make a dictionary entry with all the column values
-        result[key] = column_vals(table, key)
-    return result
+    def columnar(table: list[dict[str,str]]) -&gt; dict[str, list[str]]:
+        &quot;&quot;&quot;Reformat data so it&#39;s a dictionary with column headers as keys&quot;&quot;&quot;
+        result: dict[str, list[str]] = {}
+        # loop through keys of one row of the table to get the headers
+        first_row: dict[str,str] = table[0]
+        for key in first_row:
+            # for each key (header), make a dictionary entry with all the column values
+            result[key] = column_vals(table, key)
+        return result
 
-data: list[dict[str,str]] = [{&#39;Comp&#39;: &#39;110&#39;, &#39;Bio&#39;: &#39;100&#39;}, {&#39;Comp&#39;: &#39;210&#39;, &#39;Bio&#39;: &#39;200&#39;}]
-column_vals(data, &quot;Comp&quot;)
-columnar(data)</code></pre>
+    data: list[dict[str,str]] = [{&#39;Comp&#39;: &#39;110&#39;, &#39;Bio&#39;: &#39;100&#39;}, {&#39;Comp&#39;: &#39;210&#39;, &#39;Bio&#39;: &#39;200&#39;}]
+    column_vals(data, &quot;Comp&quot;)
+    columnar(data)</code></pre>
 <h1 id="solution">Solution</h1>
 <p><em>(Coming Soon)</em></p>
 <!-- <img class="img-fluid" src="" alt="Image Description Here"  /> -->
