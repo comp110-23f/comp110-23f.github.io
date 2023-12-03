@@ -1,47 +1,20 @@
 {
-    "2023-11-28": [
-        {
-            "kind": "QZ",
-            "n": 3,
-            "title": "Quiz 3",
-            "date": "2023-11-28",
-            "deadline": "2023-11-28",
-            "links": {
-                "Covered Topics": "/qz03-concepts.html",
-                "Practice Problems": "/resources/practice/fa23/qz03.html",
-                "Review Session 11/27, 6-8 pm (Passcode COMP110)": "https://unc.zoom.us/j/96067874045?pwd=K0NkOHV0OXlIWVFCU25wQWFYd0h3Zz09"
-            }
-        }
-    ],
-    "2023-11-29": [],
-    "2023-11-30": [
-        {
-            "kind": "CL",
-            "n": 14,
-            "title": "Working With Data",
-            "date": "2023-11-30",
-            "deadline": "None",
-            "links": {
-                "Lecture Video": "https://youtube.com/live/-T0zmLUOw-k?feature=share",
-                "Lecture Slides": "/static/slides/f23/CL14.pdf"
-            }
-        },
-        {
-            "kind": "EX",
-            "n": 10,
-            "title": "Data Wrangling (Due Wednesday 12/6)",
-            "date": "2023-11-30",
-            "deadline": "2023-12-06",
-            "links": {
-                "": "/exercises/data-wrangling.html"
-            }
-        }
-    ],
     "2023-12-01": [],
     "2023-12-02": [],
     "2023-12-03": [],
     "2023-12-04": [],
-    "2023-12-05": [],
+    "2023-12-05": [
+        {
+            "kind": "CL",
+            "n": 15,
+            "title": "Quantifying Shakespeare",
+            "date": "2023-12-05",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/1hVORfFD0ck?feature=share"
+            }
+        }
+    ],
     "2023-12-06": [],
     "2023-12-08": [
         {

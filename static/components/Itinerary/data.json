@@ -680,7 +680,18 @@
     "2023-12-02": [],
     "2023-12-03": [],
     "2023-12-04": [],
-    "2023-12-05": [],
+    "2023-12-05": [
+        {
+            "kind": "CL",
+            "n": 15,
+            "title": "Quantifying Shakespeare",
+            "date": "2023-12-05",
+            "deadline": "None",
+            "links": {
+                "Lecture Video": "https://youtube.com/live/1hVORfFD0ck?feature=share"
+            }
+        }
+    ],
     "2023-12-06": [],
     "2023-12-08": [
         {
