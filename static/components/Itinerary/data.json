@@ -684,7 +684,7 @@
         {
             "kind": "CL",
             "n": 15,
-            "title": "Quantifying Shakespeare",
+            "title": "Final Review",
             "date": "2023-12-05",
             "deadline": "None",
             "links": {
@@ -701,7 +701,8 @@
             "date": "2023-12-08",
             "deadline": "None",
             "links": {
-                "Practice Problems": "/resources/practice/fa23/final-worksheet.html"
+                "Practice Problems": "/resources/practice/fa23/final-worksheet.html",
+                "Review Session, (Dec 7 @ 4-6 pm in SN014 and over Zoom)": ""
             }
         }
     ]
