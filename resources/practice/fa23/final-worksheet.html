@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1701989075.9380615">
+  <link rel="stylesheet" href="/static/styles.css?v=1701990166.9920027">
 </head>
 
 <body>
@@ -118,25 +118,42 @@ Example: <code>reverse_multiply([1, 2, 3])</code> should return <code>[6, 4, 2]<
 <ol type="1">
 <li></li>
 </ol>
-<pre><code>def free_biscuits(input: dict[str, list[int]]) -&gt; dict[str, bool]:
-    &quot;&quot;&quot;Check each game to see if we get free biscuits.&quot;&quot;&quot;
-    result: dict[str, bool] = {}
-    # loop over each key in my input dictionary
-    for key in input:
-        # for each element of the dictionary, sum up its values
-        list_to_sum: list[int] = input[key]
-        sum: int = 0
-        # loop through list and add each value to sum
-        for element in list_to_sum:
-            sum += element
-        # if sum &gt;= 100, store in result under key &quot;key&quot; with value True
-        if sum &gt;= 100:
-            result[key] = True
-        else: # if not, store as False
-            result[key] = False
-    return result</code></pre>
+<pre><code>    def free_biscuits(input: dict[str, list[int]]) -&gt; dict[str, bool]:
+        &quot;&quot;&quot;Check each game to see if we get free biscuits.&quot;&quot;&quot;
+        result: dict[str, bool] = {}
+        # loop over each key in my input dictionary
+        for key in input:
+            # for each element of the dictionary, sum up its values
+            list_to_sum: list[int] = input[key]
+            sum: int = 0
+            # loop through list and add each value to sum
+            for element in list_to_sum:
+                sum += element
+            # if sum &gt;= 100, store in result under key &quot;key&quot; with value True
+            if sum &gt;= 100:
+                result[key] = True
+            else: # if not, store as False
+                result[key] = False
+        return result</code></pre>
 <ol start="2" type="1">
-<li><p><img src="/static/practice_worksheets/sp23/final-practice-2.png" /></p></li>
+<li></li>
+</ol>
+<pre><code>    def max_key(input: dict[str, int]) -&gt; str:
+        # Create variables to store max key and max val sum
+        max_key: str = &quot;&quot;
+        max_val_sum: int = 0
+        # Loop through each key of the dictionary
+        for key in input:
+            # Sum up the values of that key&#39;s corresponding list
+            val_sum: int = 0
+            for value in input[key]:
+                val_sum += value
+            # If the sum is the max so far, update the max_key and max_val_sum
+            if val_sum &gt; max_val_sum:
+                max_val_sum = val_sum
+                max_key = key 
+        return max_key</code></pre>
+<ol start="3" type="1">
 <li></li>
 </ol>
 <p>One Solution:</p>
@@ -161,20 +178,20 @@ Example: <code>reverse_multiply([1, 2, 3])</code> should return <code>[6, 4, 2]<
             idx += 1
         return output</code></pre>
 <p>Another Solution:</p>
-<pre><code>def multiples(input: list[int]) -&gt; list[bool]:
-    &quot;&quot;&quot;Return a mapping of each element for whether or not it&#39;s a multiple of the previous element&quot;&quot;&quot;
-    # initialize the output
-    output: list[bool] = []
-    # handle the &quot;wrap around&quot; case to check if the first element is a multiple of the last element
-    output.append(input[0] % input[len(input) - 1] == 0)
-    # now, handle the rest of the list 
-    # for idx values 1 to len(input) - 1...
-    idx: int = 1
-    while idx &lt; len(input):
-        # ...we want to see if val at idx is a multiple of val at idx-1
-        output.append(input[idx] % input[idx-1] == 0)
-        idx += 1
-    return output</code></pre>
+<pre><code>    def multiples(input: list[int]) -&gt; list[bool]:
+        &quot;&quot;&quot;Return a mapping of each element for whether or not it&#39;s a multiple of the previous element&quot;&quot;&quot;
+        # initialize the output
+        output: list[bool] = []
+        # handle the &quot;wrap around&quot; case to check if the first element is a multiple of the last element
+        output.append(input[0] % input[len(input) - 1] == 0)
+        # now, handle the rest of the list 
+        # for idx values 1 to len(input) - 1...
+        idx: int = 1
+        while idx &lt; len(input):
+            # ...we want to see if val at idx is a multiple of val at idx-1
+            output.append(input[idx] % input[idx-1] == 0)
+            idx += 1
+        return output</code></pre>
 <ol start="4" type="1">
 <li><p><img src="/static/practice_worksheets/fa21/final-solution4.png" /></p></li>
 <li><p><img src="/static/practice_worksheets/fa21/final-solution1.png" /></p></li>
