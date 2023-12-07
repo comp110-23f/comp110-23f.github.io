@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/styles.css?v=1701987943.5868273">
+  <link rel="stylesheet" href="/static/styles.css?v=1701988476.6619387">
 </head>
 
 <body>
@@ -120,6 +120,7 @@ Example: <code>reverse_multiply([1, 2, 3])</code> should return <code>[6, 4, 2]<
 <li><p><img src="/static/practice_worksheets/sp23/final-practice-2.png" /></p></li>
 <li></li>
 </ol>
+<p>One Solution:</p>
 <pre><code>    def multiples(input: list[int]) -&gt; list[bool]:
         &quot;&quot;&quot;Return a mapping of each element for whether or not it&#39;s a multiple of the previous element&quot;&quot;&quot;
         # initialize the output
@@ -140,6 +141,21 @@ Example: <code>reverse_multiply([1, 2, 3])</code> should return <code>[6, 4, 2]<
                 output.append(False)
             idx += 1
         return output</code></pre>
+<p>Another Solution:</p>
+<pre><code>def multiples(input: list[int]) -&gt; list[bool]:
+    &quot;&quot;&quot;Return a mapping of each element for whether or not it&#39;s a multiple of the previous element&quot;&quot;&quot;
+    # initialize the output
+    output: list[bool] = []
+    # handle the &quot;wrap around&quot; case to check if the first element is a multiple of the last element
+    output.append(input[0] % input[len(input) - 1] == 0)
+    # now, handle the rest of the list 
+    # for idx values 1 to len(input) - 1...
+    idx: int = 1
+    while idx &lt; len(input):
+        # ...we want to see if val at idx is a multiple of val at idx-1
+        output.append(input[idx] % input[idx-1] == 0)
+        idx += 1
+    return output</code></pre>
 <ol start="4" type="1">
 <li><p><img src="/static/practice_worksheets/fa21/final-solution4.png" /></p></li>
 <li><p><img src="/static/practice_worksheets/fa21/final-solution1.png" /></p></li>
